@@ -20,6 +20,13 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 ```
 
+注:
+```bash
+-i https://pypi.doubanio.com/simple/   #表示使用豆瓣源 （-i == --index-url）
+--trusted-host pypi.doubanio.com       #表示添加信任
+
+```
+
 ## pip 源
 
 - 清华：https://pypi.tuna.tsinghua.edu.cn/simple
