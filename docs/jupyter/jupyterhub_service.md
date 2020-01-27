@@ -19,7 +19,7 @@
 4. 修改配置文件:根据实际情况修改jupyterhub_config.py的配置
     ```
     c.JupyterHub.ip = '0.0.0.0' #IP地址
-    c.JupyterHub.port = 8082  #JupyterHub端口
+    c.JupyterHub.port = 8010  #JupyterHub端口
     c.PAMAuthenticator.encoding = 'utf8'  #编码
     ```
 
@@ -37,16 +37,6 @@
     ```
     nohup jupyterhub --no-ssl > jupyterhub.log &
     ```
-
-6. 访问 :  
-    - 25 : http://50125.hnbdata.cn:8082
-    - 26 : http://50125.hnbdata.cn:8082
-
-7. 其他说明:
-    - 服务器存放配置的目录 `/data/jupyter`
-    - [安装 tensorflow](../tesorflow/)
-    - [安装 pytorch](../pytorch/)
-    - [个人账号开启 jupyter](jupyter_service.md)
 
 # 参考
 1. http://www.mamicode.com/info-detail-2309029.html
