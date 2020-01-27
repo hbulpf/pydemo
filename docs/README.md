@@ -2,14 +2,18 @@
 
 
 ## python 
+1. python 基本
+    - [pip](./python/pip.md)
 1. [pycharm](pycharm.md)
 
 
 ## AI
 
 ### 基本环境
-1. [Anaconda](anaconda/install_anaconda.md)
-
+1. Anaconda
+    - [安装 Anaconda](anaconda/install_anaconda.md)
+    - [conda基本命令](anaconda/conda_cmd.md)
+    - [anaconda 生成py36环境](anaconda/py37_To_py36.md)
 1. [Jupyterhub](jupyter/jupyterhub_service.md)
 
 
