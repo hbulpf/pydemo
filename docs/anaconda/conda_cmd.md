@@ -85,6 +85,29 @@ conda update anaconda
 conda update anaconda-navigator    //update最新版本的anaconda-navigator   
 ```
 
+## conda Channels
+添加 Channels 可以加快包的下载速度
+
+#### 官方Channels
+```bash
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
+
+#### 清华大学 Channels
+
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+```
+
+#### 其他Channels
+```
+conda config --add channels genomedk
+```
 
 # 参考
 1. [Conda常用命令整理](https://blog.csdn.net/menc15/article/details/71477949)
+2. [conda的安装与使用](https://www.jianshu.com/p/edaa744ea47d)
