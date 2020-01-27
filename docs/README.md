@@ -8,7 +8,8 @@
 ## AI
 
 ### 基本环境
-1. [Anaconda 3.7](anaconda/install_anaconda.sh)
+1. [Anaconda](anaconda/install_anaconda.md)
+
 1. [Jupyterhub](jupyter/jupyterhub_service.md)
 
 
