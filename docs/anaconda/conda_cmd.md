@@ -47,7 +47,7 @@ source activate py36 #激活python3.6版本
 source deactivate
 ```
 
-卸载xxxx虚拟环境
+卸载删除xxxx虚拟环境
 ```bash
 conda remove -n xxxx --all #卸载xxxx虚拟环境
 ```
@@ -63,11 +63,25 @@ conda remove -n xxxx --all //创建xxxx虚拟环境
 ```
 
 
+清理（conda瘦身）
+
+第一步: 通过 `conda clean -p` 删除一些没用的包，会检查哪些包没有在包缓存中被硬依赖到其他地方，并删除它们。
+第二步: 通过 `conda clean -t` 删除缓存的tar软件包
+```
+conda clean -p      //删除没有用的包
+conda clean -t      //tar打包
+```
+
 ## 软件包管理
 
 查看环境下已有的安装包
 ```bash
 conda list
+```
+
+安装xxx安装包
+```
+conda install xxx   #安装xxx安装包
 ```
 
 更新/卸载xxx安装包
@@ -76,25 +90,33 @@ conda update xxx   #更新xxx安装包
 conda uninstall xxx   #卸载xxx安装包
 ```
 
-
 ## conda 升级
 
+更新所有库
 ```bash
-conda update conda
-conda update anaconda
-conda update anaconda-navigator    //update最新版本的anaconda-navigator   
+conda update --all
+```
+
+
+升级自身
+```bash
+conda update conda   # 更新 conda 自身
+conda update anaconda  # 更新 anaconda
+conda update anaconda-navigator    #update最新版本的anaconda-navigator   
 ```
 
 ## conda Channels
 添加 Channels 可以加快包的下载速度
 
-#### 官方Channels
+### Channels 源
+
+##### 官方Channels
 ```bash
 conda config --add channels bioconda
 conda config --add channels conda-forge
 ```
 
-#### 清华大学 Channels
+##### 清华大学 Channels
 
 ```bash
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -103,10 +125,34 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
 ```
 
-#### 其他Channels
+##### 其他Channels
 ```
 conda config --add channels genomedk
 ```
+
+### 使用 Channels
+
+使用特定频道下载指定版本的软件包
+```bash
+conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0
+```
+
+## anaconda特定版本软件包
+> 以 TensorFlow 1.8.0 为例
+
+1. 打开anaconda-prompt
+2. 查看tensorflow各个版本：`anaconda search -t conda tensorflow`（查看会发现有一大堆TensorFlow源，但是不能随便选，选择可以用查找命令定位）
+
+3. 找到自己安装环境对应的最新TensorFlow, 查看指定包: `anaconda show <USER/PACKAGE>`
+   
+   查看tensorflow版本信息: `anaconda show anaconda/tensorflow`
+
+4. 查找后确定要安装1.8.0版本tensorflow, 从指定源安装
+```
+conda install --channel https://conda.anaconda.org/anaconda tensorflow=1.8.0 
+```
+
+
 
 # 参考
 1. [Conda常用命令整理](https://blog.csdn.net/menc15/article/details/71477949)
