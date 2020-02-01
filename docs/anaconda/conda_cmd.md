@@ -159,6 +159,11 @@ conda update anaconda-navigator    #update最新版本的anaconda-navigator
 ## conda Channels
 添加 Channels 可以加快包的下载速度
 
+查看当前环境的 Channels
+```bash
+conda config --show channels
+```
+
 ### Channels 源
 
 ##### 官方Channels
@@ -174,11 +179,17 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config --set show_channel_urls yes  #从channel中安装包时显示channel的url，这样就可以知道包的安装来源
 ```
 
 ##### 其他Channels
 ```
 conda config --add channels genomedk
+```
+
+### 移除 Channels
+```
+conda config --remove channels  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 ```
 
 ### 使用 Channels
@@ -203,6 +214,21 @@ conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1
 conda install --channel https://conda.anaconda.org/anaconda tensorflow=1.8.0 
 ```
 
+如果不能通过conda install来安装，文档中提到可以从Anaconda.org安装，也可以用pip直接安装。  
+pip在Anaconda中已安装好，不需要单独为每个环境安装pip。  
+如需要用pip管理包，activate环境后直接使用即可。
+
+
+## 小技巧
+#### 使用 alias 减少命令输入
+linux的alias，只要在你的.bashrc里设置以下即可。
+
+比如想快速启动 py36 的环境，将 py36 的启动命令写成别名，放在 `～/.bashrc` 或 `~/.bash_profile
+` 中
+
+```
+alias uppy36='source activate py36'
+```
 
 
 # 参考
