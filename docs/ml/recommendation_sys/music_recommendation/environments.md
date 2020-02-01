@@ -9,7 +9,8 @@
     conda config --set show_channel_urls yes
     ```
 3. 删除目录 `C:\Users\\<你的用户名>` 下配置文件.condarc中的 `-default` 
-4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise`
+4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise`  
+   如果不奏效，使用 `conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0`
 5. 升级 pip，命令行输入： `python -m pip install --upgrade pip`
 6. 安装 gensim 库，命令行输入：`pip install gensim`
 7. 安装tensorflow 库，命令行输入：`pip install tensorflow==1.4.0`
