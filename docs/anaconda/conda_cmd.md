@@ -141,7 +141,7 @@ conda clean -p      //删除没有用的包
 conda clean -t      //tar打包
 ```
 
-## conda 升级
+## 5. conda 升级
 
 更新所有库
 ```bash
@@ -156,7 +156,7 @@ conda update anaconda  # 更新 anaconda
 conda update anaconda-navigator    #update最新版本的anaconda-navigator   
 ```
 
-## conda Channels
+## 6. conda Channels
 添加 Channels 可以加快包的下载速度
 
 查看当前环境的 Channels
@@ -199,7 +199,7 @@ conda config --remove channels  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cl
 conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0
 ```
 
-## anaconda特定版本软件包
+## 7. anaconda特定版本软件包
 > 以 TensorFlow 1.8.0 为例
 
 1. 打开anaconda-prompt
@@ -219,7 +219,7 @@ pip在Anaconda中已安装好，不需要单独为每个环境安装pip。
 如需要用pip管理包，activate环境后直接使用即可。
 
 
-## 小技巧
+## 8. 小技巧
 #### 使用 alias 减少命令输入
 linux的alias，只要在你的.bashrc里设置以下即可。
 
