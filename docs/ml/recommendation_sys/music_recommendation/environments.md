@@ -19,6 +19,13 @@
 10. 安装 Hadoop, 下载 Hadoop 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 11. 安装 Spark, 下载 Spark 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 
+## 快速配置
+如果需要快速配置基本环境，可以在安装好 Anaconda 后，在本目录执行以下命令即可安装好到上面第8步:
+```bash
+conda env create -f environment.yml
+```
+
+
 ## JDK、Hadoop、Spark 解压后需要配置环境变量
 
 1. windows上环境变量设置：右键我的电脑==》属性==》高级系统设置==》环境变量==》系统变量

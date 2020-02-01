@@ -92,19 +92,37 @@ conda remove -n xxxx --all //删除xxxx虚拟环境
 
 
 ## 3. 分享环境
+如果想把当前的环境配置与别人分享，这样ta可以快速建立一个与你一模一样的环境（同一个版本的python及各种包）来共同开发/进行新的实验。一个分享环境的快速方法就是给ta一个你的环境的.yml文件。
 
-
+首先通过activate target_env要分享的环境target_env，然后输入下面的命令会在当前工作目录下生成一个environment.yml文件，
+```
+conda env export > environment.yml
+```
+小伙伴拿到 [environment.yml](enviroment.yml) 文件后，将该文件放在工作目录下，可以通过以下命令从该文件创建环境
+```
+conda env create -f environment.yml
+```
 
 ## 4. 软件包管理
 
-查看环境下已有的安装包
+查看当前环境下已有的安装包
 ```bash
 conda list
+```
+
+查看某个不活跃环境下已有的安装包
+```
+conda list -n your_env_name
 ```
 
 安装xxx安装包
 ```
 conda install xxx   #安装xxx安装包
+```
+
+为指定环境安装某个包
+```
+conda install -n env_name package_name
 ```
 
 更新/卸载xxx安装包
