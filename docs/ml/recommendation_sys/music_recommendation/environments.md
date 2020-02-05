@@ -2,7 +2,7 @@
 
 ##  <font color=red> 配置基本环境 </font>
 
-1. 安装 Anaconda，并配置环境变量, 使用[清华大学镜像源下载Anaconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/) 后 [安装](../../../anaconda/install_anaconda.md) 
+1. 安装 Anaconda，并配置环境变量, 使用[清华大学镜像源下载Anaconda3-5.3.1](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/) 后 [安装](../../../anaconda/install_anaconda.md) 
 2. 增加 Anaconda 的镜像源，命令行输入：
     ```bash
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -31,6 +31,8 @@
 9. 安装 JDK, 下载 JDK 并解压 ：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 10. 安装 Hadoop, 下载 Hadoop 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 11. 安装 Spark, 下载 Spark 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
+
+> 注意，以后每次使用环境都要先激活 py36 的环境
 
 ## 快速配置
 如果需要快速配置基本环境，可以在安装好 Anaconda 后，在本目录执行以下命令即可安装好到上面第8步:
