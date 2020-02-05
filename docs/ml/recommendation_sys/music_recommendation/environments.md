@@ -2,13 +2,26 @@
 
 ##  <font color=red> 配置基本环境 </font>
 
-1. 安装 Anaconda，并配置环境变量, [安装 Anaconda](../../../anaconda/install_anaconda.md) 
-2. 更换 Anaconda 的镜像源，命令行输入：
+1. 安装 Anaconda，并配置环境变量, 使用[清华大学镜像源下载Anaconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/) 后 [安装](../../../anaconda/install_anaconda.md) 
+2. 增加 Anaconda 的镜像源，命令行输入：
     ```bash
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    conda config --set show_channel_urls yes
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+    conda config --set show_channel_urls yes  #从channel中安装包时显示channel的url，这样就可以知道包的安装来源
     ```
-3. 删除目录 `C:\Users\\<你的用户名>` 下配置文件.condarc中的 `-default` 
+3. [创建使用 python3.6](../../../anaconda/py37_To_py36.md)
+    ```bash 
+    conda create -n py36 python=3.6 #建立python3.6的虚拟环境，并将虚拟环境命名为py36
+    ```
+    
+    激活python3.6版本，使用命令：
+    ```
+    source activate py36
+    ```
+    如需退出python3.6：`source deactivate`   
+    windows 操作系统，上述命令不要输入 `source` 
 4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise`  
    如果不奏效，使用 `conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0`
 5. 升级 pip，命令行输入： `python -m pip install --upgrade pip`
