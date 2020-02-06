@@ -20,12 +20,14 @@ sed -i 's/^#\([ ]*c.NotebookApp.password\)/\1/' ~/.jupyter/jupyter_notebook_conf
 
 #修改启动参数配置
 sed -i 's/^[ ]*c.NotebookApp.ip.*/c.NotebookApp.ip = "*"/g' ~/.jupyter/jupyter_notebook_config.py
-sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 6666/g' ~/.jupyter/jupyter_notebook_config.py
+sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 8910/g' ~/.jupyter/jupyter_notebook_config.py
 sed -i 's/^[ ]*c.NotebookApp.open_browser.*/c.NotebookApp.open_browser = False/g' ~/.jupyter/jupyter_notebook_config.py
-sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:2f319121e25b:f20f8fe27e89d0afcc70b7cf3d6e997268abd2f5"/g' ~/.jupyter/jupyter_notebook_config.py
+# 设置密码lpc@conda+ljw
+sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:4c02993ae0ca:78fe36fcbf23712a778f9ae88a96e27de7f30b48"/g' ~/.jupyter/jupyter_notebook_config.py 
 
-nohup jupyter notebook >/dev/null 2>&1 &
+nohup jupyter notebook >jupyternotebook.log 2>&1 &
 ```
+
 
 如需关闭 jupyter notebook ,需杀掉 jupyter notebook 的进程
 ```
