@@ -17,10 +17,12 @@ source activate py36
 source deactivate
 ```
 
-**[Tips]**:
+**[Tips]**
 在`~/.bash_profile`文件的末尾加上` source activate py36`，用户登录后将自动切换到(py36)环境  
 ```
 cat <<EOM >>~/.bash_profile
+#import anacoda3 environment
+#export PATH="/opt/anaconda3/bin:$PATH"
 #get python36
 source activate py36
 EOM

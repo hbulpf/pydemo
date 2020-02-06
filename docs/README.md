@@ -15,7 +15,9 @@
     - [conda基本命令](anaconda/conda_cmd.md)
     - [anaconda 生成py36环境](anaconda/py37_To_py36.md)
     
-1. [Jupyterhub](jupyter/jupyterhub_service.md)
+1. Jupyter Notebook
+    - [Jupyter](./jupyter/jupyter_service.md)
+    - [Jupyterhub](jupyter/jupyterhub_service.md)
 
 ### ai 环境
 1. [安装NVIDIA-Linux-x86_64-384.145,cuda-9.0, libcudnn7-7.5.0.56-1](ml/nvidia_cuda/)

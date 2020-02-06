@@ -27,11 +27,6 @@ sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:2f319121e
 nohup jupyter notebook >/dev/null 2>&1 &
 ```
 
-完成后，访问端口为 6666 ，密码为 123456。
->每个人的 jupyter notebook 端口可以修改，将上面代码中的6666修改为自己的端口即可。请使用自己的 vnc端口号+64000 以防止冲突。比如我自己的vnc端口号是11，那就将以上配置改成 64011 :
->  - 25服务器访问 : http://50125.hnbdata.cn:64011/
->  - 26服务器访问 : http://50126.hnbdata.cn:64011/
-
 如需关闭 jupyter notebook ,需杀掉 jupyter notebook 的进程
 ```
 ps -ef| grep jupyter |grep -v grep|cut -c 9-15|xargs kill -9
