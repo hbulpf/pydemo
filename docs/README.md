@@ -3,7 +3,7 @@
 
 ## python 
 1. python 基本
-    - [pip](./python/pip.md)
+    - [pip使用镜像](python/pip_mirrors.md)
 1. [pycharm](pycharm.md)
 
 

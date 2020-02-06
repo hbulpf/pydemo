@@ -25,9 +25,12 @@
 4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise`  
    如果不奏效，使用 `conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0`
 5. 升级 pip，命令行输入： `python -m pip install --upgrade pip`
-6. 安装 gensim 库，命令行输入：`pip install gensim`
-7. 安装tensorflow 库，命令行输入：`pip install tensorflow==1.4.0`
-8. 安装 pyspark 库，命令行输入：`pip install pyspark`
+6. 安装 gensim 库，命令行输入：`pip install gensim`  
+   如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple gensim`
+7. 安装tensorflow 库，命令行输入：`pip install tensorflow==1.4.0`  
+   如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow==1.4.0`
+8. 安装 pyspark 库，命令行输入：`pip install pyspark`  
+   如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyspark`
 9. 安装 JDK, 下载 JDK 并解压 ：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 10. 安装 Hadoop, 下载 Hadoop 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 11. 安装 Spark, 下载 Spark 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
