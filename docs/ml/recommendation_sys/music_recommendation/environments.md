@@ -22,8 +22,8 @@
     ```
     如需退出python3.6：`source deactivate`   
     windows 操作系统，上述命令不要输入 `source` 
-4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise`  
-   如果不奏效，使用 `conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0`
+4. 安装 Surprise 库，命令行输入：`conda install scikit-surprise=1.0.4`  
+   如果不奏效，使用 `conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.0.4`
 5. 升级 pip，命令行输入： `python -m pip install --upgrade pip`
 6. 安装 gensim 库，命令行输入：`pip install gensim`  
    如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple gensim`

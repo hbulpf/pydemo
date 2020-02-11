@@ -1,3 +1,7 @@
+# pip 教程
+
+1. [pip tutorials](https://packaging.python.org/tutorials/installing-packages/)
+
 # pip 使用镜像源
 
 ## [清华大学 pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
