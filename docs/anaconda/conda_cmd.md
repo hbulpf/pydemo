@@ -196,7 +196,7 @@ conda config --remove channels  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cl
 
 使用特定频道下载指定版本的软件包
 ```bash
-conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.1.0
+conda install --channel https://conda.anaconda.org/conda-forge scikit-surprise=1.0.4
 ```
 
 ## 7. anaconda特定版本软件包
