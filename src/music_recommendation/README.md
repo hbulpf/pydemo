@@ -12,6 +12,9 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask
 python main.py
 ```
 
+查看 http://localhost:5000/ 访问音乐推荐系统。
+
+
 # 参考
 1. [Python Flask 快速部署网页](https://www.jianshu.com/p/c8b321087eca)
 2. [Python Flask Web 框架入门](https://blog.csdn.net/sinat_38682860/article/details/82354342)
