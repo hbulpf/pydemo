@@ -24,6 +24,15 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask
 
 # 运行
 
+##### 运行环境
+
+| 组件            | 版本 |
+| --------------- | ---- |
+| scikit-surprise |      |
+| gensim          |      |
+| tensorfow       |      |
+
+
 ```shell script
 python main.py
 ```
