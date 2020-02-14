@@ -10,7 +10,7 @@ def demo():
     return render_template('index.html', input_text = '', res_text = '')
   else:
     inputText = request.form.get("input_text")
-    resText = predict(str(inputText))
+    resText = formatRes(predict(str(inputText)))
     return render_template('index.html', input_text = inputText, res_text = resText)
 
 def formatRes(textList):
