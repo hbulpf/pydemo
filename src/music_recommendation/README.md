@@ -1,6 +1,22 @@
 **音乐推荐系统**
 
+
+
+
+
 # 安装 python flask
+
+##### 运行环境
+
+| 组件            | 版本 |
+| --------------- | ---- |
+| scikit-surprise |      |
+| gensim          |      |
+| tensorfow       |      |
+
+
+
+
 
 ```shell script
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask
@@ -13,6 +29,10 @@ python main.py
 ```
 
 查看 http://localhost:5000/ 访问音乐推荐系统。
+
+
+
+
 
 
 # 参考
