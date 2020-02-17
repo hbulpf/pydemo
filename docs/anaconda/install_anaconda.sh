@@ -6,6 +6,6 @@ sh Anaconda2-5.3.1-Linux-x86_64.sh
 
 cat <<EOM >>~/.bash_profile
 #anaconda python2.7.5 (by lipengfei)
-export PATH="/opt/anaconda2/bin:$PATH"
+export PATH="/opt/anaconda3/bin:$PATH"
 EOM
 source ~/.bash_profile

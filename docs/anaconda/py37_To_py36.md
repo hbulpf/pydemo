@@ -22,7 +22,7 @@ source deactivate
 ```
 cat <<EOM >>~/.bash_profile
 #import anacoda3 environment
-#export PATH="/opt/anaconda3/bin:$PATH"
+export PATH="/opt/anaconda3/bin:$PATH"
 #get python36
 source activate py36
 EOM
