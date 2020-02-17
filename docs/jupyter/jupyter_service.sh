@@ -8,11 +8,12 @@ sed -i 's/^#\([ ]*c.NotebookApp.password\)/\1/' ~/.jupyter/jupyter_notebook_conf
 
 #修改启动参数配置
 sudo sed -i 's/^[ ]*c.NotebookApp.ip.*/c.NotebookApp.ip = "*"/g' ~/.jupyter/jupyter_notebook_config.py
-sudo sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 6666/g' ~/.jupyter/jupyter_notebook_config.py
+sudo sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 8900/g' ~/.jupyter/jupyter_notebook_config.py
 sudo sed -i 's/^[ ]*c.NotebookApp.open_browser.*/c.NotebookApp.open_browser = False/g' ~/.jupyter/jupyter_notebook_config.py
-sudo sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:2f319121e25b:f20f8fe27e89d0afcc70b7cf3d6e997268abd2f5"/g' ~/.jupyter/jupyter_notebook_config.py
+sudo sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:12737bb098b8:8f544495eab285334e8423ff8f2903730520df96"/g' ~/.jupyter/jupyter_notebook_config.py
+# key:  123456
 
 # chmod a+r -R /run/user/0
 # chmod a+rwx -R /run/user/0/jupyter
 # chmod a+x -R /run/user
-nohup jupyter notebook >/dev/null 2>&1 &
+nohup jupyter notebook >jupyternote/notebook.log 2>&1 &

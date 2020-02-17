@@ -25,7 +25,7 @@ sed -i 's/^[ ]*c.NotebookApp.open_browser.*/c.NotebookApp.open_browser = False/g
 # 设置密码lpc@conda+ljw
 sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:4c02993ae0ca:78fe36fcbf23712a778f9ae88a96e27de7f30b48"/g' ~/.jupyter/jupyter_notebook_config.py 
 
-nohup jupyter notebook >jupyternotebook.log 2>&1 &
+nohup jupyter notebook >jupyternote/notebook.log 2>&1 &
 ```
 
 
