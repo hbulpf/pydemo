@@ -5,7 +5,7 @@ sudo wget  https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh #ä¸
 sh Anaconda2-5.3.1-Linux-x86_64.sh
 
 cat <<EOM >>~/.bash_profile
-#anaconda python2.7.5 (by lipengfei)
+#anaconda python3
 export PATH="/opt/anaconda3/bin:$PATH"
 EOM
 source ~/.bash_profile
