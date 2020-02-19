@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about2.css') }}">
+<title>联系我们 - 站长之家 (中国站长站) CHINAZ.com</title>
+</head>
+<body>
+<div class="page">
+<div class="header">
+<div class="logo"><a href="https://www.chinaz.com"><img src="https://ww.chinaz.com/aboutus/img/logo.png" alt="站长之家"></a></div>
+<ul class="link">
+<li  ><a href="https://www.chinaz.com/aboutus/index.html">首页</a></li>
+<li  ><a href="https://www.chinaz.com/aboutus/about.html">了解我们</a></li>
+<li  ><a href="https://www.chinaz.com/aboutus/events.html">大事记</a></li>
+<li  ><a href="https://www.chinaz.com/aboutus/ad.html">广告服务</a></li>
+<li  ><a href="https://www.chinaz.com/aboutus/join.html">加入我们</a></li>
+<li class="active"  ><a href="https://ww.chinaz.com/aboutus/contact.php">联系我们</a></li>
+</ul>
+</div>
+<div class="box">
+<ul class="left">
+	<li class="active" ><a href="https://ww.chinaz.com/aboutus/contact.php">问题反馈</a></li>
+	<li  ><a href="https://www.chinaz.com/aboutus/qq.html">联系方式</a></li>
+	<!--<li  ><a href="https://www.chinaz.com/aboutus/help.html">在线帮助</a></li>-->
+	<li><a href="https://www.chinaz.com/aboutus/announce.html">版权申明</a></li>
+	<li class="last" ><a href="https://www.chinaz.com/aboutus/privacy.html">隐私政策</a></li>
+
+</ul>
+<div class="content">
+<div class="table clearfix">
+
+<form method="post" action="contact.php?post" id="feedbackForm">
+        <div class="form feedbackform">
+            <div class="tip">您可以提交任何问题，我们会尽快答复您，请您注意查收邮件。</div>
+
+			    <div class="row">
+                <label class="label" for="problemcategory">问题分类</label>
+                <select name="ctype" id="problemcategory">
+					<option value="注册激活">注册激活</option>
+					<option value="站长工具">站长工具</option>
+					<option value="投递文章">投递文章</option>
+	  				<option value="合作联系">媒体合作</option>
+					<option value="素材相关">素材相关</option>
+					<option value="报告错误">报告错误</option>
+					<option value="论坛事务">论坛事务</option>
+		    		<option value="友情链接">友情链接</option>
+      				<option value="发布软件">发布软件&程序</option>
+       				<option value="中文排行网站登录">中文排行网站登录</option>
+       				<option value="其它">其它事务</option>
+                </select>
+				<p style="color:red;">请正确选择您需要反馈的问题分类，方便相关负责人对接解决</p>
+            </div>
+            <div class="row">
+                <label for="email" class="label">邮箱</label>
+                <input type="text" value="" id="email" name="cmail" class="text text-error gray">
+                <span id="err_email" class="msg-error">请填写正确邮箱地址</span>
+				<p style="color:red;">支持邮箱后缀：com / cn / com.cn / net / org / me</p>
+            </div>
+            <div class="row">
+                <label for="cname" class="label">昵称</label>
+                <input type="text" value="" id="cname" name="cname" class="text text-error gray">
+                <span id="err_cname" class="msg-error">请填写昵称</span>
+            </div>
+            <div class="row">
+                <label for="ctitle" class="label">标题</label>
+                <input type="text" value="" id="ctitle" name="title" class="text text-error gray" autocomplete="off">
+                <span id="err_ctitle" class="msg-error">填写标题</span>
+            </div>
+
+            <div class="row">
+                <textarea onblur="if(this.value==''){this.value='告诉我们您对站长之家的任何疑问或者建议，至少5个字以上';this.style.color='#999';}" onfocus="if(this.value=='告诉我们您对站长之家的任何疑问或者建议，至少5个字以上'){this.value='';this.style.color='#000000';}" id="cbody" name="cbody" style="color: rgb(153, 153, 153);" autocomplete="off"></textarea>
+                <span id="err_cbody" class="msg-error">填写问题内容</span>
+            </div>
+            <div class="row">
+                <label for="code" class="label">验证码</label>
+                <input type="text" id="code" name="getcode" class="text captcha" autocomplete="off">
+                <img width="50" height="18" src="getcode.php?t=0.66201600 1582131911" alt="验证码,看不清楚?请点击刷新验证码" style="cursor : pointer;" onClick="this.src='getcode.php?t=' + Math.random();" align="absMiddle">
+                <span id="err_code" class="msg-error"></span>
+                <div class="help" style="color:red;display:none;">请输入验证码</div>
+            </div>
+            <div class="row">
+                <input type="submit" value="确认提交" name="confirmsubmit" class="button">
+                            </div>
+        </div>
+
+
+
+        </form>
+
+
+		  </div>
+
+</div>
+
+<div class="clearfix"></div>
+<div class="copyright">(C) CopyRight 2002-2013, CHINAZ.COM,——
+闽ICP备08105208号, 增值电信业务经营许可证闽B2-20120007号</div>
+
+</div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery.min_v1.0.js" type="text/javascript"></script>
