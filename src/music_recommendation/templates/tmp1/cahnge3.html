@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改Ta</title>
+</head>
+
+<body background="img/f.jpeg">
+<form name="songs" method="post">
+		<table width="500" height="400" align="center">
+
+		<tr>
+			<td>歌名：</td>
+			<td>
+				<input type="text" name="songName" size="20" maxlength="20" 
+				 value="Red" readonly />
+			</td>
+		</tr>
+		<tr>
+			<td>歌手：</td>
+			<td>
+				<input type="text" name="singerName" size="20" maxlength="20" value="Taylor Swift" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>专辑名：</td>
+			<td>
+				<input type="text" name="album" size="20" maxlength="20" value="《Red》" />
+			</td>
+		</tr>
+		
+		<tr>
+				<td>类型：</td>
+				<td>
+					<input type="radio" name="kind" value="1" />摇滚
+					<input type="radio" name="kind" value="2" />流行
+					<input type="radio" name="kind" value="3"/>爵士
+					<input type="radio" name="kind" value="4" checked="checked"/>乡村
+				</td>
+			</tr>
+			
+			<tr>
+				<td>国家：</td>
+				<td>
+					<select name="country">
+						<option value="1" >中国</option>
+						<option value="2" selected="selected">欧美</option>
+						<option value="3">日韩</option>
+					</select>
+				</td>
+		</tr>
+			
+		<tr>
+			<td>上传图片：</td>
+			<td>
+				<img src="img/t01ceff31ebc2b87331.jpg"
+				 width="80" alt="Taylor Swift" />
+				<input type="file" name="photo"  />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>简介：</td>
+			<td>
+				<textarea name="induction" rows="10" cols="40">
+				《Red》融合了乡村流行乐、另类乡村、慢摇滚以及成人时代等音乐风格，
+						其开头使用了乡村音乐必用的乐器——班卓琴开场。然而，《Red》并不单单是班卓乡村
+						乐的展现，其高潮部分不断叠加的电音人声音效，将“Red”这一单词反复的体现出来了。
+				</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" name="change" value="修改" />&nbsp;
+				<input type="reset" name="clear" value="重置" />
+			</td>
+		</tr>
+		</table>
+	</form>
+	<a href="index.html">
+				返回主页
+	</a>
+</body>
+</html>

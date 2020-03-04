@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改Adele</title>
+</head>
+
+<body background="img/f.jpeg">
+<form name="songs" method="post">
+		<table width="500" height="400" align="center">
+
+		<tr>
+			<td>歌名：</td>
+			<td>
+				<input type="text" name="songName" size="20" maxlength="20" 
+				 value="when we were young" readonly />
+			</td>
+		</tr>
+		<tr>
+			<td>歌手：</td>
+			<td>
+				<input type="text" name="singerName" size="20" maxlength="20" value="Adele" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>专辑名：</td>
+			<td>
+				<input type="text" name="album" size="20" maxlength="20" value="《21》" />
+			</td>
+		</tr>
+		
+		<tr>
+				<td>类型：</td>
+				<td>
+					<input type="radio" name="kind" value="1" />摇滚
+					<input type="radio" name="kind" value="2" checked="checked"/>流行
+					<input type="radio" name="kind" value="3"/>爵士
+					<input type="radio" name="kind" value="4"/>乡村
+				</td>
+			</tr>
+			
+			<tr>
+				<td>国家：</td>
+				<td>
+					<select name="country">
+						<option value="1" >中国</option>
+						<option value="2" selected="selected">欧美</option>
+						<option value="3">日韩</option>
+					</select>
+				</td>
+		</tr>
+			
+		<tr>
+			<td>上传图片：</td>
+			<td>
+				<img src="img/t01afed9fd1324560fd.jpg"
+				 width="80" alt="Adele" />
+				<input type="file" name="photo"  />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>简介：</td>
+			<td>
+				<textarea name="induction" rows="10" cols="40">
+				专辑中歌曲与阿黛尔那较为严肃的作风相近，又探讨关于愤怒、复仇、心碎、自我反省及
+						原谅的主题。专辑中表达的是其舍不得的告别恋曲，属于21岁的分手感言。
+						专辑《21》在节奏稍快的一些曲目当中较大的运用到了打击乐器，但大部分慢板
+						灵魂乐当中，依旧以钢琴当做了主要的配乐架构，简单的钢琴伴奏却有着
+						宽阔、震撼人心的力量，阿黛尔的圆润嗓音更是令整张专辑增色颇多。
+				</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" name="change" value="修改" />&nbsp;
+				<input type="reset" name="clear" value="重置" />
+			</td>
+		</tr>
+		</table>
+	</form>
+	<a href="index.html">
+				返回主页
+	</a>
+</body>
+</html>
