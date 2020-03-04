@@ -1,4 +1,4 @@
-# 搭建环境
+# 音乐推荐系统环境搭建
 
 ##  <font color=red> 配置基本环境 </font>
 
@@ -31,9 +31,6 @@
    如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow==1.4.0`
 8. 安装 pyspark 库，命令行输入：`pip install pyspark`  
    如果下载很慢，[使用清华大学镜像](../../../python/pip_mirrors.md): `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyspark`
-9. 安装 JDK, 下载 JDK 并解压 ：http://47.93.208.249:9925/tree/0.Teacher/Online/software
-10. 安装 Hadoop, 下载 Hadoop 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
-11. 安装 Spark, 下载 Spark 并解压：http://47.93.208.249:9925/tree/0.Teacher/Online/software
 
 > 注意，以后每次使用环境都要先激活 py36 的环境
 

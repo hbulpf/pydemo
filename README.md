@@ -50,12 +50,11 @@
 1. [安装AutoKeras 0.4.0](ml/autokeras/autokeras.md)
 
 #### 推荐系统
-1. [音乐推荐系统](./ml/recommendation_sys/music_recommendation/)
+1. [音乐推荐系统](./doc/ml/recommendation_sys/music_recommendation/)
 
 ## [源码](./src/)
 
 - [基础练习](./src/basic/)
-- [音乐推荐](./src/music_recommendation)
 - [selenium](./src/seleniumdemo)
 - [sci-surprise](./src/surprisedemo)
 
