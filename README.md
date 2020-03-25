@@ -1,5 +1,11 @@
 # python 案例与文档
 
+[![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+[![GitHub stars](https://img.shields.io/github/stars/hbulpf/pydemo.svg?label=Stars)](https://github.com/hbulpf/pydemo)
+[![GitHub watchers](https://img.shields.io/github/watchers/hbulpf/pydemo.svg?label=Watchers)](https://github.com/hbulpf/pydemo/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/hbulpf/pydemo.svg?label=Forks)](https://github.com/hbulpf/pydemo/fork)
+
+
 ```
 ├─docs
 │  ├─anaconda
