@@ -1,0 +1,201 @@
+\contentsline {chapter}{\numberline {第1章\hspace {0.3em}}Array}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Two Sum}{1}{section.1.1}
+\contentsline {subsubsection}{Description}{1}{section*.2}
+\contentsline {subsubsection}{Solution}{1}{section*.3}
+\contentsline {section}{\numberline {1.2}Two Sum II - Input array is sorted}{2}{section.1.2}
+\contentsline {subsubsection}{Description}{2}{section*.4}
+\contentsline {subsubsection}{Solution}{2}{section*.5}
+\contentsline {section}{\numberline {1.3}Two Sum III - Data structure design}{3}{section.1.3}
+\contentsline {subsubsection}{Description}{3}{section*.6}
+\contentsline {subsubsection}{Solution}{3}{section*.7}
+\contentsline {section}{\numberline {1.4}Two Sum IV - Input is a BST}{4}{section.1.4}
+\contentsline {subsubsection}{Description}{4}{section*.8}
+\contentsline {subsubsection}{Solution}{4}{section*.9}
+\contentsline {section}{\numberline {1.5}3Sum}{5}{section.1.5}
+\contentsline {subsubsection}{Description}{5}{section*.10}
+\contentsline {subsubsection}{Solution}{5}{section*.11}
+\contentsline {section}{\numberline {1.6}3Sum Closest}{6}{section.1.6}
+\contentsline {subsubsection}{Description}{6}{section*.12}
+\contentsline {subsubsection}{Solution}{6}{section*.13}
+\contentsline {section}{\numberline {1.7}3Sum Smaller}{7}{section.1.7}
+\contentsline {subsubsection}{Description}{7}{section*.14}
+\contentsline {subsubsection}{Solution}{7}{section*.15}
+\contentsline {section}{\numberline {1.8}Median of Two Sorted Arrays}{8}{section.1.8}
+\contentsline {subsubsection}{Description}{8}{section*.16}
+\contentsline {subsubsection}{Solution}{8}{section*.17}
+\contentsline {section}{\numberline {1.9}Move Zeroes}{9}{section.1.9}
+\contentsline {subsubsection}{Description}{9}{section*.18}
+\contentsline {subsubsection}{Solution}{9}{section*.19}
+\contentsline {section}{\numberline {1.10}Plus One}{10}{section.1.10}
+\contentsline {subsubsection}{Description}{10}{section*.20}
+\contentsline {subsubsection}{Solution}{10}{section*.21}
+\contentsline {section}{\numberline {1.11}Container With Most Water}{11}{section.1.11}
+\contentsline {subsubsection}{Description}{11}{section*.22}
+\contentsline {subsubsection}{Analysis}{11}{section*.23}
+\contentsline {subsubsection}{Solution}{11}{section*.24}
+\contentsline {section}{\numberline {1.12}Contains Duplicate}{12}{section.1.12}
+\contentsline {subsubsection}{Description}{12}{section*.25}
+\contentsline {subsubsection}{Solution}{12}{section*.26}
+\contentsline {section}{\numberline {1.13}Contains Duplicate II}{13}{section.1.13}
+\contentsline {subsubsection}{Description}{13}{section*.27}
+\contentsline {subsubsection}{Solution I}{13}{section*.28}
+\contentsline {subsubsection}{Solution II}{13}{section*.29}
+\contentsline {section}{\numberline {1.14}Contains Duplicate III}{14}{section.1.14}
+\contentsline {subsubsection}{Description}{14}{section*.30}
+\contentsline {subsubsection}{Solution}{14}{section*.31}
+\contentsline {section}{\numberline {1.15}Trapping Rain Water}{15}{section.1.15}
+\contentsline {subsubsection}{Description}{15}{section*.32}
+\contentsline {subsubsection}{Analysis}{15}{section*.33}
+\contentsline {subsubsection}{Solution}{15}{section*.34}
+\contentsline {section}{\numberline {1.16}Trapping Rain Water II}{16}{section.1.16}
+\contentsline {subsubsection}{Description}{16}{section*.35}
+\contentsline {subsubsection}{Analysis}{16}{section*.36}
+\contentsline {subsubsection}{Solution}{17}{section*.37}
+\contentsline {section}{\numberline {1.17}Product of Array Except Self}{18}{section.1.17}
+\contentsline {subsubsection}{Description}{18}{section*.38}
+\contentsline {subsubsection}{Solution}{18}{section*.39}
+\contentsline {section}{\numberline {1.18}Find Minimum in Rotated Sorted Array}{19}{section.1.18}
+\contentsline {subsubsection}{Description}{19}{section*.40}
+\contentsline {subsubsection}{Solution}{19}{section*.41}
+\contentsline {section}{\numberline {1.19}Find Minimum in Rotated Sorted Array II}{20}{section.1.19}
+\contentsline {subsubsection}{Description}{20}{section*.42}
+\contentsline {subsubsection}{Solution}{20}{section*.43}
+\contentsline {section}{\numberline {1.20}Search in Rotated Sorted Array}{21}{section.1.20}
+\contentsline {subsubsection}{Description}{21}{section*.44}
+\contentsline {subsubsection}{Solution}{21}{section*.45}
+\contentsline {section}{\numberline {1.21}Search in Rotated Sorted Array II}{22}{section.1.21}
+\contentsline {subsubsection}{Description}{22}{section*.46}
+\contentsline {subsubsection}{Solution}{22}{section*.47}
+\contentsline {section}{\numberline {1.22}Pascal's Triangle}{23}{section.1.22}
+\contentsline {subsubsection}{Description}{23}{section*.48}
+\contentsline {subsubsection}{Solution}{23}{section*.49}
+\contentsline {section}{\numberline {1.23}Pascal's Triangle II}{24}{section.1.23}
+\contentsline {subsubsection}{Description}{24}{section*.50}
+\contentsline {subsubsection}{Solution}{24}{section*.51}
+\contentsline {section}{\numberline {1.24}Remove Element}{25}{section.1.24}
+\contentsline {subsubsection}{Description}{25}{section*.52}
+\contentsline {subsubsection}{Solution}{25}{section*.53}
+\contentsline {section}{\numberline {1.25}Summary Ranges}{26}{section.1.25}
+\contentsline {subsubsection}{Description}{26}{section*.54}
+\contentsline {subsubsection}{Solution}{26}{section*.55}
+\contentsline {section}{\numberline {1.26}Merge Sorted Array}{27}{section.1.26}
+\contentsline {subsubsection}{Description}{27}{section*.56}
+\contentsline {subsubsection}{Solution}{27}{section*.57}
+\contentsline {section}{\numberline {1.27}Rotate Image}{28}{section.1.27}
+\contentsline {subsubsection}{Description}{28}{section*.58}
+\contentsline {subsubsection}{Solution}{28}{section*.59}
+\contentsline {section}{\numberline {1.28}Remove Duplicates from Sorted Array}{29}{section.1.28}
+\contentsline {subsubsection}{Description}{29}{section*.60}
+\contentsline {subsubsection}{Solution}{29}{section*.61}
+\contentsline {section}{\numberline {1.29}Remove Duplicates from Sorted Array II}{30}{section.1.29}
+\contentsline {subsubsection}{Description}{30}{section*.62}
+\contentsline {subsubsection}{Solution}{30}{section*.63}
+\contentsline {section}{\numberline {1.30}Rotate Array}{31}{section.1.30}
+\contentsline {subsubsection}{Description}{31}{section*.64}
+\contentsline {subsubsection}{Solution}{31}{section*.65}
+\contentsline {section}{\numberline {1.31}Spiral Matrix}{32}{section.1.31}
+\contentsline {subsubsection}{Description}{32}{section*.66}
+\contentsline {subsubsection}{Solution}{32}{section*.67}
+\contentsline {section}{\numberline {1.32}Merge Intervals}{33}{section.1.32}
+\contentsline {subsubsection}{Description}{33}{section*.68}
+\contentsline {subsubsection}{Solution}{33}{section*.69}
+\contentsline {section}{\numberline {1.33}Insert Interval}{34}{section.1.33}
+\contentsline {subsubsection}{Description}{34}{section*.70}
+\contentsline {subsubsection}{Solution}{34}{section*.71}
+\contentsline {section}{\numberline {1.34}Meeting Rooms}{35}{section.1.34}
+\contentsline {subsubsection}{Description}{35}{section*.72}
+\contentsline {subsubsection}{Solution}{35}{section*.73}
+\contentsline {section}{\numberline {1.35}Meeting Rooms II}{36}{section.1.35}
+\contentsline {subsubsection}{Description}{36}{section*.74}
+\contentsline {subsubsection}{Solution}{36}{section*.75}
+\contentsline {section}{\numberline {1.36}Find the Duplicate Number}{37}{section.1.36}
+\contentsline {subsubsection}{Description}{37}{section*.76}
+\contentsline {subsubsection}{Solution}{37}{section*.77}
+\contentsline {section}{\numberline {1.37}Missing Number}{38}{section.1.37}
+\contentsline {subsubsection}{Description}{38}{section*.78}
+\contentsline {subsubsection}{Solution}{38}{section*.79}
+\contentsline {section}{\numberline {1.38}Find Peak Element}{39}{section.1.38}
+\contentsline {subsubsection}{Description}{39}{section*.80}
+\contentsline {subsubsection}{Solution}{39}{section*.81}
+\contentsline {section}{\numberline {1.39}Majority Element}{40}{section.1.39}
+\contentsline {subsubsection}{Description}{40}{section*.82}
+\contentsline {subsubsection}{Solution}{40}{section*.83}
+\contentsline {section}{\numberline {1.40}Majority Element II}{41}{section.1.40}
+\contentsline {subsubsection}{Description}{41}{section*.84}
+\contentsline {subsubsection}{Solution}{41}{section*.85}
+\contentsline {section}{\numberline {1.41}First Missing Positive}{42}{section.1.41}
+\contentsline {subsubsection}{Description}{42}{section*.86}
+\contentsline {subsubsection}{Analysis}{42}{section*.87}
+\contentsline {subsubsection}{Solution}{42}{section*.88}
+\contentsline {section}{\numberline {1.42}Game of Life}{43}{section.1.42}
+\contentsline {subsubsection}{Description}{43}{section*.89}
+\contentsline {subsubsection}{Solution}{44}{section*.90}
+\contentsline {section}{\numberline {1.43}Set Matrix Zeroes}{45}{section.1.43}
+\contentsline {subsubsection}{Description}{45}{section*.91}
+\contentsline {subsubsection}{Solution}{46}{section*.92}
+\contentsline {section}{\numberline {1.44}Next Permutation}{47}{section.1.44}
+\contentsline {subsubsection}{Description}{47}{section*.93}
+\contentsline {subsubsection}{Solution}{47}{section*.94}
+\contentsline {section}{\numberline {1.45}Search for a Range}{49}{section.1.45}
+\contentsline {subsubsection}{Description}{49}{section*.95}
+\contentsline {subsubsection}{Solution}{49}{section*.96}
+\contentsline {section}{\numberline {1.46}Search a 2D Matrix}{50}{section.1.46}
+\contentsline {subsubsection}{Description}{50}{section*.97}
+\contentsline {subsubsection}{Solution}{50}{section*.98}
+\contentsline {section}{\numberline {1.47}Search a 2D Matrix II}{51}{section.1.47}
+\contentsline {subsubsection}{Description}{51}{section*.99}
+\contentsline {subsubsection}{Solution}{51}{section*.100}
+\contentsline {section}{\numberline {1.48}Search Insert Position}{52}{section.1.48}
+\contentsline {subsubsection}{Description}{52}{section*.101}
+\contentsline {subsubsection}{Solution I}{52}{section*.102}
+\contentsline {subsubsection}{Solution II}{52}{section*.103}
+\contentsline {section}{\numberline {1.49}Minimum Size Subarray Sum}{53}{section.1.49}
+\contentsline {subsubsection}{Description}{53}{section*.104}
+\contentsline {subsubsection}{Solution}{53}{section*.105}
+\contentsline {section}{\numberline {1.50}Maximum Size Subarray Sum Equals k}{54}{section.1.50}
+\contentsline {subsubsection}{Description}{54}{section*.106}
+\contentsline {subsubsection}{Solution}{54}{section*.107}
+\contentsline {section}{\numberline {1.51}Find the Celebrity}{55}{section.1.51}
+\contentsline {subsubsection}{Description}{55}{section*.108}
+\contentsline {subsubsection}{Solution}{55}{section*.109}
+\contentsline {section}{\numberline {1.52}Find All Numbers Disappeared in an Array}{56}{section.1.52}
+\contentsline {subsubsection}{Description}{56}{section*.110}
+\contentsline {subsubsection}{Solution}{56}{section*.111}
+\contentsline {section}{\numberline {1.53}Shortest Word Distance}{57}{section.1.53}
+\contentsline {subsubsection}{Description}{57}{section*.112}
+\contentsline {subsubsection}{Solution}{57}{section*.113}
+\contentsline {section}{\numberline {1.54}Shortest Word Distance II}{58}{section.1.54}
+\contentsline {subsubsection}{Description}{58}{section*.114}
+\contentsline {subsubsection}{Solution}{58}{section*.115}
+\contentsline {section}{\numberline {1.55} Shortest Word Distance III}{59}{section.1.55}
+\contentsline {subsubsection}{Description}{59}{section*.116}
+\contentsline {subsubsection}{Solution}{59}{section*.117}
+\contentsline {section}{\numberline {1.56}Find All Duplicates in an Array}{60}{section.1.56}
+\contentsline {subsubsection}{Description}{60}{section*.118}
+\contentsline {subsubsection}{Solution}{60}{section*.119}
+\contentsline {section}{\numberline {1.57}Insert Delete GetRandom O(1)}{61}{section.1.57}
+\contentsline {subsubsection}{Description}{61}{section*.120}
+\contentsline {subsubsection}{Solution}{62}{section*.121}
+\contentsline {section}{\numberline {1.58}Insert Delete GetRandom O(1) - Duplicates allowed}{63}{section.1.58}
+\contentsline {subsubsection}{Description}{63}{section*.122}
+\contentsline {subsubsection}{Solution}{64}{section*.123}
+\contentsline {section}{\numberline {1.59}Missing Ranges}{65}{section.1.59}
+\contentsline {subsubsection}{Description}{65}{section*.124}
+\contentsline {subsubsection}{Solution}{65}{section*.125}
+\contentsline {section}{\numberline {1.60}Third Maximum Number}{66}{section.1.60}
+\contentsline {subsubsection}{Description}{66}{section*.126}
+\contentsline {subsubsection}{Solution}{66}{section*.127}
+\contentsline {section}{\numberline {1.61}Kth Largest Element in an Array}{67}{section.1.61}
+\contentsline {subsubsection}{Description}{67}{section*.128}
+\contentsline {subsubsection}{Solution I}{67}{section*.129}
+\contentsline {subsubsection}{Solution II}{67}{section*.130}
+\contentsline {subsubsection}{Solution III}{68}{section*.131}
+\contentsline {section}{\numberline {1.62}Range Addition}{69}{section.1.62}
+\contentsline {subsubsection}{Description}{69}{section*.132}
+\contentsline {subsubsection}{Solution}{70}{section*.133}
+\contentsline {section}{\numberline {1.63}Max Consecutive Ones}{71}{section.1.63}
+\contentsline {subsubsection}{Description}{71}{section*.134}
+\contentsline {subsubsection}{Solution}{71}{section*.135}
+\contentsline {section}{\numberline {1.64}Max Consecutive Ones II}{72}{section.1.64}
+\contentsline {subsubsection}{Description}{72}{section*.136}
+\contentsline {subsubsection}{Solution}{72}{section*.137}

@@ -1,0 +1,1838 @@
+\chapter{String}
+
+\section{Reverse String} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Write a function that takes a string as input and returns the string reversed.
+
+\textbf{Example:}
+
+Given s = \code{"hello"}, return \code{"olleh"}.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String reverseString(String s) {
+    return new StringBuilder(s).reverse().toString();
+}
+\end{Code}
+
+\newpage
+
+\section{Reverse String II} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string and an integer k, you need to reverse the first k characters for every 2k characters counting from the start of the string. If there are less than k characters left, reverse all of them. If there are less than 2k but greater than or equal to k characters, then reverse the first k characters and left the other as original.
+
+\textbf{Example:}
+
+\textbf{Input:} s = \code{"abcdefg"}, k = 2
+
+\textbf{Output:} \code{"bacdfeg"}
+
+\textbf{Restrictions:}
+
+The string consists of lower English letters only.
+
+Length of the given string and k will in the range \code{[1, 10000]}
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String reverseStr(String s, int k) {
+    if (s.length() <= k) {
+        return new StringBuilder(s).reverse().toString();
+    }
+    if (s.length() <= 2 * k) {
+        return reverseStr(s.substring(0, k), k) + s.substring(k);
+    }
+    return reverseStr(s.substring(0, 2 * k), k) + reverseStr(s.substring(2 * k), k);
+}
+\end{Code}
+
+\newpage
+
+\section{Reverse Words in a String} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an input string, reverse the string word by word.
+
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+
+Clarification:
+
+1. What constitutes a word?
+
+A sequence of non-space characters constitutes a word.
+
+2. Could the input string contain leading or trailing spaces?
+
+Yes. However, your reversed string should not contain leading or trailing spaces.
+
+3. How about multiple spaces between two words?
+
+Reduce them to a single space in the reversed string.
+\subsubsection{Solution I}
+
+\begin{Code}
+// 耗时10ms
+public String reverseWords(String s) {
+    StringBuilder sb = new StringBuilder();
+
+    boolean inWord = false;
+    char[] cc = s.toCharArray();
+    for (int i = cc.length - 1, idx = 0; i >= 0; i--) {
+        if (cc[i] != ' ') {
+            if (!inWord && sb.length() > 0) {
+                sb.append(' ');
+            }
+            inWord = true;
+            sb.insert(idx, cc[i]);
+        } else if (inWord) {
+            idx = sb.length() + 1;
+            inWord = false;
+        }
+    }
+
+    return sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\subsubsection{Solution II}
+
+\begin{Code}
+// 耗时18ms
+public String reverseWords2(String s) {
+    StringBuilder sb = new StringBuilder();
+
+    for (int i = 0, j = 0; i < s.length(); ) {
+        if (s.charAt(i) == ' ') {
+            i++;
+            j = i;
+        } else if (j >= s.length() || s.charAt(j) == ' ') {
+            sb.insert(0, s.substring(i, j) + " ");
+            i = j;
+        } else {
+            j++;
+        }
+    }
+
+    if (sb.length() > 0) {
+        sb.setLength(sb.length() - 1);
+    }
+
+    return sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\section{Reverse Words in a String II} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
+
+The input string does not contain leading or trailing spaces and the words are always separated by a single space.
+
+For example,
+
+Given s = \code{"the sky is blue"},
+
+return \code{"blue is sky the"}.
+
+Could you do it in-place without allocating extra space?
+\subsubsection{Solution}
+
+\begin{Code}
+public void reverseWords(char[] s) {
+    for (int i = 0, j = i; i < s.length; ) {
+        if (j >= s.length || s[j] == ' ') {
+            reverse(s, i, j - 1);
+            for (i = j; j < s.length && s[j] == ' '; j++, i = j) ;
+        } else {
+            j++;
+        }
+    }
+    reverse(s, 0, s.length - 1);
+}
+
+private void reverse(char[] s, int start, int end) {
+    for (int i = start, j = end; i < j; i++, j--) {
+        char t = s[i];
+        s[i] = s[j];
+        s[j] = t;
+    }
+}
+\end{Code}
+
+\newpage
+
+\section{Reverse Words in a String III} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
+\textbf{Example 1:}
+
+\textbf{Input:} \code{"Let's take LeetCode contest"}
+
+\textbf{Output:} \code{"s'teL ekat edoCteeL tsetnoc"}
+
+\textbf{Note:} In the string, each word is separated by single space and there will not be any extra space in the string.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String reverseWords(String s) {
+    String[] texts = s.split(" ");
+    StringBuilder sb = new StringBuilder();
+    for (String text : texts) {
+        if (text.length() > 0) {
+            sb.append(new StringBuilder(text).reverse().toString()).append(" ");
+        }
+    }
+    return sb.toString().trim();
+}
+\end{Code}
+
+\newpage
+
+\section{Reverse Vowels of a String} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+\textbf{Example 1:}
+
+Given s = \code{"hello"}, return \code{"holle"}.
+
+\textbf{Example 2:}
+
+Given s = \code{"leetcode"}, return \code{"leotcede"}.
+
+\textbf{Note:}
+
+The vowels does not include the letter \code{"y"}.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String reverseVowels(String s) {
+    boolean[] flag = new boolean[256];
+    for (char c : "aeiouAEIOU".toCharArray()) {
+        flag[c] = true;
+    }
+
+    StringBuilder sb = new StringBuilder(s);
+    for (int i = 0, j = sb.length() - 1; i < j; ) {
+        if (!flag[sb.charAt(i)]) {
+            i++;
+        } else if (!flag[sb.charAt(j)]) {
+            j--;
+        } else {
+            char c = sb.charAt(i);
+            sb.setCharAt(i, sb.charAt(j));
+            sb.setCharAt(j, c);
+            i++;
+            j--;
+        }
+    }
+
+    return sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\section{Longest Substring Without Repeating Characters} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, find the length of the longest substring without repeating characters.
+
+\textbf{Examples:}
+
+Given \code{"abcabcbb"}, the answer is \code{"abc"}, which the length is 3.
+
+Given \code{"bbbbb"}, the answer is \code{"b"}, with the length of 1.
+
+Given \code{"pwwkew"}, the answer is \code{"wke"}, with the length of 3. Note that the answer must be a substring, \code{"pwke"} is a subsequence and not a substring.
+\subsubsection{Solution}
+
+\begin{Code}
+// 耗时39ms，性能挺好
+public int lengthOfLongestSubstring(String s) {
+    int[] count = new int[256];
+
+    int maxLen = 0;
+
+    for (int i = 0, j = 0; j < s.length(); ) {
+        if (count[s.charAt(j)] == 0) {
+            count[s.charAt(j)]++;
+            maxLen = Math.max(maxLen, j - i + 1);
+            j++;
+        } else {
+            --count[s.charAt(i++)];
+        }
+    }
+
+    return maxLen;
+}
+\end{Code}
+
+\newpage
+
+\section{Longest Substring with At Most Two Distinct Characters} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
+
+For example, Given s = \code{“eceba”},
+
+T is \code{"ece"} which its length is 3.
+
+\subsubsection{Solution}
+
+\begin{Code}
+// 7ms
+public int lengthOfLongestSubstringTwoDistinct2(String s) {
+    int[] count = new int[256];
+    int distinct = 0, longest = 0;
+
+    for (int i = 0, j = 0; j < s.length(); j++) {
+        if (count[s.charAt(j)]++ == 0) {
+            distinct++;
+        }
+
+        for ( ; i < j && distinct > 2; ) {
+            if (--count[s.charAt(i++)] == 0) {
+                --distinct;
+            }
+        }
+
+        longest = Math.max(longest, j - i + 1);
+    }
+
+    return longest;
+}
+\end{Code}
+
+\newpage
+
+\section{Longest Substring with At Most K Distinct Characters} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, find the length of the longest substring T that contains at most k distinct characters.
+
+For example, Given s = \code{“eceba”} and k = 2,
+
+T is \code{"ece"} which its length is 3.
+
+\subsubsection{Solution}
+
+\begin{Code}
+/**
+ * 思路跟Longest Substring With At Most Two Distinct Characters一样，只是给2改成k，
+ * 要注意k等于0时返回0
+ */
+// 耗时9ms
+public int lengthOfLongestSubstringKDistinct(String s, int k) {
+    if (k == 0) {
+        return 0;
+    }
+
+    int[] count = new int[256];
+    int distinct = 0, longest = 0;
+
+    for (int i = 0, j = 0; j < s.length(); j++) {
+        if (count[s.charAt(j)]++ == 0) {
+            distinct++;
+        }
+
+        for ( ; i < j && distinct > k; ) {
+            if (--count[s.charAt(i++)] == 0) {
+                --distinct;
+            }
+        }
+
+        longest = Math.max(longest, j - i + 1);
+    }
+
+    return longest;
+}
+\end{Code}
+
+\newpage
+
+\section{Minimum Window Substring} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+
+For example,
+
+S = \code{"ADOBECODEBANC"}
+
+T = \code{"ABC"}
+
+Minimum window is \code{"BANC"}.
+
+\textbf{Note:}
+
+If there is no such window in S that covers all characters in T, return the empty string \code{""}.
+
+If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
+\subsubsection{Solution}
+
+\begin{Code}
+// 耗时8ms，时间复杂度O(n)
+public String minWindow(String s, String t) {
+    int[] sc = new int[256], tc = new int[256];
+
+    for (char c : t.toCharArray()) {
+        tc[c]++;
+    }
+
+    int minStart = 0, minLen = Integer.MAX_VALUE;
+
+    for (int i = 0, j = 0, k = 0; j < s.length(); j++) {
+        char c = s.charAt(j);
+
+        if (++sc[c] <= tc[c]) {
+            ++k;
+        }
+
+        if (k == t.length()) {
+            for (; i < j; i++) {
+                char cc = s.charAt(i);
+
+                if (tc[cc] == 0) {
+                    continue;
+                }
+                if (sc[cc] <= tc[cc]) {
+                    break;
+                }
+                sc[cc]--;
+            }
+
+            if (j - i + 1 < minLen) {
+                minLen = j - i + 1;
+                minStart = i;
+            }
+        }
+    }
+
+    return minLen != Integer.MAX_VALUE ? s.substring(minStart, minStart + minLen) : "";
+}
+\end{Code}
+
+\newpage
+
+\section{Sliding Window Maximum} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+
+For example,
+
+Given nums = \code{[1,3,-1,-3,5,3,6,7]}, and k = 3.
+
+\begin{Code}
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+\end{Code}
+
+Therefore, return the max sliding window as \code{[3,3,5,5,6,7]}.
+
+\textbf{Note:}
+
+You may assume k is always valid, ie: 1 ≤ k ≤ input array's size for non-empty array.
+
+\textbf{Follow up:}
+
+Could you solve it in linear time?
+
+\subsubsection{Solution I}
+
+\begin{Code}
+// 注意PriorityQueue的remove复杂度是O(k)，所以本题复杂度是O(n*k)
+// 可以将PriorityQueue转成TreeMap，复杂度为O(n*lgk), 耗时58ms
+public int[] maxSlidingWindow(int[] nums, int k) {
+    if (nums.length == 0) {
+        return new int[0];
+    }
+
+    Queue<Integer> queue = new PriorityQueue<Integer>(new Comparator<Integer>() {
+        @Override
+        public int compare(Integer i1, Integer i2) {
+            return i2 - i1;
+        }
+    });
+
+    for (int i = 0; i < k; i++) {
+        queue.offer(nums[i]);
+    }
+
+    int[] result = new int[nums.length - k + 1];
+    result[0] = queue.peek();
+
+    for (int i = 1; i < result.length; i++) {
+        queue.remove(nums[i - 1]);
+        queue.offer(nums[i + k - 1]);
+        result[i] = queue.peek();
+    }
+
+    return result;
+}
+\end{Code}
+
+\newpage
+
+\subsubsection{Solution II}
+\begin{Code}
+
+// 耗时23ms
+// queue中存的是索引
+public int[] maxSlidingWindow2(int[] nums, int k) {
+    if (nums.length == 0) {
+        return new int[0];
+    }
+
+    Deque<Integer> queue = new LinkedList<Integer>();
+
+    int[] result = new int[nums.length - k + 1];
+
+    for (int i = 0; i < nums.length; i++) {
+        if (!queue.isEmpty() && queue.peek() <= i - k) {
+            queue.removeFirst();
+        }
+
+        while (!queue.isEmpty() && nums[queue.peekLast()] < nums[i]) {
+            queue.pollLast();
+        }
+
+        queue.offerLast(i);
+
+        if (i >= k - 1) {
+            result[i - k + 1] = nums[queue.peek()];
+        }
+    }
+
+    return result;
+}
+\end{Code}
+
+\newpage
+
+\section{Sliding Window Median} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
+
+\textbf{Examples:}
+
+[2,3,4] , the median is 3
+
+[2,3], the median is (2 + 3) / 2 = 2.5
+
+Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array.
+
+For example,
+
+Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
+\begin{Code}
+Window position                Median
+---------------               -----
+[1  3  -1] -3  5  3  6  7       1
+ 1 [3  -1  -3] 5  3  6  7       -1
+ 1  3 [-1  -3  5] 3  6  7       -1
+ 1  3  -1 [-3  5  3] 6  7       3
+ 1  3  -1  -3 [5  3  6] 7       5
+ 1  3  -1  -3  5 [3  6  7]      6
+ \end{Code}
+
+Therefore, return the median sliding window as \code{[1,-1,-1,3,5,6]}.
+
+\textbf{Note:}
+
+You may assume k is always valid, ie: k is always smaller than input array's size for non-empty array.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public double[] medianSlidingWindow(int[] nums, int k) {
+    double[] res = new double[nums.length - k + 1];
+    TreeMap<Integer, Integer> minHeap = new TreeMap<Integer, Integer>();
+    TreeMap<Integer, Integer> maxHeap = new TreeMap<Integer, Integer>(Collections.reverseOrder());
+
+    int minHeapCap = k / 2; //smaller heap when k is odd.
+    int maxHeapCap = k - minHeapCap;
+
+    for (int i = 0; i < k; i++) {
+        maxHeap.put(nums[i], maxHeap.getOrDefault(nums[i], 0) + 1);
+    }
+    int[] minHeapSize = new int[]{0};
+    int[] maxHeapSize = new int[]{k};
+    for (int i = 0; i < minHeapCap; i++) {
+        move1Over(maxHeap, minHeap, maxHeapSize, minHeapSize);
+    }
+
+    res[0] = getMedian(maxHeap, minHeap, maxHeapSize, minHeapSize);
+    int resIdx = 1;
+
+    for (int i = 0; i < nums.length - k; i++) {
+        int addee = nums[i + k];
+        if (addee <= maxHeap.keySet().iterator().next()) {
+            add(addee, maxHeap, maxHeapSize);
+        } else {
+            add(addee, minHeap, minHeapSize);
+        }
+
+        int removee = nums[i];
+        if (removee <= maxHeap.keySet().iterator().next()) {
+            remove(removee, maxHeap, maxHeapSize);
+        } else {
+            remove(removee, minHeap, minHeapSize);
+        }
+
+        //rebalance
+        if (minHeapSize[0] > minHeapCap) {
+            move1Over(minHeap, maxHeap, minHeapSize, maxHeapSize);
+        } else if (minHeapSize[0] < minHeapCap) {
+            move1Over(maxHeap, minHeap, maxHeapSize, minHeapSize);
+        }
+
+        res[resIdx] = getMedian(maxHeap, minHeap, maxHeapSize, minHeapSize);
+        resIdx++;
+    }
+    return res;
+}
+
+public double getMedian(TreeMap<Integer, Integer> bigHeap, TreeMap<Integer, Integer> smallHeap, int[] bigHeapSize, int[] smallHeapSize) {
+    return bigHeapSize[0] > smallHeapSize[0] ? (double) bigHeap.keySet().iterator().next() : ((double) bigHeap.keySet().iterator().next() + (double) smallHeap.keySet().iterator().next()) / 2.0;
+}
+
+//move the top element of heap1 to heap2
+public void move1Over(TreeMap<Integer, Integer> heap1, TreeMap<Integer, Integer> heap2, int[] heap1Size, int[] heap2Size) {
+    int peek = heap1.keySet().iterator().next();
+    add(peek, heap2, heap2Size);
+    remove(peek, heap1, heap1Size);
+}
+
+public void add(int val, TreeMap<Integer, Integer> heap, int[] heapSize) {
+    heap.put(val, heap.getOrDefault(val, 0) + 1);
+    heapSize[0]++;
+}
+
+public void remove(int val, TreeMap<Integer, Integer> heap, int[] heapSize) {
+    if (heap.put(val, heap.get(val) - 1) == 1) heap.remove(val);
+    heapSize[0]--;
+}
+\end{Code}
+
+\newpage
+
+\section{Longest Palindromic Substring} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+\textbf{Example:}
+
+\textbf{Input:} \code{"babad"}
+
+\textbf{Output:} \code{"bab"}
+
+\textbf{Note:} \code{"aba"} is also a valid answer.
+
+\textbf{Example:}
+
+\textbf{Input:} \code{"cbbd"}
+
+\textbf{Output:} \code{"bb"}
+
+\subsubsection{Solution I}
+
+\begin{Code}
+private int begin, maxLen;
+
+// 耗时14ms，平均复杂度O(n)
+public String longestPalindrome(String s) {
+    for (int i = 0; i < s.length(); i++) {
+        helper(s, i, i);
+        helper(s, i, i + 1);
+    }
+    return s.substring(begin, begin + maxLen);
+}
+
+private void helper(String s, int i, int j) {
+    for (; i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j); i--, j++) ;
+    int len = j - i - 1;
+    if (len > maxLen) {
+        maxLen = len;
+        begin = i + 1;
+    }
+}
+\end{Code}
+
+\newpage
+
+\subsubsection{Solution II}
+\begin{Code}
+// 动态规划，耗时73ms，复杂度O(n^2)
+public String longestPalindrome2(String s) {
+    int len = s.length();
+
+    if (len == 0) {
+        return s;
+    }
+
+    boolean[][] f = new boolean[len][len];
+
+    int index = 0;
+    int max = 1;
+
+    for (int i = 0; i < len; i++) {
+        for (int j = 0; j <= i; j++) {
+            if (s.charAt(j) == s.charAt(i) && (i - j < 2 || f[j + 1][i - 1])) {
+                f[j][i] = true;
+
+                if (i - j + 1 > max) {
+                    max = i - j + 1;
+                    index = j;
+                }
+            }
+        }
+    }
+
+    return s.substring(index, index + max);
+}
+\end{Code}
+
+\newpage
+
+\section{Shortest Palindrome} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string S, you are allowed to convert it to a palindrome by adding characters in front of it. Find and return the shortest palindrome you can find by performing this transformation.
+
+For example:
+
+Given \code{"aacecaaa"}, return \code{"aaacecaaa"}.
+
+Given \code{"abcd"}, return \code{"dcbabcd"}.
+
+\subsubsection{Solution}
+
+\begin{Code}
+/**
+ * 其实只要将s与s的逆序串拼接在一起，求最长公共子串，逆序串中刨除这个最长公共子串，
+ * 就是要加到s前面的
+ */
+public String shortestPalindrome(String s) {
+    StringBuilder builder = new StringBuilder(s);
+    return builder.reverse().substring(0, s.length() - getCommonLength(s)) + s;
+}
+
+private int getCommonLength(String str) {
+    StringBuilder builder = new StringBuilder(str);
+    String rev = new StringBuilder(str).reverse().toString();
+    builder.append("#").append(rev);
+    int[] p = new int[builder.length()];
+    for (int i = 1; i < p.length; i++) {
+        int j = p[i - 1];
+        while (j > 0 && builder.charAt(i) != builder.charAt(j)) j = p[j - 1];
+        p[i] = j == 0 ? (builder.charAt(i) == builder.charAt(0) ? 1 : 0) : j + 1;
+    }
+    return p[p.length - 1];
+}
+
+/**
+ * 更直观的写法
+ */
+private int getCommonLength2(String str) {
+    String rev = new StringBuilder(str).reverse().toString();
+    return getCommonLength(str + rev, str.length());
+}
+
+private int getCommonLength(String s, int max) {
+    for (int i = s.length() - max; i < s.length(); i++) {
+        if (s.startsWith(s.substring(i))) {
+            return s.length() - i;
+        }
+    }
+    return 0;
+}
+\end{Code}
+
+\newpage
+
+\section{Count and Say} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+The count-and-say sequence is the sequence of integers with the first five terms as following:
+\begin{Code}
+1.     1
+2.     11
+3.     21
+4.     1211
+5.     111221
+\end{Code}
+1 is read off as \code{"one 1"} or 11.
+
+11 is read off as \code{"two 1s"} or 21.
+
+21 is read off as \code{"one 2, then one 1"} or 1211.
+
+Given an integer n, generate the nth term of the count-and-say sequence.
+
+\textbf{Note:} Each term of the sequence of integers will be represented as a string.
+\subsubsection{Solution}
+
+\begin{Code}
+public String countAndSay(int n) {
+    String s = "1";
+    for (int i = 2; i <= n; i++) {
+        s = next(s);
+    }
+    return s;
+}
+
+private String next(String s) {
+    StringBuilder sb = new StringBuilder();
+
+    char cur = 0;
+    int times = 0;
+
+    for (int i = 0; i < s.length(); i++) {
+        if (times == 0) {
+            cur = s.charAt(i);
+            times = 1;
+        } else if (s.charAt(i) == cur) {
+            times++;
+        } else {
+            sb.append(String.format("%d%c", times, cur));
+            cur = s.charAt(i);
+            times = 1;
+        }
+    }
+
+    // 这一句千万别掉了
+    if (times != 0) {
+        sb.append(String.format("%d%c", times, cur));
+    }
+
+    return sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\section{Valid Parentheses} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string containing just the characters \code{'(', ')', '{', '}', '[' and ']'}, determine if the input string is valid.
+
+The brackets must close in the correct order, \code{"()"} and \code{"()[]{}"} are all valid but \code{"(]"} and \code{"([)]"} are not.
+\subsubsection{Solution}
+
+\begin{Code}
+// 耗时5ms
+public boolean isValid(String s) {
+    char[] stack = new char[s.length()];
+    int top = -1;
+
+    for (char c : s.toCharArray()) {
+        switch (c) {
+            case ')':
+                if (top >= 0 && stack[top] == '(') {
+                    top--;
+                } else {
+                    return false;
+                }
+                break;
+            case '}':
+                if (top >= 0 && stack[top] == '{') {
+                    top--;
+                } else {
+                    return false;
+                }
+                break;
+            case ']':
+                if (top >= 0 && stack[top] == '[') {
+                    top--;
+                } else {
+                    return false;
+                }
+                break;
+            default:
+                stack[++top] = c;
+                break;
+        }
+    }
+
+    return top < 0;
+}
+\end{Code}
+
+\newpage
+
+\section{Group Anagrams} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an array of strings, group anagrams together.
+
+For example, given: \code{["eat", "tea", "tan", "ate", "nat", "bat"]},
+
+Return:
+\begin{Code}
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+\end{Code}
+
+\textbf{Note:} All inputs will be in lower-case.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public List<List<String>> groupAnagrams(String[] strs) {
+    HashMap<String, List<String>> map = new HashMap<>();
+
+    for (String s : strs) {
+        char[] cc = s.toCharArray();
+        Arrays.sort(cc);
+
+        String t = new String(cc);
+
+        List<String> list = map.get(t);
+        if (list == null) {
+            list = new LinkedList<>();
+            map.put(t, list);
+        }
+
+        list.add(s);
+    }
+
+    return new LinkedList<>(map.values());
+}
+\end{Code}
+
+\newpage
+
+\section{Add Binary} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given two binary strings, return their sum (also a binary string).
+
+For example,
+
+a = \code{"11"}
+b = \code{"1"}
+Return \code{"100"}.
+\subsubsection{Solution}
+
+\begin{Code}
+public String addBinary(String a, String b) {
+    StringBuilder sb = new StringBuilder();
+    int i = a.length() - 1, j = b.length() - 1, k = 0;
+    for ( ; i >= 0 || j >= 0 || k > 0; i--, j--) {
+        int i0 = i >= 0 ? a.charAt(i) - '0' : 0;
+        int j0 = j >= 0 ? b.charAt(j) - '0' : 0;
+        int s = i0 + j0 + k;
+        sb.insert(0, s & 1);
+        k = s >> 1;
+    }
+    return sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\section{String to Integer (atoi)} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Implement atoi to convert a string to an integer.
+
+\textbf{Hint:} Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
+
+\textbf{Notes:} It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
+
+\subsubsection{Analysis}
+1. 过滤掉前面的空格
+
+2. 考虑正负号
+
+3. 如果溢出则返回上限或下限
+
+4. 解析时遇到非法字符则停止，返回当前结果
+
+5，防御空串
+
+\subsubsection{Solution}
+
+\begin{Code}
+public int myAtoi(String str) {
+    long n = 0, sign = 1;
+
+    str = str.trim();
+
+    // 这里要防御空串
+    if (str.length() == 0) { return 0; }
+
+    switch (str.charAt(0)) {
+        case '-':
+            sign = -1;
+        case '+':
+            str = str.substring(1);
+            break;
+    }
+
+    for (char c : str.toCharArray()) {
+        if (c >= '0' && c <= '9') {
+            n = n * 10 + (c - '0');
+
+            if (n * sign > Integer.MAX_VALUE) {
+                return Integer.MAX_VALUE;
+            } else if (n * sign < Integer.MIN_VALUE) {
+                return Integer.MIN_VALUE;
+            }
+        } else {
+            break;
+        }
+    }
+    return (int) (n * sign);
+}
+\end{Code}
+
+\newpage
+
+\section{Implement strStr()} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Implement strStr().
+
+Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+\subsubsection{Solution}
+
+\begin{Code}
+// 这里非常重要的是i<=len1-len2，如果没有这个会超时
+public int strStr(String haystack, String needle) {
+    int l1 = haystack.length(), l2 = needle.length();
+    for (int i = 0, j; i + l2 - 1 < l1; i++) {
+        for (j = 0; j < l2; j++) {
+            if (haystack.charAt(i + j) != needle.charAt(j)) {
+                break;
+            }
+        }
+        if (j >= l2) {
+            return i;
+        }
+    }
+    return -1;
+}
+\end{Code}
+
+\newpage
+
+\section{Integer to English Words} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
+
+For example,
+\begin{Code}
+123 -> "One Hundred Twenty Three"
+12345 -> "Twelve Thousand Three Hundred Forty Five"
+1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+\end{Code}
+\subsubsection{Solution}
+
+\begin{Code}
+private final String[] LESS_20 = {
+        "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",
+        "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"
+};
+
+private final String[] LESS_100 = {
+        "", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"
+};
+
+private final String[] THOUSANDS = {
+        "", "Thousand", "Million", "Billion"
+};
+
+/**
+ * 1, 别漏了zero的情况
+ * 2， 当num % 1000 != 0的判断别掉了
+ * 3， helper的返回结果要trim一下，去掉前后多余的空格
+ * 4， 最后返回的sb要trim一下
+ */
+public String numberToWords(int num) {
+    if (num == 0) {
+        return "Zero";
+    }
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < THOUSANDS.length && num > 0; i++) {
+        if (num % 1000 != 0) {
+            sb.insert(0, helper(num % 1000).trim() + " " + THOUSANDS[i] + " ");
+        }
+
+        num /= 1000;
+    }
+    return sb.toString().trim();
+}
+
+private String helper(int num) {
+    if (num < 20) {
+        return LESS_20[num];
+    } else if (num < 100) {
+        return LESS_100[num / 10] + " " + helper(num % 10);
+    } else {
+        return LESS_20[num / 100] + " Hundred " + helper(num % 100);
+    }
+}
+\end{Code}
+
+\newpage
+
+\section{Multiply Strings} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+
+1. The length of both num1 and num2 is < 110.
+
+2. Both num1 and num2 contains only digits 0-9.
+
+3. Both num1 and num2 does not contain any leading zero.
+
+4. You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String multiply(String num1, String num2) {
+    int len1 = num1.length(), len2 = num2.length();
+    int[] result = new int[len1 + len2];
+    for (int i = len1 - 1; i >= 0; i--) {
+        for (int j = len2 - 1; j >= 0; j--) {
+            int res = result[i + j + 1] + (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+            result[i + j + 1] = res % 10;
+            result[i + j] += res / 10;
+        }
+    }
+
+    StringBuilder sb = new StringBuilder();
+    for (int n : result) {
+        // 这里要去掉头部的"0"
+        if (n == 0 && sb.length() == 0) {
+            continue;
+        }
+        sb.append(n);
+    }
+
+    /**
+     * 这里要注意如果是空要返回0
+     */
+    return sb.length() == 0 ? "0" : sb.toString();
+}
+\end{Code}
+
+\newpage
+
+\section{Compare Version Numbers} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Compare two version numbers version1 and version2.
+
+If version1 > version2 return 1, if version1 < version2 return -1, otherwise return 0.
+
+You may assume that the version strings are non-empty and contain only digits and the \fn{.} character.
+
+The \fn{.} character does not represent a decimal point and is used to separate number sequences.
+
+For instance, 2.5 is not \code{"two and a half"} or \code{"half way to version three"}, it is the fifth second-level revision of the second first-level revision.
+
+Here is an example of version numbers ordering:
+
+\code{0.1 < 1.1 < 1.2 < 13.37}
+
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage
+
+\section{Palindrome Pairs} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a list of unique words, find all pairs of distinct indices (i, j) in the given list, so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.
+
+\textbf{Example 1:}
+
+Given words = \code{["bat", "tab", "cat"]}
+
+Return \code{[[0, 1], [1, 0]]}
+
+The palindromes are \code{["battab", "tabbat"]}
+
+\textbf{Example 2:}
+
+Given words = \code{["abcd", "dcba", "lls", "s", "sssll"]}
+
+Return \code{[[0, 1], [1, 0], [3, 2], [2, 4]]}
+
+The palindromes are \code{["dcbaabcd", "abcddcba", "slls", "llssssll"]}
+
+\subsubsection{Solution}
+
+\begin{Code}
+public List<List<Integer>> palindromePairs(String[] words) {
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    for (int i = 0; i < words.length - 1; i++) {
+        for (int j = i + 1; j < words.length; j++) {
+            if (isPalindromePair(words[i], words[j])) {
+                result.add(Arrays.asList(i, j));
+            }
+            if (isPalindromePair(words[j], words[i])) {
+                result.add(Arrays.asList(j, i));
+            }
+        }
+    }
+    return result;
+}
+
+private boolean isPalindromePair(String word1, String word2) {
+    int len1 = word1.length();
+    int len2 = word2.length();
+
+    for (int l = 0, r = len1 + len2 - 1; l < r; l++, r--) {
+        char c1 = l < len1 ? word1.charAt(l) : word2.charAt(l - len1);
+        char c2 = r < len1 ? word1.charAt(r) : word2.charAt(r - len1);
+        if (c1 != c2) {
+            return false;
+        }
+    }
+
+    return true;
+}
+\end{Code}
+
+\newpage
+
+\section{Valid Palindrome} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+For example,
+
+\code{"A man, a plan, a canal: Panama"} is a palindrome.
+
+\code{"race a car"} is not a palindrome.
+
+\textbf{Note:}
+
+Have you consider that the string might be empty? This is a good question to ask during an interview.
+
+For the purpose of this problem, we define empty string as valid palindrome.
+
+\subsubsection{Solution}
+
+\begin{Code}
+ /**
+ * 空串认为是true
+ */
+// 耗时10ms
+public boolean isPalindrome(String s) {
+    /**
+     * 因为是忽略大小写，所以这里先转化成小写
+     */
+    s = s.toLowerCase();
+    for (int i = 0, j = s.length() - 1; i < j; ) {
+        if (!Character.isLetterOrDigit(s.charAt(i))) {
+            i++;
+        } else if (!Character.isLetterOrDigit(s.charAt(j))) {
+            j--;
+        } else {
+            if (s.charAt(i) != s.charAt(j)) {
+                return false;
+            } else {
+                i++;
+                j--;
+            }
+        }
+    }
+    return true;
+}
+\end{Code}
+
+\newpage
+
+\section{Valid Number} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Validate if a given string is numeric.
+
+Some examples:
+\begin{Code}
+"0" => true
+" 0.1 " => true
+"abc" => false
+"1 a" => false
+"2e10" => true
+\end{Code}
+
+\textbf{Note:} It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
+
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage
+
+\section{Substring with Concatenation of All Words} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.
+
+For example, given:
+\begin{Code}
+s: "barfoothefoobarman"
+words: ["foo", "bar"]
+\end{Code}
+
+You should return the indices: \code{[0,9]}.
+(order does not matter).
+
+\subsubsection{Solution}
+
+\begin{Code}
+// 这些words可能有重复
+public List<Integer> findSubstring(String s, String[] words) {
+    List<Integer> list = new LinkedList<>();
+
+    if (words.length == 0 || s.length() == 0) {
+        return list;
+    }
+
+    int len = words[0].length();
+    int total = len * words.length;
+
+    if (s.length() < total) {
+        return list;
+    }
+
+    HashMap<String, Integer> map = new HashMap<>();
+    for (String word : words) {
+        map.put(word, 1 + map.getOrDefault(word, 0));
+    }
+
+    for (int i = 0; i <= s.length() - total; ) {
+        if (isMatch(s, i, i + total, len, map)) {
+            list.add(i);
+        }
+
+        i++;
+    }
+
+    return list;
+}
+\end{Code}
+\newpage
+\begin{Code}
+private boolean isMatch(String s, int start, int end, int len, HashMap<String, Integer> map0) {
+    HashMap<String, Integer> map = new HashMap<>(map0);
+
+    for (int i = start; i < end; i += len) {
+        String t = s.substring(i, i + len);
+
+        int m = map.getOrDefault(t, 0);
+
+        if (m > 1) {
+            map.put(t, m - 1);
+        } else if (m == 1) {
+            map.remove(t);
+        } else {
+            return false;
+        }
+    }
+
+    return map.isEmpty();
+}
+\end{Code}
+
+\newpage
+
+\section{Simplify Path} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an absolute path for a file (Unix-style), simplify it.
+
+For example,
+\begin{Code}
+path = "/home/", => "/home"
+path = "/a/./b/../../c/", => "/c"
+\end{Code}
+
+\textbf{Corner Cases:}
+
+Did you consider the case where path = \code{"/../"}? In this case, you should return "/".
+
+Another corner case is the path might contain multiple slashes \code{'/'} together, such as \code{"/home//foo/"}.
+
+In this case, you should ignore redundant slashes and return \code{"/home/foo"}.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public String simplifyPath(String path) {
+    String[] ss = path.split("/");
+    /**
+     * 注意这里要用双端队列，因为后面要生成路径需要从前往后
+     */
+    Deque<String> queue = new LinkedList<>();
+    for (String s : ss) {
+        /**
+         * 注意这里别掉了s为空的情况，比如"//"时s会为空
+         */
+        if (s.length() == 0 || s.equals(".")) {
+            continue;
+        }
+        if (s.equals("..")) {
+            if (!queue.isEmpty()) {
+                /**
+                 * 这里和下面都别用stack或者push，因为他们都是在头部操作而非尾部
+                 */
+                queue.pollLast();
+            }
+        } else {
+            queue.offerLast(s);
+        }
+    }
+    /**
+     * 这里要注意queue可能为空，不过好在join会返回空
+     */
+    return "/" + String.join("/", queue);
+}
+\end{Code}
+
+\newpage
+
+\section{Text Justification} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
+
+You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly L characters.
+
+Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
+
+For the last line of text, it should be left justified and no extra space is inserted between words.
+
+For example,
+\begin{Code}
+words: ["This", "is", "an", "example", "of", "text", "justification."]
+L: 16.
+\end{Code}
+
+Return the formatted lines as:
+\begin{Code}
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+\end{Code}
+
+\textbf{Note:} Each word is guaranteed not to exceed L in length.
+
+\textbf{Corner Cases:}
+
+A line other than the last line might contain only one word. What should you do in this case? In this case, that line should be left-justified.
+
+\subsubsection{Analysis}
+这题有几个条件:
+
+如果一行只有一个单词或者该行是最后一行，则往左靠
+
+其余情况则往两边撑满，中间均衡地填充空格，如果不能均衡，则左边优先
+
+\newpage
+
+\subsubsection{Solution}
+
+\begin{Code}
+public List<String> fullJustify(String[] words, int maxWidth) {
+    List<String> result = new LinkedList<String>();
+
+    int count, last;
+    for (int first = 0; first < words.length; first = last) {
+        for (last = first, count = 0; last < words.length; last++) {
+            if (count + words[last].length() + last - first > maxWidth) {
+                break;
+            }
+            count += words[last].length();
+        }
+        StringBuilder sb = new StringBuilder();
+
+        // 最后一行或者一行只有一个单词的情况
+        if (last == words.length || last - first == 1) {
+            for (int i = first; i < last; i++) {
+                sb.append(words[i]).append(" ");
+            }
+            // 这里给最后的空格去掉是避免最后的空格导致超出
+            sb.deleteCharAt(sb.length() - 1);
+            for ( ; sb.length() < maxWidth; sb.append(" "));
+        } else {
+            int spaces = maxWidth - count;
+            int avg = spaces / (last - first - 1);
+            int extraSpaces = spaces - avg * (last - first - 1);
+            for (int i = first; i < last; i++) {
+                sb.append(words[i]);
+                if (i < last - 1) { // 注意这里别掉了，最后一个单词后是不跟空格的
+                    int curSpaces = avg + (extraSpaces > 0 ? 1 : 0);
+                    for (int j = 0; j < curSpaces; j++) {
+                        sb.append(" ");
+                    }
+                    extraSpaces--;
+                }
+            }
+        }
+
+        result.add(sb.toString());
+    }
+
+    return result;
+}
+\end{Code}
+
+\newpage
+
+\section{Read N Characters Given Read4} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+The API: int read4(char *buf) reads 4 characters at a time from a file.
+
+The return value is the actual number of characters read. For example, it returns 3 if there is only 3 characters left in the file.
+
+By using the read4 API, implement the function int read(char *buf, int n) that reads n characters from the file.
+
+\textbf{Note:}
+
+The read function will only be called once for each test case.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public int read(char[] buf, int n) {
+    char[] tmp = new char[4];
+
+    int i = 0;
+    for ( ; i < n; i++) {
+        int size = read4(tmp);
+        for (int j = 0; j < size && i < n; ) {
+            buf[i++] = tmp[j++];
+        }
+        if (size < 4) {
+            break;
+        }
+    }
+
+    return i;
+}
+\end{Code}
+
+\newpage
+
+\section{Read N Characters Given Read4 II - Call multiple times} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+The API: int read4(char *buf) reads 4 characters at a time from a file.
+
+The return value is the actual number of characters read. For example, it returns 3 if there is only 3 characters left in the file.
+
+By using the read4 API, implement the function int read(char *buf, int n) that reads n characters from the file.
+
+\textbf{Note:}
+
+The read function may be called multiple times.
+\subsubsection{Solution}
+
+\begin{Code}
+private char[] mTmp = new char[4];
+private int mIndex = 0, mSize = 0;
+
+public int read(char[] buf, int n) {
+    int i = 0;
+    for (; i < n; ) {
+        if (mIndex < mSize) {
+            buf[i++] = mTmp[mIndex++];
+        } else {
+            mIndex = 0;
+            mSize = read4(mTmp);
+            if (mSize <= 0) {
+                break;
+            }
+        }
+    }
+    return i;
+}
+\end{Code}
+
+\newpage
+
+\section{Group Shifted Strings} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a string, we can \code{"shift"} each of its letter to its successive letter, for example: \code{"abc" -> "bcd"}. We can keep \code{"shifting"} which forms the sequence:
+
+\code{"abc" -> "bcd" -> ... -> "xyz"}
+
+Given a list of strings which contains only lowercase alphabets, group all strings that belong to the same shifting sequence.
+
+For example, given: \code{["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"]},
+
+A solution is:
+\begin{Code}
+[
+  ["abc","bcd","xyz"],
+  ["az","ba"],
+  ["acef"],
+  ["a","z"]
+]
+\end{Code}
+
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage
+
+\section{Encode and Decode Strings} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+
+Machine 1 (sender) has the function:
+
+\begin{Code}
+string encode(vector<string> strs) {
+  // ... your code
+  return encoded_string;
+}
+\end{Code}
+
+Machine 2 (receiver) has the function:
+
+\begin{Code}
+vector<string> decode(string s) {
+  //... your code
+  return strs;
+}
+\end{Code}
+
+So Machine 1 does:
+
+\begin{Code}
+string encoded_string = encode(strs);
+\end{Code}
+
+and Machine 2 does:
+
+\begin{Code}
+vector<string> strs2 = decode(encoded_string);
+\end{Code}
+
+strs2 in Machine 2 should be the same as strs in Machine 1.
+
+Implement the encode and decode methods.
+
+\textbf{Note:}
+
+The string may contain any possible characters out of 256 valid ascii characters. Your algorithm should be generalized enough to work on any possible characters.
+
+Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
+
+Do not rely on any library method such as eval or serialize methods. You should implement your own encode/decode algorithm.
+\subsubsection{Solution}
+
+\begin{Code}
+public String encode(List<String> strs) {
+    StringBuilder sb = new StringBuilder();
+    for (String str : strs) {
+        sb.append(str.length()).append("/").append(str);
+    }
+    return sb.toString();
+}
+
+public List<String> decode(String s) {
+    List<String> list = new LinkedList<String>();
+    for (int i = 0; i < s.length(); ) {
+        int index = s.indexOf("/", i);
+        int size = Integer.parseInt(s.substring(i, index));
+        i = index + 1 + size;
+        list.add(s.substring(index + 1, i));
+    }
+    return list;
+}
+\end{Code}
+
+\newpage
+
+\section{Repeated Substring Pattern} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.
+
+\textbf{Example 1:}
+
+\textbf{Input:} \code{"abab"}
+
+\textbf{Output:} True
+
+\textbf{Explanation:} It's the substring \code{"ab"} twice.
+
+\textbf{Example 2:}
+
+\textbf{Input:} \code{"aba"}
+
+\textbf{Output:} False
+
+\textbf{Example 3:}
+
+\textbf{Input:} \code{"abcabcabcabc"}
+
+\textbf{Output:} True
+
+\textbf{Explanation:} It's the substring \code{"abc"} four times. (And the substring \code{"abcabc"} twice.)
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage
+
+\section{Validate IP Address} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Write a function to check whether an input string is a valid IPv4 address or IPv6 address or neither.
+
+IPv4 addresses are canonically represented in dot-decimal notation, which consists of four decimal numbers, each ranging from 0 to 255, separated by dots ("."), e.g.,172.16.254.1;
+
+Besides, leading zeros in the IPv4 is invalid. For example, the address 172.16.254.01 is invalid.
+
+IPv6 addresses are represented as eight groups of four hexadecimal digits, each group representing 16 bits. The groups are separated by colons (":"). For example, the address 2001:0db8:85a3:0000:0000:8a2e:0370:7334 is a valid one. Also, we could omit some leading zeros among four hexadecimal digits and some low-case characters in the address to upper-case ones, so 2001:db8:85a3:0:0:8A2E:0370:7334 is also a valid IPv6 address(Omit leading zeros and using upper cases).
+
+However, we don't replace a consecutive group of zero value with a single empty group using two consecutive colons (::) to pursue simplicity. For example, 2001:0db8:85a3::8A2E:0370:7334 is an invalid IPv6 address.
+
+Besides, extra leading zeros in the IPv6 is also invalid. For example, the address 02001:0db8:85a3:0000:0000:8a2e:0370:7334 is invalid.
+
+Note: You may assume there is no extra space or special characters in the input string.
+
+\textbf{Example 1:}
+
+\textbf{Input:} \code{"172.16.254.1"}
+
+\textbf{Output:} \code{"IPv4"}
+
+\textbf{Explanation:} This is a valid IPv4 address, return \code{"IPv4"}.
+
+\textbf{Example 2:}
+
+\textbf{Input:} \code{"2001:0db8:85a3:0:0:8A2E:0370:7334"}
+
+\textbf{Output:} \code{"IPv6"}
+
+\textbf{Explanation:} This is a valid IPv6 address, return \code{"IPv6"}.
+
+\textbf{Example 3:}
+
+\textbf{Input:} \code{"256.256.256.256"}
+
+\textbf{Output:} \code{"Neither"}
+
+\textbf{Explanation:} This is neither a IPv4 address nor a IPv6 address.
+
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage
+
+\section{Valid Word Abbreviation} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+Given a non-empty string s and an abbreviation abbr, return whether the string matches with the given abbreviation.
+
+A string such as \code{"word"} contains only the following valid abbreviations:
+
+\code{["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]}
+
+Notice that only the above abbreviations are valid abbreviations of the string \code{"word"}. Any other string is not a valid abbreviation of \code{"word"}.
+
+\textbf{Note:}
+
+Assume s contains only lowercase letters and abbr contains only lowercase letters and digits.
+
+\textbf{Example 1:}
+
+Given s = \code{"internationalization"}, abbr = \code{"i12iz4n"}:
+
+Return true.
+
+\textbf{Example 2:}
+
+Given s = \code{"apple"}, abbr = \code{"a2e"}:
+
+Return false.
+
+\subsubsection{Solution}
+
+\begin{Code}
+public boolean validWordAbbreviation(String word, String abbr) {
+    int i = 0, j = 0;
+    for (int value = 0; i < word.length() && j < abbr.length(); ) {
+        if (word.charAt(i) == abbr.charAt(j)) {
+            i++; j++;
+            continue;
+        }
+
+        if (abbr.charAt(j) <= '0' || abbr.charAt(j) > '9') {
+            return false;
+        }
+
+        for (value = 0; j < abbr.length() && abbr.charAt(j) >= '0' && abbr.charAt(j) <= '9'; j++) {
+            value = value * 10 + (abbr.charAt(j) - '0');
+        }
+        i += value;
+    }
+    return i == word.length() && j == abbr.length();
+}
+\end{Code}
+
+\newpage

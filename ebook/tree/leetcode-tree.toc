@@ -1,0 +1,178 @@
+\contentsline {chapter}{\numberline {第1章\hspace {0.3em}}Tree}{1}{chapter.1}
+\contentsline {subsubsection}{500以上的题目暂时未录入}{1}{section*.2}
+\contentsline {section}{\numberline {1.1}Maximum Depth of Binary Tree}{1}{section.1.1}
+\contentsline {subsubsection}{Description}{1}{section*.3}
+\contentsline {subsubsection}{Solution}{1}{section*.4}
+\contentsline {section}{\numberline {1.2}Invert Binary Tree}{2}{section.1.2}
+\contentsline {subsubsection}{Description}{2}{section*.5}
+\contentsline {subsubsection}{Solution I}{2}{section*.6}
+\contentsline {subsubsection}{Solution II}{2}{section*.7}
+\contentsline {section}{\numberline {1.3}Same Tree}{3}{section.1.3}
+\contentsline {subsubsection}{Description}{3}{section*.8}
+\contentsline {subsubsection}{Solution}{3}{section*.9}
+\contentsline {section}{\numberline {1.4}Binary Search Tree Iterator}{4}{section.1.4}
+\contentsline {subsubsection}{Description}{4}{section*.10}
+\contentsline {subsubsection}{Solution}{4}{section*.11}
+\contentsline {section}{\numberline {1.5}Lowest Common Ancestor of a Binary Search Tree}{5}{section.1.5}
+\contentsline {subsubsection}{Description}{5}{section*.12}
+\contentsline {subsubsection}{Solution}{5}{section*.13}
+\contentsline {section}{\numberline {1.6}Balanced Binary Tree}{6}{section.1.6}
+\contentsline {subsubsection}{Description}{6}{section*.14}
+\contentsline {subsubsection}{Solution}{6}{section*.15}
+\contentsline {section}{\numberline {1.7}Binary Tree Maximum Path Sum}{7}{section.1.7}
+\contentsline {subsubsection}{Description}{7}{section*.16}
+\contentsline {subsubsection}{Solution}{7}{section*.17}
+\contentsline {section}{\numberline {1.8}Populating Next Right Pointers in Each Node}{8}{section.1.8}
+\contentsline {subsubsection}{Description}{8}{section*.18}
+\contentsline {subsubsection}{Solution I}{9}{section*.19}
+\contentsline {subsubsection}{Solution II}{9}{section*.20}
+\contentsline {section}{\numberline {1.9}Populating Next Right Pointers in Each Node II}{10}{section.1.9}
+\contentsline {subsubsection}{Description}{10}{section*.21}
+\contentsline {subsubsection}{Solution I}{10}{section*.22}
+\contentsline {subsubsection}{Solution II}{10}{section*.23}
+\contentsline {section}{\numberline {1.10}Convert Sorted Array to Binary Search Tree}{11}{section.1.10}
+\contentsline {subsubsection}{Description}{11}{section*.24}
+\contentsline {subsubsection}{Solution}{11}{section*.25}
+\contentsline {section}{\numberline {1.11}Symmetric Tree}{12}{section.1.11}
+\contentsline {subsubsection}{Description}{12}{section*.26}
+\contentsline {subsubsection}{Solution}{12}{section*.27}
+\contentsline {section}{\numberline {1.12}Lowest Common Ancestor of a Binary Tree}{13}{section.1.12}
+\contentsline {subsubsection}{Description}{13}{section*.28}
+\contentsline {subsubsection}{Solution I}{13}{section*.29}
+\contentsline {subsubsection}{Solution II}{14}{section*.30}
+\contentsline {section}{\numberline {1.13}Binary Tree Level Order Traversal}{15}{section.1.13}
+\contentsline {subsubsection}{Description}{15}{section*.31}
+\contentsline {subsubsection}{Solution}{15}{section*.32}
+\contentsline {section}{\numberline {1.14}Binary Tree Level Order Traversal II}{16}{section.1.14}
+\contentsline {subsubsection}{Description}{16}{section*.33}
+\contentsline {subsubsection}{Solution}{16}{section*.34}
+\contentsline {section}{\numberline {1.15}Binary Tree Zigzag Level Order Traversal}{17}{section.1.15}
+\contentsline {subsubsection}{Description}{17}{section*.35}
+\contentsline {subsubsection}{Solution}{17}{section*.36}
+\contentsline {section}{\numberline {1.16}Serialize and Deserialize Binary Tree}{18}{section.1.16}
+\contentsline {subsubsection}{Description}{18}{section*.37}
+\contentsline {subsubsection}{Solution I}{19}{section*.38}
+\contentsline {subsubsection}{Solution II}{20}{section*.39}
+\contentsline {subsubsection}{Solution III}{21}{section*.40}
+\contentsline {section}{\numberline {1.17}Count Complete Tree Nodes}{22}{section.1.17}
+\contentsline {subsubsection}{Description}{22}{section*.41}
+\contentsline {subsubsection}{Solution}{22}{section*.42}
+\contentsline {section}{\numberline {1.18}Construct Binary Tree from Preorder and Inorder Traversal}{23}{section.1.18}
+\contentsline {subsubsection}{Description}{23}{section*.43}
+\contentsline {subsubsection}{Solution}{23}{section*.44}
+\contentsline {section}{\numberline {1.19}Construct Binary Tree from Inorder and Postorder Traversal}{24}{section.1.19}
+\contentsline {subsubsection}{Description}{24}{section*.45}
+\contentsline {subsubsection}{Solution}{24}{section*.46}
+\contentsline {section}{\numberline {1.20}Path Sum}{25}{section.1.20}
+\contentsline {subsubsection}{Description}{25}{section*.47}
+\contentsline {subsubsection}{Solution}{25}{section*.48}
+\contentsline {section}{\numberline {1.21}Path Sum II}{26}{section.1.21}
+\contentsline {subsubsection}{Description}{26}{section*.49}
+\contentsline {subsubsection}{Solution}{26}{section*.50}
+\contentsline {section}{\numberline {1.22}Path Sum III}{27}{section.1.22}
+\contentsline {subsubsection}{Description}{27}{section*.51}
+\contentsline {subsubsection}{Solution I}{28}{section*.52}
+\contentsline {subsubsection}{Solution II}{29}{section*.53}
+\contentsline {section}{\numberline {1.23}Recover Binary Search Tree}{30}{section.1.23}
+\contentsline {subsubsection}{Description}{30}{section*.54}
+\contentsline {subsubsection}{Solution I}{30}{section*.55}
+\contentsline {subsubsection}{Solution II}{31}{section*.56}
+\contentsline {section}{\numberline {1.24}Binary Tree Paths}{32}{section.1.24}
+\contentsline {subsubsection}{Description}{32}{section*.57}
+\contentsline {subsubsection}{Solution}{32}{section*.58}
+\contentsline {section}{\numberline {1.25}Flatten Binary Tree to Linked List}{33}{section.1.25}
+\contentsline {subsubsection}{Description}{33}{section*.59}
+\contentsline {subsubsection}{Solution I}{33}{section*.60}
+\contentsline {subsubsection}{Solution II}{34}{section*.61}
+\contentsline {section}{\numberline {1.26}Binary Tree Right Side View}{35}{section.1.26}
+\contentsline {subsubsection}{Description}{35}{section*.62}
+\contentsline {subsubsection}{Solution}{35}{section*.63}
+\contentsline {section}{\numberline {1.27}Kth Smallest Element in a BST}{36}{section.1.27}
+\contentsline {subsubsection}{Description}{36}{section*.64}
+\contentsline {subsubsection}{Solution I}{36}{section*.65}
+\contentsline {subsubsection}{Solution II}{36}{section*.66}
+\contentsline {section}{\numberline {1.28}Unique Binary Search Trees}{37}{section.1.28}
+\contentsline {subsubsection}{Description}{37}{section*.67}
+\contentsline {subsubsection}{Solution}{37}{section*.68}
+\contentsline {section}{\numberline {1.29}Unique Binary Search Trees II}{38}{section.1.29}
+\contentsline {subsubsection}{Description}{38}{section*.69}
+\contentsline {subsubsection}{Solution}{38}{section*.70}
+\contentsline {section}{\numberline {1.30}House Robber III}{39}{section.1.30}
+\contentsline {subsubsection}{Description}{39}{section*.71}
+\contentsline {subsubsection}{Solution}{39}{section*.72}
+\contentsline {section}{\numberline {1.31}Binary Tree Preorder Traversal}{40}{section.1.31}
+\contentsline {subsubsection}{Description}{40}{section*.73}
+\contentsline {subsubsection}{Solution}{40}{section*.74}
+\contentsline {section}{\numberline {1.32}Binary Tree Inorder Traversal}{41}{section.1.32}
+\contentsline {subsubsection}{Description}{41}{section*.75}
+\contentsline {subsubsection}{Solution}{41}{section*.76}
+\contentsline {section}{\numberline {1.33}Binary Tree Postorder Traversal}{42}{section.1.33}
+\contentsline {subsubsection}{Description}{42}{section*.77}
+\contentsline {subsubsection}{Solution}{42}{section*.78}
+\contentsline {section}{\numberline {1.34}Minimum Depth of Binary Tree}{43}{section.1.34}
+\contentsline {subsubsection}{Description}{43}{section*.79}
+\contentsline {subsubsection}{Solution}{43}{section*.80}
+\contentsline {section}{\numberline {1.35}Count Univalue Subtrees}{44}{section.1.35}
+\contentsline {subsubsection}{Description}{44}{section*.81}
+\contentsline {subsubsection}{Solution}{44}{section*.82}
+\contentsline {section}{\numberline {1.36}Validate Binary Search Tree}{45}{section.1.36}
+\contentsline {subsubsection}{Description}{45}{section*.83}
+\contentsline {subsubsection}{Solution}{45}{section*.84}
+\contentsline {section}{\numberline {1.37}Binary Tree Upside Down}{46}{section.1.37}
+\contentsline {subsubsection}{Description}{46}{section*.85}
+\contentsline {subsubsection}{Solution}{46}{section*.86}
+\contentsline {section}{\numberline {1.38}Sum Root to Leaf Numbers}{47}{section.1.38}
+\contentsline {subsubsection}{Description}{47}{section*.87}
+\contentsline {subsubsection}{Solution}{47}{section*.88}
+\contentsline {section}{\numberline {1.39}Inorder Successor in BST}{48}{section.1.39}
+\contentsline {subsubsection}{Description}{48}{section*.89}
+\contentsline {subsubsection}{Solution I}{48}{section*.90}
+\contentsline {subsubsection}{Solution II}{48}{section*.91}
+\contentsline {section}{\numberline {1.40}Binary Tree Longest Consecutive Sequence}{49}{section.1.40}
+\contentsline {subsubsection}{Description}{49}{section*.92}
+\contentsline {subsubsection}{Solution}{49}{section*.93}
+\contentsline {section}{\numberline {1.41}Delete Node in a BST}{50}{section.1.41}
+\contentsline {subsubsection}{Description}{50}{section*.94}
+\contentsline {subsubsection}{Solution}{51}{section*.95}
+\contentsline {section}{\numberline {1.42}Verify Preorder Sequence in Binary Search Tree}{52}{section.1.42}
+\contentsline {subsubsection}{Description}{52}{section*.96}
+\contentsline {subsubsection}{Solution}{52}{section*.97}
+\contentsline {section}{\numberline {1.43}Closest Binary Search Tree Value}{53}{section.1.43}
+\contentsline {subsubsection}{Description}{53}{section*.98}
+\contentsline {subsubsection}{Solution I}{53}{section*.99}
+\contentsline {subsubsection}{Solution II}{53}{section*.100}
+\contentsline {section}{\numberline {1.44}Closest Binary Search Tree Value II}{54}{section.1.44}
+\contentsline {subsubsection}{Description}{54}{section*.101}
+\contentsline {subsubsection}{Analysis}{54}{section*.102}
+\contentsline {subsubsection}{Solution I}{55}{section*.103}
+\contentsline {subsubsection}{Solution II}{56}{section*.104}
+\contentsline {section}{\numberline {1.45}Sum of Left Leaves}{57}{section.1.45}
+\contentsline {subsubsection}{Description}{57}{section*.105}
+\contentsline {subsubsection}{Solution I}{57}{section*.106}
+\contentsline {subsubsection}{Solution II}{57}{section*.107}
+\contentsline {section}{\numberline {1.46}Find Leaves of Binary Tree}{58}{section.1.46}
+\contentsline {subsubsection}{Description}{58}{section*.108}
+\contentsline {subsubsection}{Solution}{58}{section*.109}
+\contentsline {section}{\numberline {1.47}Largest BST Subtree}{59}{section.1.47}
+\contentsline {subsubsection}{Description}{59}{section*.110}
+\contentsline {subsubsection}{Solution}{59}{section*.111}
+\contentsline {section}{\numberline {1.48}Find Mode in Binary Search Tree}{60}{section.1.48}
+\contentsline {subsubsection}{Description}{60}{section*.112}
+\contentsline {subsubsection}{Analysis}{60}{section*.113}
+\contentsline {subsubsection}{Solution}{61}{section*.114}
+\contentsline {section}{\numberline {1.49}Most Frequent Subtree Sum}{62}{section.1.49}
+\contentsline {subsubsection}{Description}{62}{section*.115}
+\contentsline {subsubsection}{Solution}{63}{section*.116}
+\contentsline {section}{\numberline {1.50}Find Largest Value in Each Tree Row}{64}{section.1.50}
+\contentsline {subsubsection}{Description}{64}{section*.117}
+\contentsline {subsubsection}{Solution}{64}{section*.118}
+\contentsline {section}{\numberline {1.51}Find Bottom Left Tree Value}{65}{section.1.51}
+\contentsline {subsubsection}{Description}{65}{section*.119}
+\contentsline {subsubsection}{Solution}{66}{section*.120}
+\contentsline {section}{\numberline {1.52}Range Sum Query - Mutable}{67}{section.1.52}
+\contentsline {subsubsection}{Description}{67}{section*.121}
+\contentsline {subsubsection}{Solution}{67}{section*.122}
+\contentsline {section}{\numberline {1.53}Range Sum Query 2D - Mutable}{68}{section.1.53}
+\contentsline {subsubsection}{Description}{68}{section*.123}
+\contentsline {subsubsection}{Solution I}{68}{section*.124}
+\contentsline {subsubsection}{Solution II}{70}{section*.125}
