@@ -1,5 +1,5 @@
 # 其它题目
 
 ### Google
- - [Remove consecutive node from single list](leetcode/solution/src/RemoveDuplicateList.java)
- - [Reverse pairs](leetcode/solution/src/CountReversePairs.java)
+ - [Remove consecutive node from single list](code_java/src/solution/RemoveDuplicateList.java)
+ - [Reverse pairs](code_java/src/solution/CountReversePairs.java)
