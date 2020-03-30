@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/android-unlock-patterns/
  */

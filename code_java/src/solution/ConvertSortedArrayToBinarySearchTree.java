@@ -1,3 +1,5 @@
+package solution;
+
 public class ConvertSortedArrayToBinarySearchTree {
 
     public TreeNode sortedArrayToBST(int[] nums) {

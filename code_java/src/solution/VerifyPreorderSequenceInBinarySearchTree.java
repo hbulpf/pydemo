@@ -1,3 +1,5 @@
+package solution;
+
 public class VerifyPreorderSequenceInBinarySearchTree {
 
     public boolean verifyPreorder(int[] preorder) {

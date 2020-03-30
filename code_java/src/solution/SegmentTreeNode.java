@@ -1,3 +1,5 @@
+package solution;
+
 public class SegmentTreeNode {
 
     public SegmentTreeNode left, right;

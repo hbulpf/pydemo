@@ -1,3 +1,5 @@
+package solution;
+
 public class LinkedListCycle {
 
     // 注意判空

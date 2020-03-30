@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://segmentfault.com/a/1190000003059361
  */

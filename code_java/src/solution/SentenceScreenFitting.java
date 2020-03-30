@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://discuss.leetcode.com/category/546/sentence-screen-fitting
  */

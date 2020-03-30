@@ -1,3 +1,5 @@
+package solution;
+
 public class MissingNumber {
 
     public int missingNumber(int[] nums) {

@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * TestCase
  * 0

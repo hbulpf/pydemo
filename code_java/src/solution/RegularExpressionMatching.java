@@ -1,4 +1,4 @@
-/**
+package solution; /**
  * 这道题最重要的是no bug，而不是性能
  * 要给所有cases cover到
  * 下面的写法足够简单和直观了

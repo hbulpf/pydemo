@@ -1,3 +1,5 @@
+package solution;
+
 public class BestTimeBuySellStockIII {
 
     public int maxProfit(int[] prices) {

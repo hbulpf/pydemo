@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/range-sum-query-2d-immutable/
  */
@@ -27,8 +29,8 @@ public class NumMatrix {
     }
 }
 
-// Your NumMatrix object will be instantiated and called as such:
-// NumMatrix numMatrix = new NumMatrix(matrix);
+// Your solution.NumMatrix object will be instantiated and called as such:
+// solution.NumMatrix numMatrix = new solution.NumMatrix(matrix);
 // numMatrix.sumRegion(0, 1, 2, 3);
 // numMatrix.update(1, 1, 10);
 // numMatrix.sumRegion(1, 2, 3, 4);

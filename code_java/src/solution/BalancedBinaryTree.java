@@ -1,3 +1,7 @@
+package solution;
+
+import common.TreeNode;
+
 /**
  * 平衡二叉树条件是左边是平衡，右边是平衡，且两边高度差相差不超过1
  * 树的高度是所有子树的最大高度

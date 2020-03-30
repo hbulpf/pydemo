@@ -1,3 +1,5 @@
+package solution;
+
 public class UTFValidation {
 
     public boolean validUtf8(int[] data) {

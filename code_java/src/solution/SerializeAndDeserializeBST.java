@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 本题和#297一样
  */

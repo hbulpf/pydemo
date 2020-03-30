@@ -1,3 +1,5 @@
+package solution;
+
 public class MajorityElement {
 
     public int majorityElement(int[] nums) {

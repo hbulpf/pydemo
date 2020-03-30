@@ -1,3 +1,5 @@
+package solution;
+
 public class PalindromeNumber {
 
     // 耗时101ms

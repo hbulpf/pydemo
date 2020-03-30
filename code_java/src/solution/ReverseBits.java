@@ -1,3 +1,4 @@
+package solution;
 
 public class ReverseBits {
 

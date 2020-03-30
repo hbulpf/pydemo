@@ -1,3 +1,5 @@
+package solution;
+
 public class PalindromeLinkedList {
 
     // 耗时2ms

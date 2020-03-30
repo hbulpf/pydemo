@@ -1,3 +1,5 @@
+package solution;
+
 public class FriendCircles {
 
     public int findCircleNum(int[][] M) {

@@ -1,4 +1,6 @@
-import java.awt.Point;
+package solution;
+
+import java.awt.*;
 import java.util.HashMap;
 
 /**

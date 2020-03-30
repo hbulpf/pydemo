@@ -1,3 +1,5 @@
+package solution;
+
 public class ShortestWordDistanceIII {
 
     public int shortestWordDistance(String[] words, String word1, String word2) {

@@ -1,3 +1,7 @@
+package solution;
+
+import common.TreeNode;
+
 public class BinaryTreePruning {
 
     public TreeNode pruneTree(TreeNode root) {

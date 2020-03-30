@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 易错的地方在于random要判空
  */

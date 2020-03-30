@@ -1,3 +1,5 @@
+package solution;
+
 public class WordSearch {
 
     // 耗时9ms

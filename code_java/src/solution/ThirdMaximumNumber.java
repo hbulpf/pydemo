@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这题注意边界情况
  */

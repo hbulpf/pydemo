@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/two-sum-ii-input-array-sorted/
  */

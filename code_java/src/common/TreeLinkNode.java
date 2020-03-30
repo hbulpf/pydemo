@@ -1,3 +1,5 @@
+package common;
+
 /**
  * Definition for binary tree with next pointer.
  */

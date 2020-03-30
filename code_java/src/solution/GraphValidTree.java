@@ -1,4 +1,4 @@
-/**
+package solution; /**
  * <p>
  * 判断无向图是否带环，可采用UF, DFS, BFS。
  * UF实现简单，性能很好

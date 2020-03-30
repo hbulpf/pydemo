@@ -1,3 +1,5 @@
+package solution;
+
 public abstract class ReadNCharactersGivenRead4 {
 
     public int read(char[] buf, int n) {

@@ -1,3 +1,5 @@
+package solution;
+
 public class TrimABinarySearchTree {
 
     public TreeNode trimBST(TreeNode root, int L, int R) {

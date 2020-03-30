@@ -1,3 +1,5 @@
+package solution;
+
 public class ReverseWordsInAString {
 
     public static String reverseWords(String s) {

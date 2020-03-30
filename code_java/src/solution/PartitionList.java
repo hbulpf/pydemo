@@ -1,3 +1,5 @@
+package solution;
+
 public class PartitionList {
 
     ListNode partition(ListNode head, int x) {

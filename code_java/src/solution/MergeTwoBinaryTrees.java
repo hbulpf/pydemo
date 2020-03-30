@@ -1,3 +1,5 @@
+package solution;
+
 public class MergeTwoBinaryTrees {
 
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {

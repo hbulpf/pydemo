@@ -1,3 +1,5 @@
+package common;
+
 public class Utils {
 
     public static int max(int... val) {

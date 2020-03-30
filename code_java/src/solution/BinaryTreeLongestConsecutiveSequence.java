@@ -1,3 +1,7 @@
+package solution;
+
+import common.TreeNode;
+
 /**
  * https://leetcode.com/articles/binary-tree-longest-consecutive-sequence/
  */

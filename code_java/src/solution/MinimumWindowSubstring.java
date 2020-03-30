@@ -1,3 +1,5 @@
+package solution;
+
 public class MinimumWindowSubstring {
 
     // 耗时6ms，时间复杂度O(n)

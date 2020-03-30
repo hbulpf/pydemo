@@ -1,3 +1,5 @@
+package common;
+
 /**
  * Definition for an interval.
  */

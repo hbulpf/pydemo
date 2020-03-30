@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这里要注意的是nums[nums[i] - 1] != nums[i]这个条件，意思是目标坑和当前坑的值不等，此时才能swap
  * 倘若换成nums[i] - 1 != i是不行的，这表示目标坑和当前坑不是一个坑就swap，会死循环

@@ -1,3 +1,5 @@
+package solution;
+
 public class BulbSwitcher {
     /**
      * https://discuss.leetcode.com/topic/39558/share-my-o-1-solution-with-explanation/2

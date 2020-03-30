@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/implement-trie-prefix-tree/
  */

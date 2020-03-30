@@ -1,3 +1,5 @@
+package solution;
+
 public class ProductOfArrayExceptSelf {
 
     // 耗时1ms

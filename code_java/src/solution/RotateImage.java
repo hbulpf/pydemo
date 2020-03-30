@@ -1,3 +1,5 @@
+package solution;
+
 public class RotateImage {
 
     // 耗时2ms

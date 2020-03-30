@@ -1,3 +1,5 @@
+package solution;
+
 public class ValidateBinarySearchTree {
 
     // 耗时1ms

@@ -1,4 +1,4 @@
-/**
+package solution; /**
  * https://leetcode.com/articles/construct-string-from-binary-tree/
  */
 

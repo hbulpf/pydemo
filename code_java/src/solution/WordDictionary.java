@@ -1,3 +1,5 @@
+package solution;
+
 public class WordDictionary {
 
     private class Trie {
@@ -51,8 +53,8 @@ public class WordDictionary {
     }
 }
 
-// Your WordDictionary object will be instantiated and called as such:
-// WordDictionary wordDictionary = new WordDictionary();
+// Your solution.WordDictionary object will be instantiated and called as such:
+// solution.WordDictionary wordDictionary = new solution.WordDictionary();
 // wordDictionary.addWord("word");
 // wordDictionary.search("pattern");
 

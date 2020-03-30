@@ -1026,7 +1026,7 @@ getMin() -- Retrieve the minimum element in the stack.
 
 \textbf{Example:}
 \begin{Code}
-MinStack minStack = new MinStack();
+solution.MinStack minStack = new solution.MinStack();
 minStack.push(-2);
 minStack.push(0);
 minStack.push(-3);
@@ -1042,7 +1042,7 @@ Stack<Integer> mMinStack;
 
 Stack<Integer> mStack;
 
-public MinStack() {
+public solution.MinStack() {
     mStack = new Stack<Integer>();
     mMinStack = new Stack<Integer>();
 }
@@ -1256,7 +1256,7 @@ You may assume that all operations are valid (for example, no pop or peek operat
 \subsubsection{Solution}
 
 \begin{Code}
-public class MyQueue {
+public class solution.MyQueue {
     private Stack<Integer> mStack = new Stack<Integer>();
     private Stack<Integer> mStackTmp = new Stack<Integer>();
 
@@ -1374,7 +1374,7 @@ You may assume that all operations are valid (for example, no pop or top operati
 \subsubsection{Solution I}
 
 \begin{Code}
-public class MyStack {
+public class solution.MyStack {
     private LinkedList<Integer> q1 = new LinkedList<>();
 
     // Push element x onto stack.
@@ -1410,11 +1410,11 @@ public class MyStack {
 \subsubsection{Solution II}
 
 \begin{Code}
-public class MyStack {
+public class solution.MyStack {
 
     private Queue<Integer> mQueue, mQueueTmp;
 
-    public MyStack() {
+    public solution.MyStack() {
         mQueue = new LinkedList<Integer>();
         mQueueTmp = new LinkedList<Integer>();
     }

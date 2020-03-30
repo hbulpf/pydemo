@@ -1,3 +1,5 @@
+package solution;
+
 import java.util.Iterator;
 
 public class PeekingIterator implements Iterator<Integer> {

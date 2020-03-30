@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这道题有两种方法
  * 1，2D BIT
@@ -63,7 +65,7 @@ public class NumMatrixII {
     private int[][] mMatrix;
     private int mRow, mCol;
 
-    public NumMatrixII(int[][] matrix) {
+    public solution.NumMatrixII(int[][] matrix) {
         if (matrix.length == 0) {
             return;
         }

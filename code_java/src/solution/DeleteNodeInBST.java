@@ -1,3 +1,5 @@
+package solution;
+
 public class DeleteNodeInBST {
 
     public TreeNode deleteNode(TreeNode root, int key) {

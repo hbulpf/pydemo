@@ -1,3 +1,5 @@
+package solution;
+
 public class SwapNodesInPairs {
 
     public ListNode swapPairs(ListNode head) {

@@ -1,3 +1,5 @@
+package solution;
+
 import java.util.HashMap;
 
 public class PathSumIII {

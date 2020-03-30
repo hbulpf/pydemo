@@ -1,3 +1,5 @@
+package solution;
+
 public class ConvertSortedListToBinarySearchTree {
 
     public TreeNode sortedListToBST(ListNode head) {

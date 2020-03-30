@@ -1,3 +1,5 @@
+package solution;
+
 public class CountNumberWithUniqueDigits {
 
     public int countNumbersWithUniqueDigits(int n) {

@@ -1,3 +1,5 @@
+package solution;
+
 // 是longest increasing subsequence的简化版
 public class IncreasingTripletSubsequence {
 

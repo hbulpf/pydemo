@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这题可以用segment tree或binary index tree(bit)，两者时间复杂度都是lgn，不过segment tree因为用到树，
  * 而bit用的是数组，所以bit更省空间。
@@ -52,17 +54,17 @@ public class NumArrayII {
     }
 
     /**
-    private SegmentTreeNode mRoot;
+    private solution.SegmentTreeNode mRoot;
 
-    public NumArrayII(int[] nums) {
+    public solution.NumArrayII(int[] nums) {
         mRoot = buildTree(nums, 0, nums.length - 1);
     }
 
-    private SegmentTreeNode buildTree(int[] nums, int start, int end) {
+    private solution.SegmentTreeNode buildTree(int[] nums, int start, int end) {
         if (start > end) {
             return null;
         }
-        SegmentTreeNode root = new SegmentTreeNode(start, end);
+        solution.SegmentTreeNode root = new solution.SegmentTreeNode(start, end);
         if (start == end) {
             root.sum = nums[start];
             return root;
@@ -78,7 +80,7 @@ public class NumArrayII {
         update(mRoot, i, val);
     }
 
-    private void update(SegmentTreeNode root, int i, int val) {
+    private void update(solution.SegmentTreeNode root, int i, int val) {
         int start = root.start, end = root.end;
 
         if (start == end) {
@@ -98,7 +100,7 @@ public class NumArrayII {
         return sumRange(mRoot, i, j);
     }
 
-    public int sumRange(SegmentTreeNode root, int i, int j) {
+    public int sumRange(solution.SegmentTreeNode root, int i, int j) {
         int start = root.start, end = root.end;
 
         if (start == i && end == j) {
@@ -117,8 +119,8 @@ public class NumArrayII {
     }*/
 }
 
-// Your NumArray object will be instantiated and called as such:
-// NumArray numArray = new NumArray(nums);
+// Your solution.NumArray object will be instantiated and called as such:
+// solution.NumArray numArray = new solution.NumArray(nums);
 // numArray.sumRange(0, 1);
 // numArray.update(1, 10);
 // numArray.sumRange(1, 2);

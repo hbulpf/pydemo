@@ -1,3 +1,5 @@
+package solution;
+
 public class ValidWordAbbreviation {
 
     public boolean validWordAbbreviation(String word, String abbr) {

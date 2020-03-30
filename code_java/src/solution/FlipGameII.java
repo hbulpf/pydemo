@@ -1,3 +1,5 @@
+package solution;
+
 public class FlipGameII {
 
     public boolean canWin(String s) {

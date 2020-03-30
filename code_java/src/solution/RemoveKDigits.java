@@ -1,4 +1,4 @@
-/**
+package solution; /**
  * TestCase:
  * "10", 2
  */

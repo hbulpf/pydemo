@@ -1,3 +1,5 @@
+package solution;
+
 public class Search2DMatrix {
 
     // 耗时11ms

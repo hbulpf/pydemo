@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/remove-nth-node-end-list/
  */

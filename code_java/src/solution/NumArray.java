@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/range-sum-query-immutable/
  */
@@ -17,7 +19,7 @@ public class NumArray {
     }
 }
 
-// Your NumArray object will be instantiated and called as such:
-// NumArray numArray = new NumArray(nums);
+// Your solution.NumArray object will be instantiated and called as such:
+// solution.NumArray numArray = new solution.NumArray(nums);
 // numArray.sumRange(0, 1);
 // numArray.sumRange(1, 2);

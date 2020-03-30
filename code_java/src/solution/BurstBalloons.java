@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这题用的闭区间DP，dp[start][end]表示区间start,end内所有气球爆掉的最大coin
  * 假设最后爆第i个气球，start <= i <= end，则对应的coin为

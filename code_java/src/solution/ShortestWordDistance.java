@@ -1,3 +1,5 @@
+package solution;
+
 public class ShortestWordDistance {
 
     // 耗时3ms

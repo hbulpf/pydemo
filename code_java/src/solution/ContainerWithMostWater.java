@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 题目的意思是选定两块板子组成一个桶，使得装水量最大。注意其余的板子都忽略。
  * 一种O(n)的方法是对于区间[left, right]，假如height[left] < height[right]，则我们可以认定[left, right - 1]，[left, right - 2] ...

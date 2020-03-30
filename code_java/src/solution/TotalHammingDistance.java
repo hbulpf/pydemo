@@ -1,3 +1,5 @@
+package solution;
+
 public class TotalHammingDistance {
     /**
      * 思路是依次遍历每个数字的第i位，统计出为1的有m个，为0的有n个，则在这一位上

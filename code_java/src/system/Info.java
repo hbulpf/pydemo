@@ -1,4 +1,4 @@
-package system;
+package solution.system;
 
 public class Info {
     /**

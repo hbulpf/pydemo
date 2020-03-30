@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 这题采用merge sort，可自顶向下或自底向上
  * 区别是自顶向下是递归的，需要额外的空间

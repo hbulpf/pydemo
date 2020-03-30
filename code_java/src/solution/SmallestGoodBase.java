@@ -1,3 +1,5 @@
+package solution;
+
 import java.math.BigInteger;
 
 public class SmallestGoodBase {

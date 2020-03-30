@@ -123,12 +123,12 @@ next() and hasNext() should run in average O(1) time and uses O(h) memory, where
 \subsubsection{Solution}
 
 \begin{Code}
-public class BSTIterator {
+public class solution.BSTIterator {
 
     private Stack<TreeNode> mStack;
     private TreeNode mCurNode;
 
-    public BSTIterator(TreeNode root) {
+    public solution.BSTIterator(TreeNode root) {
         mStack = new Stack<TreeNode>();
         mCurNode = root;
     }
@@ -3103,11 +3103,11 @@ You may assume the number of calls to update and sumRange function is distribute
 \subsubsection{Solution}
 
 \begin{Code}
-public class NumArrayII {
+public class solution.NumArrayII {
     private int[] bit;
     private int[] nums;
 
-    public NumArrayII(int[] nums) {
+    public solution.NumArrayII(int[] nums) {
         this.nums = nums;
         bit = new int[nums.length + 1];
         for (int i = 0; i < nums.length; i++) {
@@ -3183,13 +3183,13 @@ sumRegion(2, 1, 4, 3) -> 10
 \subsubsection{Solution I}
 
 \begin{Code}
-public class NumMatrixII {
+public class solution.NumMatrixII {
     private int m, n;
 
     private int[][] tree;
     private int[][] nums;
 
-    public NumMatrixII(int[][] matrix) {
+    public solution.NumMatrixII(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return;
         }
@@ -3244,11 +3244,11 @@ public class NumMatrixII {
 \subsubsection{Solution II}
 
 \begin{Code}
-public class NumMatrixII {
+public class solution.NumMatrixII {
     private int[][] mMatrix;
     private int mRow, mCol;
 
-    public NumMatrixII(int[][] matrix) {
+    public solution.NumMatrixII(int[][] matrix) {
         if (matrix.length == 0) {
             return;
         }

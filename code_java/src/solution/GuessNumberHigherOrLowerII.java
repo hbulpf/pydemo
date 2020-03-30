@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * 可参考官方文档
  * https://leetcode.com/articles/guess-number-higher-or-lower-ii/

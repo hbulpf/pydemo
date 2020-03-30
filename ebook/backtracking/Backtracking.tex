@@ -94,7 +94,7 @@ public boolean isMatch2(String s, String p) {
 
 \newpage
 
-\section{Letter Combinations of a Phone Number} %%%%%%%%%%%%%%%%%%%%%%
+\section{Letter solution.Combinations of a Phone Number} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 Given a digit string, return all possible letter combinations that the number could represent.
@@ -210,7 +210,7 @@ private void dfs(List<String> result, int n, String str, int left, int right) {
 
 \newpage
 
-\section{Permutations} %%%%%%%%%%%%%%%%%%%%%%
+\section{solution.Permutations} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 Given a collection of distinct numbers, return all possible permutations.
@@ -260,7 +260,7 @@ public static void swap(int[] nums, int left, int right) {
 
 \newpage
 
-\section{Permutations II} %%%%%%%%%%%%%%%%%%%%%%
+\section{solution.Permutations II} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 
@@ -448,20 +448,20 @@ You may assume that all inputs are consist of lowercase letters a-z.
 
 You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
 
-If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
+If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a solution.Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement solution.Trie (Prefix Tree) first.
 
 \subsubsection{Solution}
 
 \begin{Code}
-private class Trie {
-    Trie[] nodes = new Trie[26];
+private class solution.Trie {
+    solution.Trie[] nodes = new solution.Trie[26];
     String word;
 }
 
-private void buildTrie(Trie trie, String word) {
+private void buildTrie(solution.Trie trie, String word) {
     for (int i = 0; i < word.length(); i++) {
         if (trie.nodes[word.charAt(i) - 'a'] == null) {
-            trie.nodes[word.charAt(i) - 'a'] = new Trie();
+            trie.nodes[word.charAt(i) - 'a'] = new solution.Trie();
         }
         trie = trie.nodes[word.charAt(i) - 'a'];
     }
@@ -474,7 +474,7 @@ private void buildTrie(Trie trie, String word) {
 
 \begin{Code}
 public List<String> findWords(char[][] board, String[] words) {
-    Trie trie = new Trie();
+    solution.Trie trie = new solution.Trie();
     for (String word : words) {
         buildTrie(trie, word);
     }
@@ -487,7 +487,7 @@ public List<String> findWords(char[][] board, String[] words) {
     return new LinkedList<String>(set);
 }
 
-private void dfs(Set<String> set, char[][] board, int i, int j, Trie trie) {
+private void dfs(Set<String> set, char[][] board, int i, int j, solution.Trie trie) {
     if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) {
         return;
     }
@@ -1003,7 +1003,7 @@ private boolean isValid(int[] f, int row, int col) {
 
 \newpage
 
-\section{Subsets} %%%%%%%%%%%%%%%%%%%%%%
+\section{solution.Subsets} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 
@@ -1085,7 +1085,7 @@ private void subsets(int[] nums, int start, List<List<Integer>> result, List<Int
 
 \newpage
 
-\section{Subsets II} %%%%%%%%%%%%%%%%%%%%%%
+\section{solution.Subsets II} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 Given a collection of integers that might contain duplicates, nums, return all possible subsets.
@@ -1215,7 +1215,7 @@ private boolean check(char[][] board, int row, int col, char c) {
 
 \newpage
 
-\section{Combinations} %%%%%%%%%%%%%%%%%%%%%%
+\section{solution.Combinations} %%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Description}
 
@@ -1951,7 +1951,7 @@ private boolean search(TriNode node, String word) {
 
 \newpage
 
-\section{Factor Combinations} %%%%%%%%%%%%%%%%%%%%%%
+\section{Factor solution.Combinations} %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Descriptor}
 Numbers can be regarded as product of its factors. For example,
 \begin{Code}

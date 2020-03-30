@@ -1,3 +1,5 @@
+package solution;
+
 public class FirstUniqueCharacterInAString {
 
     // 耗时21ms，O(2n)

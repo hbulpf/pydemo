@@ -1,3 +1,5 @@
+package solution;
+
 public class MaximumDepthOfBinaryTree {
 
     public int maxDepth(TreeNode node) {

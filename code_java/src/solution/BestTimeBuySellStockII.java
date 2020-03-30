@@ -1,3 +1,5 @@
+package solution;
+
 /**
  * https://leetcode.com/articles/best-time-buy-and-sell-stock-ii/
  */

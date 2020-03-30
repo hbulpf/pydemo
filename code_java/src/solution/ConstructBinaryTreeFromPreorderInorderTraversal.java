@@ -1,3 +1,5 @@
+package solution;
+
 public class ConstructBinaryTreeFromPreorderInorderTraversal {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {

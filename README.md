@@ -40,7 +40,7 @@
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)| [Java](code_java/src/solution/LongestCommonPrefix.java)| | | ||
 |15|[3Sum](https://leetcode.com/problems/3sum/)| [Java](code_java/src/solution/ThreeSum.java)| | | ||
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)| [Java](code_java/src/solution/ThreeSumClosest.java)| | | ||
-|17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Java](code_java/src/solution/LetterCombinationOfPhoneNumber.java)| | | ||
+|17|[Letter solution.Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Java](code_java/src/solution/LetterCombinationOfPhoneNumber.java)| | | ||
 |18|[4Sum](https://leetcode.com/problems/4sum/)| [Java](code_java/src/solution/FourSum.java)| | | ||
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [Java](code_java/src/solution/RemoveNthNodeFromEndOfList.java)| | | ||
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [Java](code_java/src/solution/ValidParentheses.java)| | | ||
@@ -69,11 +69,11 @@
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [Java](code_java/src/solution/MultiplyStrings.java)| | | ||
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)| [Java](code_java/src/solution/WildcardMatching.java)| | | |和#10多做几遍|
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/#/description)| [Java](code_java/src/solution/JumpGameII.java)| | | ||
-|46|[Permutations](https://leetcode.com/problems/permutations/)| [Java](code_java/src/solution/Permutations.java)| | | ||
-|47|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [Java](code_java/src/solution/PermutationsII.java)| | | |多做几遍|
+|46|[solution.Permutations](https://leetcode.com/problems/permutations/)| [Java](code_java/src/solution/Permutations.java)| | | ||
+|47|[solution.Permutations II](https://leetcode.com/problems/permutations-ii/)| [Java](code_java/src/solution/PermutationsII.java)| | | |多做几遍|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [Java](code_java/src/solution/RotateImage.java)| | | ||
 |49|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [Java](code_java/src/solution/GroupAnagrams.java)| | | ||
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [Java](code_java/src/solution/Pow.java)| | | ||
+|50|[solution.Pow(x, n)](https://leetcode.com/problems/powx-n/)| [Java](code_java/src/solution/Pow.java)| | | ||
 |51|[N-Queens](https://leetcode.com/problems/n-queens/)| [Java](code_java/src/solution/NQueens.java)| | | ||
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [Java](code_java/src/solution/NQueensII.java)| | | ||
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| [Java](code_java/src/solution/MaximumSubarray.java)| | | ||
@@ -86,15 +86,15 @@
 |66|[Plus One](https://leetcode.com/problems/plus-one/)| [Java](code_java/src/solution/PlusOne.java)| | | |这题多看一遍|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)| [Java](code_java/src/solution/AddBinary.java)| | | ||
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)| [Java](code_java/src/solution/TextJustification.java)| | | ||
-|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [Java](code_java/src/solution/Sqrt.java)| | | ||
+|69|[solution.Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [Java](code_java/src/solution/Sqrt.java)| | | ||
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path/)| [Java](code_java/src/solution/SimplifyPath.java)| | | ||
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [Java](code_java/src/solution/EditDistance.java)| | | ||
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)| [Java](code_java/src/solution/SetMatrixZeroes.java)| | | ||
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [Java](code_java/src/solution/Search2DMatrix.java)| | | ||
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)| [Java](code_java/src/solution/SortColors.java)| | | |这题多做几遍，很有意思|
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [Java](code_java/src/solution/MinimumWindowSubstring.java)| | | |这题以及类似的题一定要多做几遍，很经典，参见window|
-|77|[Combinations](https://leetcode.com/problems/combinations)| [Java](code_java/src/solution/Combinations.java)| | | ||
-|78|[Subsets](https://leetcode.com/problems/subsets/)| [Java](code_java/src/solution/Subsets.java)| | | ||
+|77|[solution.Combinations](https://leetcode.com/problems/combinations)| [Java](code_java/src/solution/Combinations.java)| | | ||
+|78|[solution.Subsets](https://leetcode.com/problems/subsets/)| [Java](code_java/src/solution/Subsets.java)| | | ||
 |79|[Word Search](https://leetcode.com/problems/word-search/)| [Java](code_java/src/solution/WordSearch.java)| | | ||
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [Java](code_java/src/solution/RemoveDuplicatesFromSortedArrayII.java)| | | ||
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [Java](code_java/src/solution/SearchInRotatedSortedArrayII.java)| | | ||
@@ -104,7 +104,7 @@
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [Java](code_java/src/solution/MaximalRectangle.java)| | | ||
 |86|[Partition List](https://leetcode.com/problems/partition-list/)| [Java](code_java/src/solution/PartitionList.java)| | | ||
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [Java](code_java/src/solution/MergeSortedArray.java)| | | ||
-|90|[Subsets II](https://leetcode.com/problems/subsets-ii/)| [Java](code_java/src/solution/SubsetsII.java)| | | ||
+|90|[solution.Subsets II](https://leetcode.com/problems/subsets-ii/)| [Java](code_java/src/solution/SubsetsII.java)| | | ||
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)| [Java](code_java/src/solution/DecodeWays.java)| | | |这题多做几遍，包括#639|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)| [Java](code_java/src/solution/ReverseLinkedListII.java)| | | ||
 |93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)| [Java](code_java/src/solution/RestoreIPAddresses.java)| | | |多看两遍|
@@ -145,7 +145,7 @@
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)| [Java](code_java/src/solution/PalindromePartitioning.java)| | | ||
 |132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)| [Java](code_java/src/solution/PalindromePartitioningII.java)| | | ||
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)| [Java](code_java/src/solution/CloneGraph.java)| | | |这题不难，多看两遍，BFS方法再做两遍|
-|135|[Candy](https://leetcode.com/problems/candy/)|[Java](code_java/src/solution/Candy.java)|||||
+|135|[solution.Candy](https://leetcode.com/problems/candy/)|[Java](code_java/src/solution/Candy.java)|||||
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)| [Java](code_java/src/solution/CopyListWithRandomPointer.java)| | | |有一个易错点|
 |139|[Word Break](https://leetcode.com/problems/word-break/)| [Java](code_java/src/solution/WordBreak.java)| | | |多看两遍|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)| [Java](code_java/src/solution/WordBreakII.java)| | | |这题多做两遍，很典型|
@@ -192,7 +192,7 @@
 |204|[Count Primes](https://leetcode.com/problems/count-primes/)| [Java](code_java/src/solution/CountPrimes.java)| | | ||
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [Java](code_java/src/solution/ReverseLinkedList.java)| | | ||
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule/)| [Java](code_java/src/solution/CourseSchedule.java)| | | |典型的拓扑排序|
-|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [Java](code_java/src/solution/Trie.java)| | | |和#211多留意，trie很典型|
+|208|[Implement solution.Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [Java](code_java/src/solution/Trie.java)| | | |和#211多留意，trie很典型|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [Java](code_java/src/solution/MinimumSizeSubarraySum.java)| | | ||
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [Java](code_java/src/solution/CourseScheduleII.java)| | | ||
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [Java](code_java/src/solution/WordDictionary.java)| | | ||
@@ -235,7 +235,7 @@
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)| [Java](code_java/src/solution/Vector2D.java)| | | ||
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)| [Java](code_java/src/solution/MeetingRooms.java)| | | ||
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)| [Java](code_java/src/solution/MeetingRoomsII.java)| | | ||
-|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)| [Java](code_java/src/solution/FactorCombinations.java)| | | ||
+|254|[Factor solution.Combinations](https://leetcode.com/problems/factor-combinations/)| [Java](code_java/src/solution/FactorCombinations.java)| | | ||
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)| [Java](code_java/src/solution/VerifyPreorderSequenceInBinarySearchTree.java)| | | |很简单，粗心错了|
 |256|[Paint House](https://leetcode.com/problems/paint-house/)| [Java](code_java/src/solution/PaintHouse.java)| | | ||
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)| [Java](code_java/src/solution/BinaryTreePaths.java)| | | ||

@@ -1,3 +1,5 @@
+package solution;
+
 public class MergeTwoSortedList {
 
     // 耗时15ms

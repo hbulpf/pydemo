@@ -1,4 +1,4 @@
-/**
+package solution; /**
  * https://leetcode.com/articles/median-of-two-sorted-arrays/
  */
 
