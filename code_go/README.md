@@ -1,1 +1,1 @@
-# GoLang 代码
+# Leetcode in GO
