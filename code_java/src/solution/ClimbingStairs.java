@@ -1,4 +1,4 @@
-package leetsample.solution;
+package solution;
 
 /**
  * 爬楼梯

@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class CountCompleteTreeNodes {
 
     /** 适合通用的二叉树，但是对于完全二叉树会超时
