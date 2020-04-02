@@ -6,5 +6,5 @@
 | ----------------------------- | ------ | ---------- |
 | 70. climb stairs              | 完成   | 动态规划   |
 | 4. Median of two sorted array | 70%    | 不是最优解 |
-| 5. L5_Logest Palindromic Substring | 完成 | 动态规划
+| 5. Logest Palindromic Substring | 完成 | 动态规划 |
 
