@@ -3,6 +3,11 @@ package solution;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/
+ * 优先级队列解法
+ *
+ */
 public class KthLargestElementInAStream {
 
     class KthLargest {
