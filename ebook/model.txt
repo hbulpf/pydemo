@@ -1,0 +1,11 @@
+\section{Title} %%%%%%%%%%%%%%%%%%%%%%  
+
+\subsubsection{Description}
+
+\subsubsection{Solution}
+
+\begin{Code}
+
+\end{Code}
+
+\newpage

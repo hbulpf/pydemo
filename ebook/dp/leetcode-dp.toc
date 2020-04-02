@@ -1,0 +1,167 @@
+\contentsline {chapter}{\numberline {第1章\hspace {0.3em}}Dynamic Programing}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}House Robber}{1}{section.1.1}
+\contentsline {subsubsection}{Description}{1}{section*.2}
+\contentsline {subsubsection}{Solution I}{1}{section*.3}
+\contentsline {subsubsection}{Solution II}{1}{section*.4}
+\contentsline {section}{\numberline {1.2}House Robber II}{2}{section.1.2}
+\contentsline {subsubsection}{Description}{2}{section*.5}
+\contentsline {subsubsection}{Solution}{2}{section*.6}
+\contentsline {section}{\numberline {1.3}Best Time to Buy and Sell Stock}{3}{section.1.3}
+\contentsline {subsubsection}{Description}{3}{section*.7}
+\contentsline {subsubsection}{Solution}{3}{section*.8}
+\contentsline {section}{\numberline {1.4}Best Time to Buy and Sell Stock II}{4}{section.1.4}
+\contentsline {subsubsection}{Description}{4}{section*.9}
+\contentsline {subsubsection}{Solution}{4}{section*.10}
+\contentsline {section}{\numberline {1.5}Best Time to Buy and Sell Stock III}{5}{section.1.5}
+\contentsline {subsubsection}{Description}{5}{section*.11}
+\contentsline {subsubsection}{Solution}{5}{section*.12}
+\contentsline {section}{\numberline {1.6}Best Time to Buy and Sell Stock IV}{6}{section.1.6}
+\contentsline {subsubsection}{Description}{6}{section*.13}
+\contentsline {subsubsection}{Solution}{6}{section*.14}
+\contentsline {section}{\numberline {1.7}Best Time to Buy and Sell Stock with Cooldown}{7}{section.1.7}
+\contentsline {subsubsection}{Description}{7}{section*.15}
+\contentsline {subsubsection}{Solution}{7}{section*.16}
+\contentsline {section}{\numberline {1.8}Maximum Subarray}{8}{section.1.8}
+\contentsline {subsubsection}{Description}{8}{section*.17}
+\contentsline {subsubsection}{Solution I}{8}{section*.18}
+\contentsline {subsubsection}{Solution II}{8}{section*.19}
+\contentsline {section}{\numberline {1.9}Word Break}{9}{section.1.9}
+\contentsline {subsubsection}{Description}{9}{section*.20}
+\contentsline {subsubsection}{Solution}{9}{section*.21}
+\contentsline {section}{\numberline {1.10}Counting Bits}{10}{section.1.10}
+\contentsline {subsubsection}{Description}{10}{section*.22}
+\contentsline {subsubsection}{Solution}{10}{section*.23}
+\contentsline {section}{\numberline {1.11}Maximum Product Subarray}{11}{section.1.11}
+\contentsline {subsubsection}{Description}{11}{section*.24}
+\contentsline {subsubsection}{Solution}{11}{section*.25}
+\contentsline {section}{\numberline {1.12}Largest Rectangle in Histogram}{12}{section.1.12}
+\contentsline {subsubsection}{Description}{12}{section*.26}
+\contentsline {subsubsection}{Analysis}{12}{section*.27}
+\contentsline {subsubsection}{Solution I}{13}{section*.28}
+\contentsline {subsubsection}{Solution II}{13}{section*.29}
+\contentsline {section}{\numberline {1.13}Maximal Rectangle}{14}{section.1.13}
+\contentsline {subsubsection}{Description}{14}{section*.30}
+\contentsline {subsubsection}{Solution I}{14}{section*.31}
+\contentsline {subsubsection}{Solution II}{15}{section*.32}
+\contentsline {section}{\numberline {1.14}Maximal Square}{16}{section.1.14}
+\contentsline {subsubsection}{Description}{16}{section*.33}
+\contentsline {subsubsection}{Solution}{16}{section*.34}
+\contentsline {section}{\numberline {1.15}Edit Distance}{17}{section.1.15}
+\contentsline {subsubsection}{Description}{17}{section*.35}
+\contentsline {subsubsection}{Solution}{17}{section*.36}
+\contentsline {section}{\numberline {1.16}One Edit Distance}{18}{section.1.16}
+\contentsline {subsubsection}{Description}{18}{section*.37}
+\contentsline {subsubsection}{Solution}{18}{section*.38}
+\contentsline {section}{\numberline {1.17}Distinct Subsequences}{19}{section.1.17}
+\contentsline {subsubsection}{Description}{19}{section*.39}
+\contentsline {subsubsection}{Solution}{19}{section*.40}
+\contentsline {section}{\numberline {1.18}Triangle}{20}{section.1.18}
+\contentsline {subsubsection}{Description}{20}{section*.41}
+\contentsline {subsubsection}{Solution}{20}{section*.42}
+\contentsline {section}{\numberline {1.19}Perfect Squares}{21}{section.1.19}
+\contentsline {subsubsection}{Description}{21}{section*.43}
+\contentsline {subsubsection}{Solution}{21}{section*.44}
+\contentsline {section}{\numberline {1.20}Range Sum Query - Immutable}{22}{section.1.20}
+\contentsline {subsubsection}{Description}{22}{section*.45}
+\contentsline {subsubsection}{Solution}{22}{section*.46}
+\contentsline {section}{\numberline {1.21}Range Sum Query 2D - Immutable}{23}{section.1.21}
+\contentsline {subsubsection}{Description}{23}{section*.47}
+\contentsline {subsubsection}{Solution}{23}{section*.48}
+\contentsline {section}{\numberline {1.22}Unique Paths}{24}{section.1.22}
+\contentsline {subsubsection}{Description}{24}{section*.49}
+\contentsline {subsubsection}{Solution}{24}{section*.50}
+\contentsline {section}{\numberline {1.23}Unique Paths II}{25}{section.1.23}
+\contentsline {subsubsection}{Description}{25}{section*.51}
+\contentsline {subsubsection}{Solution}{25}{section*.52}
+\contentsline {section}{\numberline {1.24}Burst Balloons}{26}{section.1.24}
+\contentsline {subsubsection}{Description}{26}{section*.53}
+\contentsline {subsubsection}{Solution}{26}{section*.54}
+\contentsline {section}{\numberline {1.25}Minimum Path Sum}{27}{section.1.25}
+\contentsline {subsubsection}{Description}{27}{section*.55}
+\contentsline {subsubsection}{Solution}{27}{section*.56}
+\contentsline {section}{\numberline {1.26}Decode Ways}{28}{section.1.26}
+\contentsline {subsubsection}{Description}{28}{section*.57}
+\contentsline {subsubsection}{Solution}{28}{section*.58}
+\contentsline {section}{\numberline {1.27}Decode Ways II}{29}{section.1.27}
+\contentsline {subsubsection}{Description}{29}{section*.59}
+\contentsline {subsubsection}{Solution}{29}{section*.60}
+\contentsline {section}{\numberline {1.28}Scramble String}{30}{section.1.28}
+\contentsline {subsubsection}{Description}{30}{section*.61}
+\contentsline {subsubsection}{Solution}{30}{section*.62}
+\contentsline {section}{\numberline {1.29}Interleaving String}{31}{section.1.29}
+\contentsline {subsubsection}{Description}{31}{section*.63}
+\contentsline {subsubsection}{Solution}{31}{section*.64}
+\contentsline {section}{\numberline {1.30}Coin Change}{32}{section.1.30}
+\contentsline {subsubsection}{Description}{32}{section*.65}
+\contentsline {subsubsection}{Solution}{32}{section*.66}
+\contentsline {section}{\numberline {1.31}Ugly Number II}{33}{section.1.31}
+\contentsline {subsubsection}{Description}{33}{section*.67}
+\contentsline {subsubsection}{Solution}{33}{section*.68}
+\contentsline {section}{\numberline {1.32}Integer Break}{34}{section.1.32}
+\contentsline {subsubsection}{Description}{34}{section*.69}
+\contentsline {subsubsection}{Solution}{34}{section*.70}
+\contentsline {section}{\numberline {1.33}Longest Valid Parentheses}{35}{section.1.33}
+\contentsline {subsubsection}{Description}{35}{section*.71}
+\contentsline {subsubsection}{Solution}{35}{section*.72}
+\contentsline {section}{\numberline {1.34}Longest Increasing Subsequence}{36}{section.1.34}
+\contentsline {subsubsection}{Description}{36}{section*.73}
+\contentsline {subsubsection}{Solution I}{36}{section*.74}
+\contentsline {subsubsection}{Solution II}{37}{section*.75}
+\contentsline {section}{\numberline {1.35}Count Numbers with Unique Digits}{38}{section.1.35}
+\contentsline {subsubsection}{Description}{38}{section*.76}
+\contentsline {subsubsection}{Solution}{38}{section*.77}
+\contentsline {section}{\numberline {1.36}Create Maximum Number}{39}{section.1.36}
+\contentsline {subsubsection}{Description}{39}{section*.78}
+\contentsline {subsubsection}{Solution}{39}{section*.79}
+\contentsline {section}{\numberline {1.37}Guess Number Higher or Lower II}{40}{section.1.37}
+\contentsline {subsubsection}{Description}{40}{section*.80}
+\contentsline {subsubsection}{Solution I}{40}{section*.81}
+\contentsline {subsubsection}{Solution II}{41}{section*.82}
+\contentsline {subsubsection}{Solution III}{41}{section*.83}
+\contentsline {section}{\numberline {1.38}Paint House}{42}{section.1.38}
+\contentsline {subsubsection}{Description}{42}{section*.84}
+\contentsline {subsubsection}{Solution}{42}{section*.85}
+\contentsline {section}{\numberline {1.39}Paint House II}{43}{section.1.39}
+\contentsline {subsubsection}{Description}{43}{section*.86}
+\contentsline {subsubsection}{Solution}{43}{section*.87}
+\contentsline {section}{\numberline {1.40}Russian Doll Envelopes}{44}{section.1.40}
+\contentsline {subsubsection}{Description}{44}{section*.88}
+\contentsline {subsubsection}{Solution}{44}{section*.89}
+\contentsline {section}{\numberline {1.41}Max Sum of Rectangle No Larger Than K}{45}{section.1.41}
+\contentsline {subsubsection}{Description}{45}{section*.90}
+\contentsline {subsubsection}{Solution}{45}{section*.91}
+\contentsline {section}{\numberline {1.42}Wiggle Subsequence}{46}{section.1.42}
+\contentsline {subsubsection}{Description}{46}{section*.92}
+\contentsline {subsubsection}{Solution}{46}{section*.93}
+\contentsline {section}{\numberline {1.43}Largest Divisible Subset}{47}{section.1.43}
+\contentsline {subsubsection}{Description}{47}{section*.94}
+\contentsline {subsubsection}{Solution}{47}{section*.95}
+\contentsline {section}{\numberline {1.44}Paint Fence}{48}{section.1.44}
+\contentsline {subsubsection}{Description}{48}{section*.96}
+\contentsline {subsubsection}{Solution}{48}{section*.97}
+\contentsline {section}{\numberline {1.45}Bomb Enemy}{49}{section.1.45}
+\contentsline {subsubsection}{Description}{49}{section*.98}
+\contentsline {subsubsection}{Solution}{50}{section*.99}
+\contentsline {section}{\numberline {1.46}Is Subsequence}{51}{section.1.46}
+\contentsline {subsubsection}{Description}{51}{section*.100}
+\contentsline {subsubsection}{Solution}{51}{section*.101}
+\contentsline {section}{\numberline {1.47}Sentence Screen Fitting}{52}{section.1.47}
+\contentsline {subsubsection}{Description}{52}{section*.102}
+\contentsline {subsubsection}{Solution}{53}{section*.103}
+\contentsline {section}{\numberline {1.48}Split Array Largest Sum}{54}{section.1.48}
+\contentsline {subsubsection}{Description}{54}{section*.104}
+\contentsline {subsubsection}{Analysis}{54}{section*.105}
+\contentsline {subsubsection}{Solution I}{55}{section*.106}
+\contentsline {subsubsection}{Solution II}{56}{section*.107}
+\contentsline {section}{\numberline {1.49}Partition Equal Subset Sum}{57}{section.1.49}
+\contentsline {subsubsection}{Description}{57}{section*.108}
+\contentsline {subsubsection}{Solution}{57}{section*.109}
+\contentsline {section}{\numberline {1.50}Ones and Zeroes}{58}{section.1.50}
+\contentsline {subsubsection}{Description}{58}{section*.110}
+\contentsline {subsubsection}{Solution}{58}{section*.111}
+\contentsline {section}{\numberline {1.51}Target Sum}{59}{section.1.51}
+\contentsline {subsubsection}{Description}{59}{section*.112}
+\contentsline {subsubsection}{Solution}{59}{section*.113}
+\contentsline {section}{\numberline {1.52}Encode String with Shortest Length}{60}{section.1.52}
+\contentsline {subsubsection}{Description}{60}{section*.114}
+\contentsline {subsubsection}{Solution}{60}{section*.115}
