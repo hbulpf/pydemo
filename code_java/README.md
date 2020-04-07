@@ -15,7 +15,7 @@
 | 7    | [Reverse Integer](https://leetcode-cn.com/problems/reverse-integer/) |         |       | [Java解答](src/solution/ReverseInteger.java)       |                                                              |
 | 8    | [String to Integer (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) |         |       | [Java解答](src/solution/String2Integer.java)       | 很考代码能力，容易错                                         |
 | 9    | [Palindrome Number](https://leetcode-cn.com/problems/palindrome-number/) |         |       | [Java解答](src/solution/PalindromeNumber.java)     |                                                              |
-| 10   | [Regular Expression Matching](https://leetcode-cn.com/problems/regular-expression-matching/) |         |       | [Java解答](src/solution/RegularExpressionMatching.java) | 这题很经典，多做几遍，和#44一起                              |
+| 10   | [Regular Expression Matching](https://leetcode-cn.com/problems/regular-expression-matching/) |  正则表达式匹配  | hard  | [递归法/dp算法](src/solution/RegularExpressionMatching.java) | 递归法/dp算法, 这题很经典，多做几遍，和#44一起                           |
 | 11   | [Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/) |         |       | [Java解答](src/solution/ContainerWithMostWater.java) |                                                              |
 | 12   | [Integer to Roman](https://leetcode-cn.com/problems/integer-to-roman/) |         |       | [Java解答](src/solution/IntegerToRoman.java)       |                                                              |
 | 13   | [Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/) |         |       | [Java解答](src/solution/RomanToInteger.java)       |                                                              |
