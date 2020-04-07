@@ -13,3 +13,4 @@
 |[1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)| 完成 | 栈 |
 | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/) | 完成 | 动态规划（递归会超时） |
 | [63. 不同路径ii](https://leetcode-cn.com/problems/unique-paths-ii/) | 完成 | 动态规划（递归会超时） |
+|[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)| 完成 | 动态规划、递归|
