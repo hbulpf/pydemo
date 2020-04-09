@@ -15,3 +15,4 @@
 | [63. 不同路径ii](https://leetcode-cn.com/problems/unique-paths-ii/) | 完成 | 动态规划（递归会超时） |
 |[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)| 完成 | 动态规划、递归|
 |[455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/)|完成|贪心、排序|
+|[56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/solution/he-bing-qu-jian-by-leetcode/)|完成|排序、双指针|
