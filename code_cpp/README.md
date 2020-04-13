@@ -16,3 +16,6 @@
 |[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)| 完成 | 动态规划、递归|
 |[455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/)|完成|贪心、排序|
 |[56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/solution/he-bing-qu-jian-by-leetcode/)|完成|排序、双指针|
+|[98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|完成|递归、中序遍历|
+|[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|完成|递归、二叉树|
+|[106. 从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|完成|递归、二叉树|
