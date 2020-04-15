@@ -16,5 +16,7 @@ class Solution:
             # remove num from seen_twice
             seen_once = ~seen_twice & (seen_once ^ num)
             seen_twice = ~seen_once & (seen_twice ^ num)
+            #集合做法
+            #字典做法
 
         return seen_once
