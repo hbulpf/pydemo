@@ -415,3 +415,17 @@
 | 904  | [Fruit Into Baskets](https://leetcode-cn.com/problems/fruit-into-baskets/) |            |       | [Java解答](code_java/src/solution/FruitIntoBaskets.java)     |                           |                                 |      |                                                              |
 | 929  | [Unique Email Addresses](https://leetcode-cn.com/problems/unique-email-addresses/) |            |       | [Java解答](code_java/src/solution/UniqueEmailAddresses.java) |                           |                                 |      |                                                              |
 
+----------------------------------------
+
+**项目规范**
+
+本文使用 [`Markdown`](https://www.markdownguide.org/basic-syntax) 编写, 排版符合[`中文技术文档写作规范`](https://github.com/hbulpf/document-style-guide)。Find Me On [**Github**](https://github.com/hbulpf/LeetcodeEveryday) , [**Gitee**](https://gitee.com/sifangcloud/LeetcodeEveryday)
+
+**友情贡献**
+
+@[**RunAtWorld**](http://www.github.com/RunAtWorld)  &nbsp;  
+
+
+#### 关注公众号 『四方云和』 获取更多优质文章 ~
+
+![sfyh_qrcode](sfyh_qrcode.jpg)
