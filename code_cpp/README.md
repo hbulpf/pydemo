@@ -20,10 +20,10 @@
 |[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|完成|递归、二叉树|
 |[106. 从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|完成|递归、二叉树|
 |[202. 快乐数](https://leetcode-cn.com/problems/happy-number/)| 完成 | 快慢指针 |
-|[187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)|||
+|[187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)|完成| hashmap |
 |[149. 直线上最多的点数](https://leetcode-cn.com/problems/max-points-on-a-line/)|||
-|[1042. 不邻接的植花](https://leetcode-cn.com/problems/flower-planting-with-no-adjacent/)|||
+|[1042. 不邻接的植花](https://leetcode-cn.com/problems/flower-planting-with-no-adjacent/)|完成|邻接表+set|
 |[997. 找到小镇的法官](https://leetcode-cn.com/problems/find-the-town-judge/)|||
 |[155. 最小栈](https://leetcode-cn.com/problems/min-stack/)|||
-|[146. LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|||
+|[146. LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)| 完成 | hashmap + 链表 |
 |[51. N皇后](https://leetcode-cn.com/problems/n-queens/)|||
