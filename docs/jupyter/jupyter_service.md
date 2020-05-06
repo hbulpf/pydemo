@@ -1,4 +1,10 @@
 **Jupyter Notebook的远程连接配置**
+
+```
+conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+```
+
+
 >以下操作前请先导入 anaconda 环境变量
 >```
 >export PATH="/opt/anaconda3/bin:$PATH"

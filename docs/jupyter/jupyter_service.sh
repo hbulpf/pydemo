@@ -1,4 +1,6 @@
 #/bin/bash
+conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+
 jupyter notebook --generate-config --allow-root #生成并激活配置文件
 #消除配置文件的注释
 sed -i 's/^#\([ ]*c.NotebookApp.ip\)/\1/' ~/.jupyter/jupyter_notebook_config.py
