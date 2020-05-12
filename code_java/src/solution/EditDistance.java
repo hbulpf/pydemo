@@ -1,30 +1,53 @@
 package solution;
 
 /**
- * 这题非常重要的是对f的初始化，千万不能漏
- * 所有DP问题都要注意初始化边界条件
+ * 72. 编辑距离
+ * https://leetcode-cn.com/problems/edit-distance/
+ * <p>
+ * 动态规划方法
+ * T=O(mn)
+ * S=O(mn)
+ *
+ * @Author: RunAtWorld
+ * @Date: 2020/5/12 23:34
  */
 public class EditDistance {
 
+    /**
+     * 动态规划方法
+     * T=O(mn)
+     * S=O(mn)
+     *
+     * @param word1
+     * @param word2
+     * @return
+     */
     public int minDistance(String word1, String word2) {
-        int len1 = word1.length(), len2 = word2.length();
-        int[][] f = new int[len1 + 1][len2 + 1];
-        for (int i = 1; i <= len1; i++) {
-            f[i][0] = i;
+        int m = word1.length();
+        int n = word2.length();
+        if (m * n == 0) {
+            return m + n;
         }
-        for (int i = 1; i <= len2; i++) {
-            f[0][i] = i;
+        int[][] dp = new int[m + 1][n + 1];
+
+        //初始化dp数组
+        for (int i = 0; i < m + 1; i++) {
+            dp[i][0] = i;
         }
-        for (int i = 1; i <= len1; i++) {
-            for (int j = 1; j <= len2; j++) {
-                if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-                    f[i][j] = f[i - 1][j - 1];
-                } else {
-                    int min = Math.min(f[i][j - 1], f[i - 1][j]);
-                    f[i][j] = Math.min(f[i - 1][j - 1], min) + 1; /** 这里的加1别掉了 */
+        for (int i = 0; i < n + 1; i++) {
+            dp[0][i] = i;
+        }
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                int left = dp[i - 1][j] + 1;
+                int down = dp[i][j - 1] + 1;
+                int leftDown = dp[i - 1][j - 1];
+                if (word1.charAt(i - 1) != word2.charAt(j - 1)) {
+                    leftDown += 1;
                 }
+                dp[i][j] = Math.min(Math.min(left, down), leftDown);
             }
         }
-        return f[len1][len2];
+        return dp[m][n];
     }
 }
