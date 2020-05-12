@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 import java.util.Random;
 
 public class LinkedListRandomNode {

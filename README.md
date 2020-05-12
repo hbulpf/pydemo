@@ -1,26 +1,8 @@
 # Leetcode 学习与总结
 
-## 一、电子书(pdf)
- Latex排版整理的电子书
-  - [Backtracking](./ebook/backtracking/leetcode-backtracking.pdf)
-  - [Graph](./ebook/graph/leetcode-graph.pdf)
-  - [Tree](./ebook/tree/leetcode-tree.pdf)
-  - [DP](./ebook/dp/leetcode-dp.pdf)
-  - [Array](./ebook/array/leetcode-array.pdf)
-  - [List](./ebook/list/leetcode-list.pdf)
+[Leetcode全量题目](LeetCode全部题目.md)
 
- <br/><br/>
-
-## 二、文档列表
- - [刷题要点总结](./doc/Attention.md)
- - [Facebook面试总结](./doc/Facebook.md)
- - [Bitset技巧](./doc/BitSet.md)
- - [Map新接口](./doc/Map.md)
- - [其它题目](extras.md)
-
-<br/><br/>
-
-## 三、所有题目列表
+## 一、题目列表
 
 | #    | TitleEN                                                      | TitleCN    | Level | [Java](code_java/README.md)                                  | [C++](code_cpp/README.md) | [Python](code_python\README.md) | Go   | Remark                                                       |
 | ---- | ------------------------------------------------------------ | ---------- | ----- | ------------------------------------------------------------ | ------------------------- | ------------------------------- | ---- | ------------------------------------------------------------ |
@@ -91,7 +73,7 @@
 | 69   | [solution.Sqrt(x)](https://leetcode-cn.com/problems/sqrtx/)  |            |       | [Java解答](code_java/src/solution/Sqrt.java)                 |                           |                                 |      |                                                              |
 | 70   | [Climb Stairs](https://leetcode-cn.com/problems/climbing-stairs/) | 爬楼梯     | easy  | [迭代法/动态规划法/递归法](code_java/src/solution/ClimbingStairs.java) |                           |                                 |      | 可使用迭代法/动态规划法/递归法                               |
 | 71   | [Simplify Path](https://leetcode-cn.com/problems/simplify-path/) |            |       | [Java解答](code_java/src/solution/SimplifyPath.java)         |                           |                                 |      |                                                              |
-| 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) |            |       | [Java解答](code_java/src/solution/EditDistance.java)         |                           |                                 |      |                                                              |
+| 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) |  编辑距离  |  difficult | [Java解答](code_java/src/solution/EditDistance.java)         |                           |                                 |      |                                                              |
 | 73   | [Set Matrix Zeroes](https://leetcode-cn.com/problems/set-matrix-zeroes/description/) |            |       | [Java解答](code_java/src/solution/SetMatrixZeroes.java)      |                           |                                 |      |                                                              |
 | 74   | [Search a 2D Matrix](https://leetcode-cn.com/problems/search-a-2d-matrix/) |            |       | [Java解答](code_java/src/solution/Search2DMatrix.java)       |                           |                                 |      |                                                              |
 | 75   | [Sort Colors](https://leetcode-cn.com/problems/sort-colors/) |            |       | [Java解答](code_java/src/solution/SortColors.java)           |                           |                                 |      | 这题多做几遍，很有意思                                       |
@@ -414,6 +396,29 @@
 | 889  | [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) |            |       | [Java解答](code_java/src/solution/ConstructBinaryTreeFromPreorderAndPostorderTraversal.java) |                           |                                 |      |                                                              |
 | 904  | [Fruit Into Baskets](https://leetcode-cn.com/problems/fruit-into-baskets/) |            |       | [Java解答](code_java/src/solution/FruitIntoBaskets.java)     |                           |                                 |      |                                                              |
 | 929  | [Unique Email Addresses](https://leetcode-cn.com/problems/unique-email-addresses/) |            |       | [Java解答](code_java/src/solution/UniqueEmailAddresses.java) |                           |                                 |      |                                                              |
+
+
+
+## 二、电子书(pdf)
+ Latex排版整理的电子书
+  - [Backtracking](./ebook/backtracking/leetcode-backtracking.pdf)
+  - [Graph](./ebook/graph/leetcode-graph.pdf)
+  - [Tree](./ebook/tree/leetcode-tree.pdf)
+  - [DP](./ebook/dp/leetcode-dp.pdf)
+  - [Array](./ebook/array/leetcode-array.pdf)
+  - [List](./ebook/list/leetcode-list.pdf)
+
+ <br/><br/>
+
+## 三、文档列表
+
+ - [刷题要点总结](./doc/Attention.md)
+ - [Facebook面试总结](./doc/Facebook.md)
+ - [Bitset技巧](./doc/BitSet.md)
+ - [Map新接口](./doc/Map.md)
+ - [其它题目](extras.md)
+
+<br/><br/>
 
 ----------------------------------------
 
