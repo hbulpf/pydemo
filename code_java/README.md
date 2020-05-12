@@ -1,9 +1,5 @@
 # Leetcode in Java
 
-
-
-## 三、所有题目列表
-
 | #    | TitleEN                                                      | TitleCN | Level | Java                                                         | Remark                                                       |
 | ---- | ------------------------------------------------------------ | ------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 1    | [Two Sum](https://leetcode-cn.com/problems/two-sum/)         |         |       | [Java解答](src/solution/TwoSum.java)               |                                                              |
@@ -72,8 +68,8 @@
 | 68   | [Text Justification](https://leetcode-cn.com/problems/text-justification/) |         |       | [Java解答](src/solution/TextJustification.java)    |                                                              |
 | 69   | [solution.Sqrt(x)](https://leetcode-cn.com/problems/sqrtx/)  |         |       | [Java解答](src/solution/Sqrt.java)                 |                                                              |
 | 70   | [Climb Stairs](https://leetcode-cn.com/problems/climbing-stairs/) | 爬楼梯  | easy  | [Java解答](src/solution/SimplifyPath.java)         |                                                              |
-| 71   | [Simplify Path](https://leetcode-cn.com/problems/simplify-path/) |         |       | [Java解答](src/solution/SimplifyPath.java)         |                                                              |
-| 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) |         |       | [Java解答](src/solution/EditDistance.java)         |                                                              |
+| 71   | [Simplify Path](https://leetcode-cn.com/problems/simplify-path/) |  编辑距离 |       | [Java解答](src/solution/SimplifyPath.java)         |                                                              |
+| 72   | [Edit Distance](https://leetcode-cn.com/problems/edit-distance/) |         |       | [Java解答](src/solution/EditDistance.java)         |              DP算法                   |
 | 73   | [Set Matrix Zeroes](https://leetcode-cn.com/problems/set-matrix-zeroes/description/) |         |       | [Java解答](src/solution/SetMatrixZeroes.java)      |                                                              |
 | 74   | [Search a 2D Matrix](https://leetcode-cn.com/problems/search-a-2d-matrix/) |         |       | [Java解答](src/solution/Search2DMatrix.java)       |                                                              |
 | 75   | [Sort Colors](https://leetcode-cn.com/problems/sort-colors/) |         |       | [Java解答](src/solution/SortColors.java)           | 这题多做几遍，很有意思                                       |
