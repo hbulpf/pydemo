@@ -1,3 +1,13 @@
+package others.test;
+
+import org.junit.Assert;
+import org.junit.Test;
+import others.chrysanthemum.Main2;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * 十进制整数数组，按位与操作

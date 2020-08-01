@@ -1,3 +1,8 @@
+package others.test;
+
+import org.junit.Test;
+import others.chrysanthemum.Main3;
+
 /**
  * 运动会，任意3排，抽方阵
  *

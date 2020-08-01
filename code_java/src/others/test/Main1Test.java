@@ -1,3 +1,8 @@
+package others.test;
+
+import org.junit.Test;
+import others.chrysanthemum.Main1;
+
 /**
  * N株植物，补充1升水
  *
