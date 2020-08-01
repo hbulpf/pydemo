@@ -4,3 +4,5 @@
 /app/app.iml
 build
 out/
+*.class
+./code_java/classes
