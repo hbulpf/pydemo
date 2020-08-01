@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class SwapNodesInPairs {
 
     public ListNode swapPairs(ListNode head) {

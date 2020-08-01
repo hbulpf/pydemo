@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class MaximumDepthOfBinaryTree {
 
     public int maxDepth(TreeNode node) {

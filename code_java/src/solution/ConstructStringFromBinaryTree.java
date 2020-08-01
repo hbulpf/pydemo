@@ -2,6 +2,8 @@ package solution; /**
  * https://leetcode.com/articles/construct-string-from-binary-tree/
  */
 
+import common.TreeNode;
+
 /**
  * 这题不难，主要是搞清楚题目意思
  * 即返回root + (左子树) + (右子树)

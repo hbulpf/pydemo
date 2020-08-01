@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class RemoveDuplicatesFromSortedListII {
 
     public ListNode deleteDuplicates(ListNode head) {

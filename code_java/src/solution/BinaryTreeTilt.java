@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class BinaryTreeTilt {
 
     int tilt = 0;

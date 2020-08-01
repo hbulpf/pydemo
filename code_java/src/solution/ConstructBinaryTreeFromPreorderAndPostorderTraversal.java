@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 import java.util.HashMap;
 
 public class ConstructBinaryTreeFromPreorderAndPostorderTraversal {

@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class PalindromeLinkedList {
 
     // 耗时2ms

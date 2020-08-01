@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 /**
  * Created by dingjiekrbo on 2016/11/17.
  * https://leetcode.com/articles/intersection-two-linked-lists/

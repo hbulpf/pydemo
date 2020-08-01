@@ -1,5 +1,7 @@
 package solution;
 
+import common.RandomListNode;
+
 /**
  * 易错的地方在于random要判空
  */

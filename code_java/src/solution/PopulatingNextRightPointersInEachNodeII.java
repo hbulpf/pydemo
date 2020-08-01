@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeLinkNode;
+
 public class PopulatingNextRightPointersInEachNodeII {
 
     /**

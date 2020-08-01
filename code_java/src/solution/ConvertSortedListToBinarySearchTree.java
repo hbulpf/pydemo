@@ -1,5 +1,8 @@
 package solution;
 
+import common.ListNode;
+import common.TreeNode;
+
 public class ConvertSortedListToBinarySearchTree {
 
     public TreeNode sortedListToBST(ListNode head) {

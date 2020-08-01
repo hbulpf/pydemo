@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class SameTree {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {

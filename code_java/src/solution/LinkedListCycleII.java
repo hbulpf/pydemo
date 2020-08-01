@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class LinkedListCycleII {
     /**
      * 这里有个问题，如果链表是a,b，然后又回到a
