@@ -28,6 +28,6 @@ public class Main1Test {
         res = main1.minOperations(t, 2);
         System.out.println(res);
 
-        System.out.println("max:" + Math.pow(2,32));
+        // System.out.println("max:" + Math.pow(2,32));
     }
 }

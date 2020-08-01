@@ -1,5 +1,7 @@
 package others.chrysanthemum;
 
+import java.util.HashSet;
+
 /**
  * 运动会，任意3排，抽方阵
  * 学校开运动会，队伍是 N*3 的 矩阵, 从其中选出 3 排，组成一个方阵，使得 3*3 的方阵是对称的。
@@ -10,6 +12,7 @@ public class Main3 {
     public int numWay(String[] grid) {
         int len = grid.length;
         String[] matrix;
+        HashSet set = new HashSet();
         int res = 0;
         for (int i = 0; i < len - 2; i++) {
             for (int j = i + 1; j < len - 1; j++) {
