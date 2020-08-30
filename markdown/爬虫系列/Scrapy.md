@@ -8,7 +8,7 @@
 
 ## 架构图
 
- ![图片描述](pic\bVco7P) 
+ ![图片描述](pic/bVco7P) 
 
 ### Scrapy Engine(引擎)
 
