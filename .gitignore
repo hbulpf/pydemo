@@ -4,3 +4,4 @@
 /app/app.iml
 build
 out/
+*.class
