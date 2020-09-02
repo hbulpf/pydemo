@@ -5,24 +5,12 @@
 3. [LeetCode题目分类](LeetCode题目分类.md)
 4. [其它题目](extras.md)
 
-## 电子书
-
-Latex排版整理的电子书
-
-- [Backtracking](./ebook/backtracking/leetcode-backtracking.pdf)
-- [Graph](./ebook/graph/leetcode-graph.pdf)
-- [Tree](./ebook/tree/leetcode-tree.pdf)
-- [DP](./ebook/dp/leetcode-dp.pdf)
-- [Array](./ebook/array/leetcode-array.pdf)
-- [List](./ebook/list/leetcode-list.pdf)
-
-
 ## 总结
 
-- [刷题要点总结](./doc/Attention.md)
-- [Facebook面试总结](./doc/Facebook.md)
-- [Bitset技巧](./doc/BitSet.md)
-- [Map新接口](./doc/Map.md)
+- [刷题要点总结](others/Attention.md)
+- [Facebook面试总结](others/Facebook.md)
+- [Bitset技巧](others/BitSet.md)
+- [Map新接口](others/Map.md)
 - [其它题目](extras.md)
 
 
@@ -30,7 +18,6 @@ Latex排版整理的电子书
 
 * [五大常用算法](algorithms/五大常用算法.md)
 * [OJ练习](algorithms/oj.md)
-* [常见笔试题](algorithms/常见笔试题.md)
 
 ----------------------------------------
 
