@@ -1,5 +1,6 @@
-# 数据结构与算法
-## 基本数据结构与算法
+# 基本数据结构与算法
+
+## 基本数据结构
 
 1. 线性表
    1. 顺序存储
@@ -16,7 +17,7 @@
       1. 线索二叉树
       2. 排序二叉树
          1. 二叉排序树
-         2. [平衡二叉树](tree/bitree/link/balanced/BalancedTree.java): 一个二叉树每个节点的左右两个子树的高度差的绝对值不超过1。
+         2. 平衡二叉树: 一个二叉树每个节点的左右两个子树的高度差的绝对值不超过1。
       3. BTree
          1. 基本BTree 
          2. B+Tree
@@ -56,15 +57,15 @@
         2. 桶排序 bucket sort
         3. 基数排序 radix sort
 5. 堆/栈/队列
-   1. [栈](../../src/main/dev/algorithm/stack)
+   1. 栈
       1. 顺序栈
       2. 链栈
       3. 共享栈
-   2. [队列](queue)
+   2. 队列
       1. 链式队列
       2. 循环队列
       3. 双端队列
-   3. [堆](../../src/main/dev/algorithm/heap)
+   3. 堆
        1. 大根堆
        2. 小根堆
 6. 查找
@@ -81,10 +82,10 @@
 2. 线性表数组大小和空间在动态分配下可以调整，但也是申请一块更大的空间替换原始空间
 3. 随机访问：查找某个下标的元素, 复杂度为O(1)；按元素值查找某个元素，复杂度为O(N) ； 插入和增加需要大量元素，复杂度为O(N)
 
-#### [链表](../../src/main/dev/algorithm/linkedlist)
+#### 链表
 
 
-### [树](../../src/main/dev/algorithm/tree)
+### 树
 
 1. 二叉树
     * [平衡二叉树](tree/bitree/link/balanced/BalancedTree.java): 一个二叉树每个节点的左右两个子树的高度差的绝对值不超过1。
@@ -94,10 +95,10 @@
 3. 多叉树
 4. 红黑树
 
-### [图](../../src/main/dev/algorithm/graph)
+### 图
 
 
-### [排序算法](../../src/main/dev/algorithm/sort)
+### 排序算法
 
 
 ### 复杂度概览
@@ -125,7 +126,7 @@
     2. 小根堆
 
 
-## [五大常用算法](五大常用算法.md)
+## 五大常用算法
 
 1. [动态规划](../../src/main/dev/algorithm/dp)
 1. [贪心](../../src/main/dev/algorithm/greedy)
@@ -135,9 +136,8 @@
 
 # 练习总结
 
-1. [笔试练习题](exams.md)
-2. [OJ 练习](oj.md)
-3. [google code jam](https://codingcompetitions.withgoogle.com/codejam)
+1. [OJ 练习](oj.md)
+2. [google code jam](https://codingcompetitions.withgoogle.com/codejam)
 
 
 ## 参考 

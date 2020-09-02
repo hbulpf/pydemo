@@ -1,8 +1,8 @@
 <!-- _navbar.md -->
 
 * 算法
+  * [基本数据结构与算法](algorithms/README.md)
   * [五大常用算法](algorithms/五大常用算法.md)
-  * [OJ练习](algorithms/oj.md)
 
 * LeetCode
   * [每日打卡](每日打卡.md)
