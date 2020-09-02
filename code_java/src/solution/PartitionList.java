@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class PartitionList {
 
     ListNode partition(ListNode head, int x) {

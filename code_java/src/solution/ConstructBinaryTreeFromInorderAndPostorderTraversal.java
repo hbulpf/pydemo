@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {

@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class ClosestBinarySearchTreeValue {
 
     public int closestValue(TreeNode root, double target) {

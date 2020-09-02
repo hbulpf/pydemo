@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class MergeTwoSortedList {
 
     // 耗时15ms

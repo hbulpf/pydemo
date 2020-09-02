@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeLinkNode;
+
 public class PopulatingNextRightPointersInEachNode {
 
     /** 递归法，巧妙地运用dummy使代码很简洁

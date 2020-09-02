@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class LinkedListCycle {
 
     // 注意判空

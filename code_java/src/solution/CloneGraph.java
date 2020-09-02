@@ -1,5 +1,7 @@
 package solution;
 
+import common.UndirectedGraphNode;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;

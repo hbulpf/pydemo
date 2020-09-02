@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class MergeTwoBinaryTrees {
 
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {

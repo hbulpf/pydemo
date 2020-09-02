@@ -1,5 +1,7 @@
 package solution;
 
+import common.TreeNode;
+
 public class ValidateBinarySearchTree {
 
     // 耗时1ms

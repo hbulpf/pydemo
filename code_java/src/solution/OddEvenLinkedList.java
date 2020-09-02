@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 public class OddEvenLinkedList {
 
     public ListNode oddEvenList(ListNode head) {

@@ -1,5 +1,7 @@
 package solution;
 
+import common.Interval;
+
 import java.util.Map;
 import java.util.TreeMap;
 

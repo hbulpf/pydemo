@@ -1,5 +1,7 @@
 package solution;
 
+import common.NestedInteger;
+
 import java.util.List;
 
 /**

@@ -1,5 +1,7 @@
 package solution;
 
+import common.ListNode;
+
 /**
  * https://leetcode.com/articles/reverse-linked-list/
  */
