@@ -31,7 +31,7 @@
 6. [Leetcode-Java](https://github.com/dingjikerbo/Leetcode-Java)
 7. [leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 8. [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
-
+9. [软件工程技术面试个人指南](https://github.com/kdn251/interviews)
 
 ----------------------------------------
 
