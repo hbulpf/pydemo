@@ -1,4 +1,10 @@
 **Jupyter Notebook的远程连接配置**
+
+```
+conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+```
+
+
 >以下操作前请先导入 anaconda 环境变量
 >```
 >export PATH="/opt/anaconda3/bin:$PATH"
@@ -20,17 +26,14 @@ sed -i 's/^#\([ ]*c.NotebookApp.password\)/\1/' ~/.jupyter/jupyter_notebook_conf
 
 #修改启动参数配置
 sed -i 's/^[ ]*c.NotebookApp.ip.*/c.NotebookApp.ip = "*"/g' ~/.jupyter/jupyter_notebook_config.py
-sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 6666/g' ~/.jupyter/jupyter_notebook_config.py
+sed -i 's/^[ ]*c.NotebookApp.port.*/c.NotebookApp.port = 8910/g' ~/.jupyter/jupyter_notebook_config.py
 sed -i 's/^[ ]*c.NotebookApp.open_browser.*/c.NotebookApp.open_browser = False/g' ~/.jupyter/jupyter_notebook_config.py
-sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:2f319121e25b:f20f8fe27e89d0afcc70b7cf3d6e997268abd2f5"/g' ~/.jupyter/jupyter_notebook_config.py
+# 设置密码lpc@conda+ljw
+sed -i 's/^[ ]*c.NotebookApp.password.*/c.NotebookApp.password = "sha1:4c02993ae0ca:78fe36fcbf23712a778f9ae88a96e27de7f30b48"/g' ~/.jupyter/jupyter_notebook_config.py 
 
-nohup jupyter notebook >/dev/null 2>&1 &
+nohup jupyter notebook >jupyternote/notebook.log 2>&1 &
 ```
 
-完成后，访问端口为 6666 ，密码为 123456。
->每个人的 jupyter notebook 端口可以修改，将上面代码中的6666修改为自己的端口即可。请使用自己的 vnc端口号+64000 以防止冲突。比如我自己的vnc端口号是11，那就将以上配置改成 64011 :
->  - 25服务器访问 : http://50125.hnbdata.cn:64011/
->  - 26服务器访问 : http://50126.hnbdata.cn:64011/
 
 如需关闭 jupyter notebook ,需杀掉 jupyter notebook 的进程
 ```
