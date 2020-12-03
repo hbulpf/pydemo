@@ -28,3 +28,4 @@ print(isPalindrome('AAEBAA'))
 
 print(isPalindrome2('AABAA'))
 print(isPalindrome2('AAEBAA'))
+
