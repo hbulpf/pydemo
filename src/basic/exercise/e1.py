@@ -37,9 +37,12 @@ def test03(str):
         i += 1
     return str
 
+
+
 print(test01('babble'))
 print(test02('babble'))
 print(test03('babble'))
+
 
 def test_str_replace():
     str = 'babble'
