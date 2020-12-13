@@ -1,6 +1,6 @@
 package solution;
 
-import common.ListNode;
+import common.enties.ListNode;
 
 /**
  * 这题采用merge sort，可自顶向下或自底向上

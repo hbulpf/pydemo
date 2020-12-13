@@ -1,4 +1,4 @@
-package common;
+package common.enties;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package common;
+package common.enties;
 
 /**
  * Definition for an interval.

@@ -1,6 +1,6 @@
 package solution;
 
-import common.TreeNode;
+import common.enties.TreeNode;
 
 /**
  * 450. 删除二叉搜索树中的节点

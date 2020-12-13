@@ -1,4 +1,4 @@
-package common;
+package common.enties;
 
 public class TrieNode {
 

@@ -1,6 +1,6 @@
 package solution;
 
-import common.TreeNode;
+import common.enties.TreeNode;
 
 /**
  * 平衡二叉树条件是左边是平衡，右边是平衡，且两边高度差相差不超过1

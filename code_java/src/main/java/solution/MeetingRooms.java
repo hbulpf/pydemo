@@ -1,6 +1,6 @@
 package solution;
 
-import common.Interval;
+import common.enties.Interval;
 
 import java.util.Arrays;
 import java.util.Comparator;

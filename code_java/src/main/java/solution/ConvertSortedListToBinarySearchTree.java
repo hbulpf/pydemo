@@ -1,7 +1,7 @@
 package solution;
 
-import common.ListNode;
-import common.TreeNode;
+import common.enties.ListNode;
+import common.enties.TreeNode;
 
 public class ConvertSortedListToBinarySearchTree {
 

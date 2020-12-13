@@ -1,6 +1,6 @@
 package solution;
 
-import common.NestedInteger;
+import common.enties.NestedInteger;
 
 import java.util.Iterator;
 import java.util.List;

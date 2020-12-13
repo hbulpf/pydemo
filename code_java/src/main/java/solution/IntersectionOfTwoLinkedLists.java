@@ -1,6 +1,6 @@
 package solution;
 
-import common.ListNode;
+import common.enties.ListNode;
 
 /**
  * Created by dingjiekrbo on 2016/11/17.

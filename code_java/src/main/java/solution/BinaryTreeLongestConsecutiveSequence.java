@@ -1,6 +1,6 @@
 package solution;
 
-import common.TreeNode;
+import common.enties.TreeNode;
 
 /**
  * https://leetcode.com/articles/binary-tree-longest-consecutive-sequence/

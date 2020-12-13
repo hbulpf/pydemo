@@ -1,6 +1,6 @@
 package solution;
 
-import common.ListNode;
+import common.enties.ListNode;
 
 /**
  * https://leetcode.com/articles/remove-duplicates-sorted-list/

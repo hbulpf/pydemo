@@ -1,6 +1,6 @@
 package solution;
 
-import common.TreeNode;
+import common.enties.TreeNode;
 
 /**
  * 单边的或者双边的，或只包含根节点的

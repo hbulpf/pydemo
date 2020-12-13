@@ -2,7 +2,7 @@ package solution; /**
  * https://leetcode.com/articles/construct-string-from-binary-tree/
  */
 
-import common.TreeNode;
+import common.enties.TreeNode;
 
 /**
  * 这题不难，主要是搞清楚题目意思
