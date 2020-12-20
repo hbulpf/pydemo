@@ -1,6 +1,8 @@
 
 package practices.leetcode;
 
+import common.enties.TreeNode;
+
 /**
  * 110. 平衡二叉树
  * https://leetcode-cn.com/problems/balanced-binary-tree/
