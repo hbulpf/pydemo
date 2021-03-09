@@ -1,4 +1,4 @@
-# 基础
+# Scapy
 
 ### Scapy是什么
 
@@ -6,7 +6,9 @@ Scapy是一个Python程序，使用户能够发送，嗅探和剖析并伪造网
 
 ### 安装
 
-* python3 -m pip install scapy
+```
+python3 -m pip install scapy
+```
 
 ### 使用场景
 

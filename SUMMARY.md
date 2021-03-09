@@ -1,20 +1,24 @@
+## python基础
 
-# 文档
-- [docs](docs/README.md)
-- [conda常见命令](docs/anaconda/conda_cmd.md)
-- [安装 Anaconda](docs/anaconda/install_anaconda.md)
-- [Anaconda默认python 3.7 要使用 python3.6](docs/anaconda/py37_To_py36.md)
-- [jupyter](docs/jupyter/jupyter_service.md)
-- [启动Jupyterhub 服务](docs/jupyter/jupyterhub_service.md)
-- [pycharm.md](docs/pycharm.md)
-- [pip教程](docs/python/pip_mirrors.md)
+- [pip使用镜像](docs/python/pip_mirrors.md)
+- [pycharm](docs/python/pycharm.md)
 
-# src
+## 环境安装
 
-- [surprisedemo](src/surprisedemo/README.md)
+ - [Anaconda](docs/anaconda/README.md)
+   - [conda基本命令](docs/anaconda/conda_cmd.md)
+   - [anaconda 生成py36环境](docs/anaconda/py37_To_py36.md)
+  
+- [Jupyter](docs/jupyter/README.md)
+  - [Jupyterhub](docs/jupyter/jupyterhub_service.md)
 
+## 爬虫
 
-# script
-
-- [js]()
-- [shell]()
+* [总体介绍](docs/spiders/README.md)
+* [requests](docs/spiders/requests.md)
+* [Fiddler](docs/spiders/Fiddler.md)
+* [mitmproxy](docs/spiders/mitmproxy.md)
+* [scapy](docs/spiders/scapy.md)
+* [Scrapy](docs/spiders/Scrapy.md)
+* [urllib](docs/spiders/urllib.md)
+* [wireshark](docs/spiders/wireshark.md)

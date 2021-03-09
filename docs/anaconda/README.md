@@ -1,4 +1,4 @@
-# 安装 Anaconda 
+# Anaconda 
 
 ### 1. 下载 Anaconda 
 

@@ -1,4 +1,4 @@
-**Jupyter Notebook的远程连接配置**
+# Jupyter Notebook
 
 ```
 conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
@@ -14,7 +14,7 @@ conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/a
 + **快速配置(贴完代码)即可远程使用  jupyter notebook 服务。无需进行基本配置。**
 + **进入页面后根目录为自己的 home 目录。**  
 
-# 快速配置
+## 快速配置
 在自己的命令行中执行下面的脚本，为自己生成 jupyter notebook 远程访问服务。
 ```
 jupyter notebook --generate-config
@@ -40,7 +40,7 @@ nohup jupyter notebook >jupyternote/notebook.log 2>&1 &
 ps -ef| grep jupyter |grep -v grep|cut -c 9-15|xargs kill -9
 ```
 
-# 基本配置
+## 基本配置
 1. 打开python，输入以下语句：
 
     ```
@@ -86,9 +86,9 @@ ps -ef| grep jupyter |grep -v grep|cut -c 9-15|xargs kill -9
     nohup jupyter notebook >/dev/null 2>&1 &
     ```
 
-# 其他配置
+## 其他配置
 
-## 使用隧道
+### 使用隧道
 1. 配置隧道
 
     要想使用本地方式访问Jupyter Notebook，需要和服务器建立起一个隧道，一般在使用的本地的终端工具上建立就可以了。如使用xshell，点击新建：
@@ -134,4 +134,5 @@ ps -ef| grep jupyter |grep -v grep|cut -c 9-15|xargs kill -9
     ```
 
 # 参考
+
 1. Jupyter Notebook 远程连接及配置方法说明 . https://www.jianshu.com/p/08f276d48669
