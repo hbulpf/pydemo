@@ -1,24 +1,26 @@
-## python基础
+## 基础知识
 
-- [pip使用镜像](docs/python/pip_mirrors.md)
-- [pycharm](docs/python/pycharm.md)
 
-## 环境安装
+- [语法基础](docs/python/README.md)
+- [开发基础](docs/dev/README.md)
+  - [pip使用镜像](docs/dev/pip_mirrors.md)
+  - [pycharm](docs/dev/pycharm.md)
 
- - [Anaconda](docs/anaconda/README.md)
-   - [conda基本命令](docs/anaconda/conda_cmd.md)
-   - [anaconda 生成py36环境](docs/anaconda/py37_To_py36.md)
-  
-- [Jupyter](docs/jupyter/README.md)
-  - [Jupyterhub](docs/jupyter/jupyterhub_service.md)
+## 项目进阶
 
-## 爬虫
+* [爬虫](docs/spiders/README.md)
+  * [requests](docs/spiders/requests.md)
+  * [Fiddler](docs/spiders/Fiddler.md)
+  * [mitmproxy](docs/spiders/mitmproxy.md)
+  * [scapy](docs/spiders/scapy.md)
+  * [Scrapy](docs/spiders/Scrapy.md)
+  * [urllib](docs/spiders/urllib.md)
+  * [wireshark](docs/spiders/wireshark.md)
 
-* [总体介绍](docs/spiders/README.md)
-* [requests](docs/spiders/requests.md)
-* [Fiddler](docs/spiders/Fiddler.md)
-* [mitmproxy](docs/spiders/mitmproxy.md)
-* [scapy](docs/spiders/scapy.md)
-* [Scrapy](docs/spiders/Scrapy.md)
-* [urllib](docs/spiders/urllib.md)
-* [wireshark](docs/spiders/wireshark.md)
+## 人工智能
+
+- [Anaconda](docs/env/anaconda/README.md)
+   - [conda基本命令](docs/env/anaconda/conda_cmd.md)
+   - [anaconda 生成py36环境](docs/env/anaconda/py37_To_py36.md)
+- [Jupyter](docs/env/jupyter/README.md)
+  - [Jupyterhub](docs/env/jupyter/jupyterhub_service.md)

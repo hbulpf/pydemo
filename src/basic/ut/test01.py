@@ -1,6 +1,5 @@
 # -*- coding=utf-8 -*-
 
-
 def test04(str):
     if len(str) <= 1:
         return str

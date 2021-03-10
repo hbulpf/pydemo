@@ -7,16 +7,29 @@
 
 ## 第一阶段 Python基础
 
+### 语言基础
+
 1. [python基础文档](https://codechina.csdn.net/AiShow/aibooks/-/blob/master/python基础学习文档.pdf)
-2. [pip使用镜像](docs/python/pip_mirrors.md)
-3. [pycharm](docs/python/pycharm.md)
+2. 在线学习教材参考
+   - [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+   - [莫烦PYTHON-Python 3 基础教程](https://mofanpy.com/)
+3. 基础阶段需要掌握知识点
+   - 基础类型：数字类型、None类型、Bool类型、字符串类型
+   - 常用内置数据结构：列表(list)、元组(tuple)、字典(dict)、集合(set)
+   - 逻辑控制与操作：If分支语句、for/while循环控制、try...except异常处理
+   - 函数：定义函数、函数参数
+   - 类与模块：类构造、类实例化、模块介绍、模块加载和使用
+2. Python基础测验 完成上面的基础学习后，可以在下面的题目中小试牛刀：
+   - [牛客网专项练习-编程语言Python](https://www.nowcoder.com/intelligentTest)
 
-学习教材参考
+### 开发基础
 
-- [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-- [莫烦PYTHON-Python 3 基础教程](https://mofanpy.com/)
+1. [pip使用镜像](docs/dev/pip_mirrors.md)
+2. [pycharm](docs/dev/pycharm.md)
 
-## 第二阶段 Python项目
+
+
+## 第二阶段 项目实战
 
 ### 项目1: 游戏
 
@@ -32,22 +45,43 @@
 7. [scapy](docs/spiders/scapy.md)
 8. [wireshark](docs/spiders/wireshark.md)
 
-## 第三阶段 用python做AI
+## 第三阶段 AI
 
 ### 安装环境
-1. [Anaconda](docs/anaconda/README.md)
-   - [conda基本命令](docs/anaconda/conda_cmd.md)
-   - [anaconda 生成py36环境](docs/anaconda/py37_To_py36.md)
-2. [Jupyter Notebook](docs/jupyter/README.md)
-   - [Jupyterhub](docs/jupyter/jupyterhub_service.md)
+- [Anaconda](docs/env/anaconda/README.md)
+   - [conda基本命令](docs/env/anaconda/conda_cmd.md)
+   - [anaconda 生成py36环境](docs/env/anaconda/py37_To_py36.md)
+- [Jupyter](docs/env/jupyter/README.md)
+  - [Jupyterhub](docs/env/jupyter/jupyterhub_service.md)
+
 
 ## 其他
 
-### 算法进阶
+### leetcode进阶
 
-1. [leetcode In Python](https://codechina.csdn.net/AiShow/leetcode_python)
+学习分两个部分:
 
-### Python语言原理与特性
+1. 去 [牛客网的LeetCode经典编程题](https://www.nowcoder.com/ta/leetcode) 做题系统中进行 leetcode in python 练习
+2. 按照下面的 [LeetCode作业集](docs/leetcode/README.md) 自主完成习题反复思考总结
+
+学习目标：
+
+1. 需要掌握的题目类型 
+   1. 数组
+   2. 字符串
+   3. 查找
+   4. 排序
+   5. 链表
+   6. 堆栈
+   7. 树+递归
+   8. 回溯法
+   9. 动态规划
+   10. 贪心算法
+2. 需要完成目标: 本阶段后，要把[牛客网的LeetCode经典编程题](https://www.nowcoder.com/ta/leetcode)全部刷完。
+
+
+### 公司面试
+根据面试公司往年的招聘情况，找一些相似公司或该公司的历年真题进行针对性测验练习。
 
 
 ----------------------------------------
