@@ -34,6 +34,7 @@
 
 ## 第三阶段 用python做AI
 
+### 安装环境
 1. [Anaconda](docs/anaconda/README.md)
    - [conda基本命令](docs/anaconda/conda_cmd.md)
    - [anaconda 生成py36环境](docs/anaconda/py37_To_py36.md)
