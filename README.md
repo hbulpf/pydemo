@@ -6,8 +6,10 @@
 [![GitHub forks](https://img.shields.io/github/forks/hbulpf/pydemo.svg?label=Forks)](https://github.com/hbulpf/pydemo/fork)
 
 ## python基础
-1. [pip使用镜像](docs/python/pip_mirrors.md)
-2. [pycharm](docs/python/pycharm.md)
+
+1. [python基础文档](https://gitee.com/funny_python/aibooks/blob/master/python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3.pdf)
+2. [pip使用镜像](docs/python/pip_mirrors.md)
+3. [pycharm](docs/python/pycharm.md)
 
 ## 环境安装
 1. [Anaconda](docs/anaconda/README.md)
