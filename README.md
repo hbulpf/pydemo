@@ -5,34 +5,49 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/hbulpf/pydemo.svg?label=Watchers)](https://github.com/hbulpf/pydemo/watchers)
 [![GitHub forks](https://img.shields.io/github/forks/hbulpf/pydemo.svg?label=Forks)](https://github.com/hbulpf/pydemo/fork)
 
-## python基础
+## 第一阶段 Python基础
 
 1. [python基础文档](https://codechina.csdn.net/AiShow/aibooks/-/blob/master/python基础学习文档.pdf)
 2. [pip使用镜像](docs/python/pip_mirrors.md)
 3. [pycharm](docs/python/pycharm.md)
 
-## 环境安装
+学习教材参考
+
+- [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+- [莫烦PYTHON-Python 3 基础教程](https://mofanpy.com/)
+
+## 第二阶段 Python项目
+
+### 项目1: 游戏
+
+
+### 项目2: 爬虫
+
+1. [爬虫介绍](docs/spiders/README.md)
+2. [requests](docs/spiders/requests.md)
+3. [urllib](docs/spiders/urllib.md)
+4. [Scrapy](docs/spiders/Scrapy.md)
+5. [Fiddler](docs/spiders/fildder.md)
+6. [mitmproxy](docs/spiders/mitmproxy.md)
+7. [scapy](docs/spiders/scapy.md)
+8. [wireshark](docs/spiders/wireshark.md)
+
+## 第三阶段 用python做AI
+
 1. [Anaconda](docs/anaconda/README.md)
    - [conda基本命令](docs/anaconda/conda_cmd.md)
    - [anaconda 生成py36环境](docs/anaconda/py37_To_py36.md)
- 
 2. [Jupyter Notebook](docs/jupyter/README.md)
    - [Jupyterhub](docs/jupyter/jupyterhub_service.md)
 
-## 爬虫
+## 其他
 
-1. [总体介绍](docs/spiders/README.md)
-2. [requests](docs/spiders/requests.md)
-3. [Fiddler](docs/spiders/fildder.md)
-4. [mitmproxy](docs/spiders/mitmproxy.md)
-5. [scapy](docs/spiders/scapy.md)
-6. [Scrapy](docs/spiders/Scrapy.md)
-7. [urllib](docs/spiders/urllib.md)
-8. [wireshark](docs/spiders/wireshark.md)
+### 算法进阶
 
-## 优秀项目源码走读
+1. [leetcode In Python](https://codechina.csdn.net/AiShow/leetcode_python)
 
-1. 
+### Python语言原理与特性
+
 
 ----------------------------------------
 
