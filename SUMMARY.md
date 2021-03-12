@@ -1,7 +1,9 @@
 ## 基础知识
 
 
-- [语法基础](docs/python/README.md)
+- [Python语法](docs/python/README.md)
+  - [基本语法](docs/python/基本语法.md)
+  - [函数](docs/python/函数.md)
 - [开发基础](docs/dev/README.md)
   - [pip使用镜像](docs/dev/pip_mirrors.md)
   - [pycharm](docs/dev/pycharm.md)
