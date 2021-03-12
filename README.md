@@ -47,12 +47,12 @@
 
 ## 第三阶段 AI
 
-### 安装环境
-- [Anaconda](docs/env/anaconda/README.md)
-   - [conda基本命令](docs/env/anaconda/conda_cmd.md)
-   - [anaconda 生成py36环境](docs/env/anaconda/py37_To_py36.md)
-- [Jupyter](docs/env/jupyter/README.md)
-  - [Jupyterhub](docs/env/jupyter/jupyterhub_service.md)
+### 工具
+- [Anaconda](docs/tools/anaconda/README.md)
+   - [conda基本命令](docs/tools/anaconda/conda_cmd.md)
+   - [anaconda 生成py36环境](docs/tools/anaconda/py37_To_py36.md)
+- [Jupyter](docs/tools/jupyter/README.md)
+  - [Jupyterhub](docs/tools/jupyter/jupyterhub_service.md)
 
 
 ## 其他
