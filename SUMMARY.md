@@ -1,9 +1,18 @@
 ## 基础知识
-
-
 - [Python语言基础](docs/python/README.md)
-  - [基本语法](docs/python/基本语法.md)
-  - [函数](docs/python/函数.md)
+  * [基本语法](docs/python/基本语法.md)
+  * [函数](docs/python/函数.md)
+  * [高级特性](docs/python/高级特性.md)
+  * [函数式编程](docs/python/函数式编程.md)
+  * [模块](docs/python/模块.md)
+  * [面向对象](docs/python/面向对象.md)
+  * [面向对象高级](docs/python/面向对象高级.md)
+  * [错误、调试和测试](docs/python/错误和调试.md)
+  * [IO](docs/python/IO.md)
+  * [进程与线程](docs/python/进程与线程.md)
+  * [正则表达式](docs/python/正则表达式.md)
+  * [常见内建模块](docs/python/常见内建模块.md)
+
 - [开发基础](docs/dev/README.md)
   - [pip使用镜像](docs/dev/pip_mirrors.md)
   - [pycharm](docs/dev/pycharm.md)
