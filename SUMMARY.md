@@ -1,7 +1,7 @@
 ## 基础知识
 
 
-- [Python语法](docs/python/README.md)
+- [Python语言基础](docs/python/README.md)
   - [基本语法](docs/python/基本语法.md)
   - [函数](docs/python/函数.md)
 - [开发基础](docs/dev/README.md)
