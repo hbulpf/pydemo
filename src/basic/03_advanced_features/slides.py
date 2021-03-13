@@ -1,4 +1,19 @@
+
+# 使用 切片实现 trim，更简洁的方法
 def trim(s):
+	print("input:",s)
+	# 这里不要用 s[0],因为 s[:1]取得的是一个列表，可以为None
+	while s[:1]==' ':
+		print("res:",s)
+		s = s[1:]
+	while s[-1:]==' ':
+		print("res:",s)
+		s = s[:-1]
+	return s
+
+
+# 使用 切片实现 trim, 更高效的方法
+def trim2(s):
 	i = 0
 	if s == '':
 		return ''
