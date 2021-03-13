@@ -51,3 +51,8 @@ while n > 0:
 		continue
 	pow = pow * n
 print(pow)
+
+
+# 进制转换
+print(hex(255))
+print(hex(1000))

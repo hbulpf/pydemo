@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 # 使用 切片实现 trim，更简洁的方法
 def trim(s):
 	print("input:",s)
