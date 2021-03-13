@@ -41,9 +41,37 @@ while True:
         break
 
 # 杨辉三角
+def triangles1():
+    res = []
+    res.append([1])
+    for i in range(1,10):
+        L = [1]
+        for j in range(1,i):
+            L.append(res[i-1][j-1]+res[i-1][j])
+        L.append(1)
+        res.append(L)
+    return res
+
+# 使用 generator,我的解
+def triangles2():
+    L1=[1]
+    for i in range(1,11):
+        yield L1
+        L2 = [1]
+        for j in range(1,i):
+            L2.append(L1[j-1]+L1[j])
+        L2.append(1)
+        L1 = L2
+    return 'done'
+
+# 使用 generator,更好的解
 def triangles():
-    
-    pass
+    L = [1]
+    while True:
+        yield L[:]
+        # 杨辉三角相当于前后补0
+        L.append(0)
+        L=[L[n-1]+L[n] for n in range(len(L))]
 
 # 期待输出:
 # [1]

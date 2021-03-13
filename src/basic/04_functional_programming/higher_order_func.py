@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def doublepow(n):
 	l = list((range(1,n+1)))
 	p = 1

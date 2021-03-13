@@ -45,3 +45,5 @@ print(roommate)
 roommate[2][1] = 'bianbian'
 print(roommate)
 print(len(roommate))
+
+print([i for i in range(10)])

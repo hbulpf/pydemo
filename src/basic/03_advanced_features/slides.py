@@ -40,3 +40,10 @@ elif trim('    ') != '':
     print('测试失败!')
 else:
     print('测试成功!')
+
+str = 'abcdefg123456'
+print(str[:7])
+print(str[7:])
+print(str[::-1])
+print(str[:6:-1])
+print(str.find('g'))
