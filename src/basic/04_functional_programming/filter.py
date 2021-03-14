@@ -26,12 +26,17 @@ for n in primes():
 		break
 print("res:",res)
 
-def is_palindrome(n):
+# 回文数一般方法
+def is_palindrome2(n):
 	n = str(n)
 	for i in range(0, len(n) // 2):
 		if n[i] != n[len(n)-i-1]:
 			return False
 	return True
+# 回文数简洁方法
+def is_palindrome(n):
+    n = str(n)
+    return n == n[::-1]
 
 output = filter(is_palindrome, range(1, 1000))
 print('\n1~1000:', list(output))
