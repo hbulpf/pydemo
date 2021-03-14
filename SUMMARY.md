@@ -14,7 +14,7 @@
   * [常见内建模块](docs/python/常见内建模块.md)
 
 - [开发基础](docs/dev/README.md)
-  - [pip使用镜像](docs/dev/pip_mirrors.md)
+  - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
 
 ## 项目进阶

@@ -1,6 +1,10 @@
 # pip 教程
 
-1. [pip tutorials](https://packaging.python.org/tutorials/installing-packages/)
+在Python中，安装第三方模块，是通过包管理工具pip完成的。 
+
+一般来说，第三方库都会在Python官方的[pypi.python.org](https://pypi.python.org/)网站注册 
+
+如果尚未安装pip，参考[安装Python](https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624), 确保安装时勾选了`pip`和`Add python.exe to Path`。 pip的详细教程见 [pip tutorials](https://packaging.python.org/tutorials/installing-packages/)
 
 # pip 使用镜像源
 

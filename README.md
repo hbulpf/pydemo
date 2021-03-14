@@ -24,7 +24,7 @@
 
 ### 开发基础
 
-1. [pip使用镜像](docs/dev/pip_mirrors.md)
+1. [pip](docs/dev/pip.md)
 2. [pycharm](docs/dev/pycharm.md)
 
 
