@@ -21,6 +21,7 @@
 - [开发基础](docs/dev/README.md)
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
+  - [日志](docs/dev/logging.md)
 
 ## 项目进阶
 
