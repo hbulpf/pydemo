@@ -42,7 +42,6 @@ class MyHTMLParser(HTMLParser):
       self.__parsedata = ''# 在HTML 标签结束时，把标志位清空
 
    def handle_data(self, data):
-
       if self.__parsedata == 'name':
          # 通过标志位判断，输出打印标签内容
          self.info.append(f'会议名称:{data}')
