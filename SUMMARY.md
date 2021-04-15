@@ -13,6 +13,7 @@
   * [正则表达式](docs/python/正则表达式.md)
   * [常见内建模块](docs/python/常见内建模块.md)
   * [常见第三方模块](docs/python/常见第三方模块.md)
+  * [多个虚拟环境](docs/python/virtualenv.md)
   * [图形界面](docs/python/图形界面.md)
   * [网络编程](docs/python/网络编程.md)
   * [电子邮件](docs/python/电子邮件.md)
