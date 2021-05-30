@@ -1,6 +1,6 @@
 ## 基础知识
 - [Python语言基础](docs/python/README.md)
-  * [基本语法](docs/python/基本语法.md)
+  * [基本语法](docs/python/总结与复习.md)
   * [函数](docs/python/函数.md)
   * [高级特性](docs/python/高级特性.md)
   * [函数式编程](docs/python/函数式编程.md)
