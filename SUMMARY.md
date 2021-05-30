@@ -1,6 +1,6 @@
 ## 基础知识
 - [Python语言基础](docs/python/README.md)
-  * [基本语法](docs/python/总结与复习.md)
+  * [总结与复习](docs/python/总结与复习.md)
   * [函数](docs/python/函数.md)
   * [高级特性](docs/python/高级特性.md)
   * [函数式编程](docs/python/函数式编程.md)
@@ -14,6 +14,8 @@
   * [常见内建模块](docs/python/常见内建模块.md)
   * [常见第三方模块](docs/python/常见第三方模块.md)
   * [多个虚拟环境](docs/python/virtualenv.md)
+  * [内建函数](docs/python/内建函数.md)
+  * [常见样例](docs/python/常见样例.md)
   * [图形界面](docs/python/图形界面.md)
   * [网络编程](docs/python/网络编程.md)
   * [电子邮件](docs/python/电子邮件.md)
