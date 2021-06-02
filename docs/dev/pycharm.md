@@ -1,7 +1,5 @@
 # PyCharm
 
-
-
 ## cmd进入pycharm所创建的虚拟环境
 
 打开pycharm的 `File | Settings | Project: mysite | Project Interpreter`
