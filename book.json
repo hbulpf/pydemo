@@ -30,7 +30,7 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/hbulpf/pydemo"
+            "url": "https://gitee.com/hecloudAi/pydemo"
         },
         "github-buttons": {
             "buttons": [{
