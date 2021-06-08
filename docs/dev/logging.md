@@ -1,10 +1,10 @@
-# logging日志模块详解
+# logging日志
 
 用Python写代码的时候，在想看的地方写个print xx 就能在控制台上显示打印信息，这样子就能知道它是什么了，但是当我需要看大量的地方或者在一个文件中查看的时候，这时候print就不大方便了，所以Python引入了logging模块来记录我想要的信息。
 
-​    print也可以输入日志，logging相对print来说更好控制输出在哪个地方，怎么输出及控制消息级别来过滤掉那些不需要的信息。
+print也可以输入日志，logging相对print来说更好控制输出在哪个地方，怎么输出及控制消息级别来过滤掉那些不需要的信息。
 
-***1、日志级别***
+## 1、日志级别
 
 ```python
 import logging  # 引入logging模块
@@ -24,7 +24,7 @@ logging.critical(u"泷泽萝拉")
 
 默认生成的root logger的level是logging.WARNING,低于该级别的就不输出了
 
-## **级别排序:CRITICAL > ERROR > WARNING > INFO > DEBUG**
+**级别排序:CRITICAL > ERROR > WARNING > INFO > DEBUG**
 
 debug : 打印全部的日志,详细的信息,通常只出现在诊断问题上
 
@@ -48,7 +48,7 @@ logging.debug(u"如果设置了日志级别为NOTSET,那么这里可以采取deb
 
 ![img](https://img-blog.csdnimg.cn/20190408154854563.png)
 
-***2、部分名词解释***
+## 2、部分名词解释
 
 Logging.Formatter：这个类配置了日志的格式，在里面自定义设置日期和时间，输出日志的时候将会按照设置的格式显示内容。
 Logging.Logger：Logger是Logging模块的主体，进行以下三项工作：
@@ -64,7 +64,7 @@ Logging.Handler：Handler基于日志级别对日志进行分发，如设置为W
 setLevel() 设置级别
 setFormatter() 设置Formatter
 
-***3、日志输出-控制台***
+## 3、日志输出-控制台
 
 ```python
 import logging  # 引入logging模块
@@ -78,15 +78,13 @@ logging.error('this is an loggging error message')
 logging.critical('this is a loggging critical message')
 ```
 
- 
-
 上面代码通过logging.basicConfig函数进行配置了日志级别和日志内容输出格式；因为级别为DEBUG，所以会将DEBUG级别以上的信息都输出显示再控制台上。
 
 回显：
 
 ![img](https://img-blog.csdnimg.cn/20190408154854582.png)
 
-***4、日志输出-文件***
+## 4、日志输出-文件
 
 ```python
 import logging  # 引入logging模块
@@ -121,17 +119,20 @@ logger.critical('this is a logger critical message')
 
 ![img](https://img-blog.csdnimg.cn/20190408154854635.png)
 
-***5、日志输出-控制台和文件***
+### 5、日志输出-控制台和文件
+
+只要在输入到日志中的第二步和第三步插入一个handler输出到控制台， 创建一个handler，用于输出到控制台
 
 ```python
-只要在输入到日志中的第二步和第三步插入一个handler输出到控制台：
-创建一个handler，用于输出到控制台
 ch = logging.StreamHandler()
 ch.setLevel(logging.WARNING)  # 输出到console的log等级的开关
-第四步和第五步分别加入以下代码即可
+# 第4步和第5步分别加入以下代码即可
 ch.setFormatter(formatter)
 logger.addHandler(ch)
-6、format常用格式说明
+```
+### 6、format常用格式说明
+
+```python
 %(levelno)s: 打印日志级别的数值
 %(levelname)s: 打印日志级别名称
 %(pathname)s: 打印当前执行程序的路径，其实就是sys.argv[0]
@@ -143,7 +144,13 @@ logger.addHandler(ch)
 %(threadName)s: 打印线程名称
 %(process)d: 打印进程ID
 %(message)s: 打印日志信息
-7、捕捉异常,用traceback记录
+```
+
+### 7、捕捉异常
+
+用traceback记录
+
+```python
 import os.path
 import time
 import logging
@@ -172,58 +179,55 @@ except Exception, e:
     logger.error('Failed to open file', exc_info=True)
 ```
 
-回显(存储在文件中)：
+存储在文件中：
 
 ![img](https://img-blog.csdnimg.cn/20190408154854595.png)
 
-```html
-如果需要将日志不上报错误，仅记录，可以将exc_info=False，回显如下：
-8、多模块调用logging,日志输出顺序
-warning_output.py
-import logging
 
+如果需要将日志不上报错误，仅记录，可以将exc_info=False，回显如下：
+
+## 8、多模块调用logging
+
+warning_output.py
+
+```python
+import logging
 
 def write_warning():
     logging.warning(u"记录文件warning_output.py的日志")
+```
 
 error_output.py
 
+```python
 import logging
-
 
 def write_error():
     logging.error(u"记录文件error_output.py的日志")
 ```
 
-*main.py*
-
- 
+main.py
 
 ```python
 import logging
 import warning_output
 import error_output
-
-
 def write_critical():
     logging.critical(u"记录文件main.py的日志")
-
 
 warning_output.write_warning()  # 调用warning_output文件中write_warning方法
 write_critical()
 error_output.write_error()  # 调用error_output文件中write_error方法
 ```
 
- 
-
-回显：
-
 ![img](https://img-blog.csdnimg.cn/20190408154854625.png)
 
 从上面来看，日志的输出顺序和模块执行顺序是一致的。
 
-```html
-9、日志滚动和过期删除(按时间
+
+## 9、日志滚动和过期删除
+
+```python
 # coding:utf-8
 import logging
 import time
@@ -252,7 +256,6 @@ def backroll():
         time.sleep(20)
         count = count + 1
     log.removeHandler(log_file_handler)
-
 
 if __name__ == "__main__":
     backroll()

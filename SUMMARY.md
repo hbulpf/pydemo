@@ -29,6 +29,10 @@
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
   - [日志](docs/dev/logging.md)
+- [常用库](docs/libs/README.md)
+  - [numpy](docs/libs/numpy.md)
+  - [surprise](docs/libs/surprise.md)
+
 
 ## 项目进阶
 
