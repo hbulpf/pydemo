@@ -28,9 +28,10 @@
 - [开发基础](docs/dev/README.md)
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
-  - [日志](docs/dev/logging.md)
+
 - [常用库](docs/libs/README.md)
   - [numpy](docs/libs/numpy.md)
+  - [日志](docs/libs/logging.md)
   - [surprise](docs/libs/surprise.md)
 
 
