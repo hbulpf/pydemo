@@ -24,10 +24,14 @@
 
 ### 开发基础
 
+#### 开发工具
+
 1. [pip](docs/dev/pip.md)
 2. [pycharm](docs/dev/pycharm.md)
 
+#### 小例子
 
+1. [递归遍历目录](docs/samples/递归遍历目录.md)
 
 ## 第二阶段 项目实战
 

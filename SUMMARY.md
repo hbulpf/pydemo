@@ -34,6 +34,8 @@
   - [日志](docs/libs/logging.md)
   - [surprise](docs/libs/surprise.md)
 
+- [小例子](docs/samples/README.md)
+  - [递归遍历目录](docs/samples/递归遍历目录.md)
 
 ## 项目进阶
 
