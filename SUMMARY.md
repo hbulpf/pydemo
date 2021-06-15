@@ -28,6 +28,7 @@
 - [开发基础](docs/dev/README.md)
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
+  - [pep8](docs/dev/pep8.md)
 
 - [常用库](docs/libs/README.md)
   - [numpy](docs/libs/numpy.md)
