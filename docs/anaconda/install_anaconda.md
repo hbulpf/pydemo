@@ -15,3 +15,7 @@ sudo wget  https://repo.anaconda.com/archive/Anaconda2-5.3.1-Linux-x86_64.sh #�
 ```shell
 sh Anaconda3-5.3.1-Linux-x86_64.sh
 ```
+
+## 参考
+1. https://blog.csdn.net/yuejisuo1948/article/details/81043823
+2. https://blog.csdn.net/zzqhello2018/article/details/90896852
