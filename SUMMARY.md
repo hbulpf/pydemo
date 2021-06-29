@@ -1,20 +1,58 @@
+## 基础知识
+- [Python语言基础](docs/python/README.md)
+  * [总结与复习](docs/python/总结与复习.md)
+  * [函数](docs/python/函数.md)
+  * [高级特性](docs/python/高级特性.md)
+  * [函数式编程](docs/python/函数式编程.md)
+  * [模块](docs/python/模块.md)
+  * [面向对象](docs/python/面向对象.md)
+  * [面向对象高级](docs/python/面向对象高级.md)
+  * [错误、调试和测试](docs/python/错误和调试.md)
+  * [IO](docs/python/IO.md)
+  * [进程与线程](docs/python/进程与线程.md)
+  * [正则表达式](docs/python/正则表达式.md)
+  * [常见内建模块](docs/python/常见内建模块.md)
+  * [常见第三方模块](docs/python/常见第三方模块.md)
+  * [多个虚拟环境](docs/python/virtualenv.md)
+  * [内建函数](docs/python/内建函数.md)
+  * [常见样例](docs/python/常见样例.md)
+  * [图形界面](docs/python/图形界面.md)
+  * [网络编程](docs/python/网络编程.md)
+  * [电子邮件](docs/python/电子邮件.md)
+  * [访问数据库](docs/python/访问数据库.md)
+  * [web开发](docs/python/web开发/README.md)
+    * [http](docs/python/web开发/http.md)
+    * [wsgi](docs/python/web开发/wsgi.md)
+    * [flask](docs/python/web开发/flask.md)
+  
+- [开发基础](docs/dev/README.md)
+  - [pip](docs/dev/pip.md)
+  - [pycharm](docs/dev/pycharm.md)
+  - [pep8](docs/dev/pep8.md)
 
-# 文档
-- [docs](docs/README.md)
-- [conda常见命令](docs/anaconda/conda_cmd.md)
-- [安装 Anaconda](docs/anaconda/install_anaconda.md)
-- [Anaconda默认python 3.7 要使用 python3.6](docs/anaconda/py37_To_py36.md)
-- [jupyter](docs/jupyter/jupyter_service.md)
-- [启动Jupyterhub 服务](docs/jupyter/jupyterhub_service.md)
-- [pycharm.md](docs/pycharm.md)
-- [pip教程](docs/python/pip_mirrors.md)
+- [常用库](docs/libs/README.md)
+  - [numpy](docs/libs/numpy.md)
+  - [日志](docs/libs/logging.md)
+  - [surprise](docs/libs/surprise.md)
 
-# src
+- [小例子](docs/samples/README.md)
+  - [递归遍历目录](docs/samples/递归遍历目录.md)
 
-- [surprisedemo](src/surprisedemo/README.md)
+## 项目进阶
 
+* [爬虫](docs/spiders/README.md)
+  * [requests](docs/spiders/requests.md)
+  * [Fiddler](docs/spiders/Fiddler.md)
+  * [mitmproxy](docs/spiders/mitmproxy.md)
+  * [scapy](docs/spiders/scapy.md)
+  * [Scrapy](docs/spiders/Scrapy.md)
+  * [urllib](docs/spiders/urllib.md)
+  * [wireshark](docs/spiders/wireshark.md)
 
-# script
+## 人工智能
 
-- [js]()
-- [shell]()
+- [Anaconda](docs/tools/anaconda/README.md)
+   - [conda基本命令](docs/tools/anaconda/conda_cmd.md)
+   - [anaconda 生成py36环境](docs/tools/anaconda/py37_To_py36.md)
+- [Jupyter](docs/tools/jupyter/README.md)
+  - [Jupyterhub](docs/tools/jupyter/jupyterhub_service.md)
