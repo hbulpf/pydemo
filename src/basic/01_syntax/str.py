@@ -28,3 +28,5 @@ print('{0}成绩提升了{1:.2f}%'.format('童童', 5.2316))
 # format
 str1 = 'my name is {0}, I am {1} years old. Please call me {0}'.format('陈明',12)
 print(str1)
+
+print(not '')
