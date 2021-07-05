@@ -26,6 +26,7 @@
     * [flask](docs/python/web开发/flask.md)
   
 - [开发基础](docs/dev/README.md)
+  - [源码安装](docs/dev/源码安装.md)
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
   - [pep8](docs/dev/pep8.md)
