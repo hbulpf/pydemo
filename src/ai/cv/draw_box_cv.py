@@ -12,7 +12,7 @@ import cv2
 
 
 def draw():
-    image_path = './taxi.jpg'
+    image_path = 'taxi.jpg'
     img = cv2.imread(image_path)
     # 左上(X,Y)
     pt1 = (341, 718)
@@ -27,7 +27,7 @@ def draw():
     font = cv2.FONT_HERSHEY_SIMPLEX
     # 打标签: 文字内容, 左上角坐标,字体,大小,颜色,字体厚度
     cv2.putText(img, '{} {:.3f}'.format(object_type, credence), (341 + 50, 718 - 15), font, 1, (0, 0, 255), 2)
-    cv2.imwrite('./res/taxi-cv.jpg', img)
+    cv2.imwrite('res/taxi-cv.jpg', img)
 
 
 if __name__ == '__main__':
