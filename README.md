@@ -9,18 +9,27 @@
 
 ### 语言基础
 
-1. [python基础文档](https://codechina.csdn.net/AiShow/aibooks/-/blob/master/python基础学习文档.pdf)
+基础阶段需要掌握知识点
+- 基础类型：数字类型、None类型、Bool类型、字符串类型
+- 常用内置数据结构：列表(list)、元组(tuple)、字典(dict)、集合(set)
+- 逻辑控制与操作：If分支语句、for/while循环控制、try...except异常处理
+- 函数：定义函数、函数参数
+- 类与模块：类构造、类实例化、模块介绍、模块加载和使用
+
+#### 学习资料
+
+1. [Python官方API](https://docs.python.org/zh-cn/3.7/)
+
 2. 在线学习教材参考
    - [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
    - [莫烦PYTHON-Python 3 基础教程](https://mofanpy.com/)
-3. 基础阶段需要掌握知识点
-   - 基础类型：数字类型、None类型、Bool类型、字符串类型
-   - 常用内置数据结构：列表(list)、元组(tuple)、字典(dict)、集合(set)
-   - 逻辑控制与操作：If分支语句、for/while循环控制、try...except异常处理
-   - 函数：定义函数、函数参数
-   - 类与模块：类构造、类实例化、模块介绍、模块加载和使用
-2. Python基础测验 完成上面的基础学习后，可以在下面的题目中小试牛刀：
+
+3. Python基础测验 完成上面的基础学习后，可以在下面的题目中小试牛刀：
    - [牛客网专项练习-编程语言Python](https://www.nowcoder.com/intelligentTest)
+
+#### 其他文档
+
+1. [总结文档](https://codechina.csdn.net/AiShow/aibooks/-/blob/master/python基础学习文档.pdf)
 
 ### 开发基础
 
