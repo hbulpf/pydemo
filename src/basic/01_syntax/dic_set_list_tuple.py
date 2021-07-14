@@ -7,7 +7,10 @@ print(ad.get('pap'))
 print(ad.get('pap',1))
 print(ad)
 ad.pop('mar')
+ext=dict({'three': 3, 'one': 1, 'two': 2})
 print(ad)
+ad.update(ext)
+print(f"add ext:{ad}")
 
 # set 集合
 s = set([2,2,3,(1,2),5])
