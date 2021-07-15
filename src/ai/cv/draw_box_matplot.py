@@ -14,7 +14,7 @@ from PIL import ImageDraw
 
 
 def draw():
-    file_name = 'taxi.jpg'
+    file_name = 'img/taxi.jpg'
     img = Image.open(file_name)
     drawer = ImageDraw.ImageDraw(img)
     # 左上(X,Y)
@@ -32,7 +32,7 @@ def draw():
     font = ImageFont.truetype(r'C:\Windows\Fonts\Arial.ttf', 36)
     drawer.text((341 + 50, 718 - 40), '{} {:.3f}'.format(object_type, credence), (255, 0, 0), font=font)
 
-    pic_drew_path = "res/taxi-pil.jpg"
+    pic_drew_path = "img/res/taxi-pil.jpg"
     img.save(pic_drew_path)
     cv2.imshow('image', cv2.imread(pic_drew_path))
     cv2.waitKey(0)
