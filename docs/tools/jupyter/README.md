@@ -1,17 +1,37 @@
 # Jupyter Notebook
 
+## pip安装Notebook
+
+安装Notebook
+```sh
+pip3 install --upgrade pip
+pip3 install jupyter
+```
+
+启动notebook
+```sh
+jupyter notebook
+```
+
+后台启动
+```sh
+nohup jupyter notebook --ip=0.0.0.0 --port=30561 --no-browser --notebook-dir=~/notebook  --allow-root >>~/notebook/notebook.log 2>&1 &
+```
+
+## anaconda安装notebook
+
+安装Notebook
 ```
 conda install jupyter notebook --channel  https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 ```
 
 
->以下操作前请先导入 anaconda 环境变量
->```
->export PATH="/opt/anaconda3/bin:$PATH"
->```
+导入 anaconda 环境变量
+```
+export PATH="/opt/anaconda3/bin:$PATH"
+```
 
 + **快速配置用于快速启动 jupyter notebook ，基本配置用于讲解配置基本过程。**  
-+ **快速配置(贴完代码)即可远程使用  jupyter notebook 服务。无需进行基本配置。**
 + **进入页面后根目录为自己的 home 目录。**  
 
 ## 快速配置
