@@ -9,9 +9,13 @@
 """
 import base64
 import json
-
+from PIL import Image
 import cv2
 import numpy as np
+import scipy.ndimage as ndi
+
+from skimage import data, filters, segmentation, measure, morphology, color
+import matplotlib.pyplot as plt
 
 
 def draw():
@@ -93,13 +97,15 @@ def overlay_blob():
     print(f"{fw},{fh}")
     # overlayer = cv2.resize(contours, (w, h))
     overlayer = cv2.resize(contours, (0, 0), fx=fw, fy=fh, interpolation=cv2.INTER_NEAREST)
+
     output = image.copy()
     alpha = 0.2
     cv2.addWeighted(overlayer, alpha, image, 1 - alpha, 0, output)
     # cv2.resize(output, (h, w))
-    cv2.imshow('output', output)
-    cv2.waitKey()
-    cv2.destroyAllWindows()
+    # cv2.imshow('output', output)
+    # cv2.waitKey()
+    # cv2.destroyAllWindows()
+    cv2.imwrite("img/res/unet_boxed.jpg", output)
 
 
 def str2jpg(str, img):
@@ -121,13 +127,82 @@ def json2jpg():
         str2jpg(BlobMask, img2)
 
 
-def fill():
+# 定位一个种子,返回种子位置
+def seed_dirt(img):
+    for j in range(height):
+        for i in range(width):
+            a = img.getpixel((i, j))
+            if a == 0:
+                return ((i, j))
+
+
+# 标记连通区域-4连通
+def LableConnectedRagion4(labelmap, labelindex, quene):
+    # flag = len(quene)
+    while len(quene) != 0:
+        (m, n) = quene[0]
+        quene.remove(quene[0])
+        if img.getpixel((m, n + 1)) == 0 and labelmap[n + 1][m] == 0:
+            quene.append((m, n + 1))
+            labelindex += 1
+            labelmap[n + 1][m] = 1
+        if img.getpixel((m, n - 1)) == 0 and labelmap[n - 1][m] == 0:
+            quene.append((m, n - 1))
+            labelindex += 1
+            labelmap[n - 1][m] = 1
+        if img.getpixel((m + 1, n)) == 0 and labelmap[n][m + 1] == 0:
+            quene.append((m + 1, n))
+            labelindex += 1
+            labelmap[n][m + 1] = 1
+        if img.getpixel((m - 1, n)) == 0 and labelmap[n][m - 1] == 0:
+            quene.append((m - 1, n))
+            labelindex += 1
+            labelmap[n][m - 1] = 1
+
+
+# 标记连通区域-8连通
+def LableConnectedRagion8(labelmap, labelindex, quene):
+    # flag = len(quene)
+    while len(quene) != 0:
+        (m, n) = quene[0]
+        quene.remove(quene[0])
+        # print(m,n)
+        # print(quene)
+        for i in range(-1, 2):
+            for j in range(-1, 2):
+                if img.getpixel((m + i, n + j)) == 0 and labelmap[n + j][m + i] == 0:
+                    quene.append((m + i, n + j))
+                    labelindex += 1
+                    labelmap[n + j][m + i] = 1
+
+
+# 匹配标记矩阵输出第一个连通域图片
+def save_image(labelmap):
+    for i in range(len(labelmap)):
+        for j in range(len(labelmap[0])):
+            if labelmap[i][j] != 0:
+                newImg.putpixel((j, i), 0)
+    newImg.show()
+    newImg.save("test3.jpg")
+
+
+def fill_color():
     """
     python+OpenCV填充孔洞
     https://zhuanlan.zhihu.com/p/63919290
+    PYTHON---二值图像连通域标记
+    https://www.freesion.com/article/5478444052/
     :return:
     """
-    pass
+    # contours = color.rgb2gray(cv2.imread("img/BlobContours.jpg"))
+    # # contours = cv2.imread("img/BlobContours.jpg")
+    # thresh = filters.threshold_otsu(contours)
+    # bw = morphology.closing(contours > thresh, morphology.square(3))
+    # labels = measure.label(bw)
+    # dst = color.label2rgb(labels)
+    # plt.imshow(dst)
+    # plt.show()
+    cv2.imwrite("img/res/contours_color.jpg", dst)
 
 
 if __name__ == '__main__':
@@ -135,4 +210,5 @@ if __name__ == '__main__':
     # overlay()
     # json2jpg()
     # resize_test()
-    overlay_blob()
+    # overlay_blob()
+    fill_color()
