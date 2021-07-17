@@ -12,10 +12,6 @@ import json
 from PIL import Image
 import cv2
 import numpy as np
-import scipy.ndimage as ndi
-
-from skimage import data, filters, segmentation, measure, morphology, color
-import matplotlib.pyplot as plt
 
 
 def draw():
@@ -87,31 +83,19 @@ def resize_test():
     cv.destroyAllWindows()
 
 
-def overlay_blob():
-    image = cv2.imread("img/unetpp-yt.jpg")
-    h, w = image.shape[0:2]
-    print(image.shape)
-    contours = cv2.imread("img/BlobContours.jpg")
-    h1, w1 = contours.shape[0:2]
-    fh, fw = (h / h1), (w / w1)
-    print(f"{fw},{fh}")
-    # overlayer = cv2.resize(contours, (w, h))
-    overlayer = cv2.resize(contours, (0, 0), fx=fw, fy=fh, interpolation=cv2.INTER_NEAREST)
-
-    output = image.copy()
-    alpha = 0.2
-    cv2.addWeighted(overlayer, alpha, image, 1 - alpha, 0, output)
-    # cv2.resize(output, (h, w))
-    # cv2.imshow('output', output)
-    # cv2.waitKey()
-    # cv2.destroyAllWindows()
-    cv2.imwrite("img/res/unet_boxed.jpg", output)
-
-
 def str2jpg(str, img):
     with open(img, "wb") as f:
         bi = base64.b64decode(str)
         f.write(bi)
+
+
+def str2cv2jpg(str):
+    bi = base64.b64decode(str)
+    # 二进制数据流转np.ndarray [np.uint8: 8位像素]
+    img = cv2.imdecode(np.frombuffer(bi, np.uint8), cv2.IMREAD_COLOR)
+    # # 将bgr转为rbg
+    rgb_img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    cv2.imwrite("img/res/str2cv2.jpg", rgb_img)
 
 
 def json2jpg():
@@ -119,90 +103,101 @@ def json2jpg():
         json1 = json.loads(f.read())
         BlobContours = json1.get("reqs/unetpp-yt.jpg").get("BlobContours")
         print("BlobContours: " + BlobContours)
-        BlobMask = json1.get("reqs/unetpp-yt.jpg").get("BlobMask")
-        print("BlobMask:" + BlobMask)
-        img1 = "img/BlobContours.jpg"
+        img1 = "img/res/BlobContours.jpg"
         str2jpg(BlobContours, img1)
-        img2 = "img/BlobMask.jpg"
-        str2jpg(BlobMask, img2)
+        str2cv2jpg(BlobContours)
 
 
-# 定位一个种子,返回种子位置
-def seed_dirt(img):
-    for j in range(height):
-        for i in range(width):
-            a = img.getpixel((i, j))
-            if a == 0:
-                return ((i, j))
-
-
-# 标记连通区域-4连通
-def LableConnectedRagion4(labelmap, labelindex, quene):
-    # flag = len(quene)
-    while len(quene) != 0:
-        (m, n) = quene[0]
-        quene.remove(quene[0])
-        if img.getpixel((m, n + 1)) == 0 and labelmap[n + 1][m] == 0:
-            quene.append((m, n + 1))
-            labelindex += 1
-            labelmap[n + 1][m] = 1
-        if img.getpixel((m, n - 1)) == 0 and labelmap[n - 1][m] == 0:
-            quene.append((m, n - 1))
-            labelindex += 1
-            labelmap[n - 1][m] = 1
-        if img.getpixel((m + 1, n)) == 0 and labelmap[n][m + 1] == 0:
-            quene.append((m + 1, n))
-            labelindex += 1
-            labelmap[n][m + 1] = 1
-        if img.getpixel((m - 1, n)) == 0 and labelmap[n][m - 1] == 0:
-            quene.append((m - 1, n))
-            labelindex += 1
-            labelmap[n][m - 1] = 1
-
-
-# 标记连通区域-8连通
-def LableConnectedRagion8(labelmap, labelindex, quene):
-    # flag = len(quene)
-    while len(quene) != 0:
-        (m, n) = quene[0]
-        quene.remove(quene[0])
-        # print(m,n)
-        # print(quene)
-        for i in range(-1, 2):
-            for j in range(-1, 2):
-                if img.getpixel((m + i, n + j)) == 0 and labelmap[n + j][m + i] == 0:
-                    quene.append((m + i, n + j))
-                    labelindex += 1
-                    labelmap[n + j][m + i] = 1
-
-
-# 匹配标记矩阵输出第一个连通域图片
-def save_image(labelmap):
-    for i in range(len(labelmap)):
-        for j in range(len(labelmap[0])):
-            if labelmap[i][j] != 0:
-                newImg.putpixel((j, i), 0)
-    newImg.show()
-    newImg.save("test3.jpg")
-
-
-def fill_color():
+def fill_color(img, save_path):
     """
-    python+OpenCV填充孔洞
-    https://zhuanlan.zhihu.com/p/63919290
     PYTHON---二值图像连通域标记
     https://www.freesion.com/article/5478444052/
     :return:
     """
-    # contours = color.rgb2gray(cv2.imread("img/BlobContours.jpg"))
-    # # contours = cv2.imread("img/BlobContours.jpg")
-    # thresh = filters.threshold_otsu(contours)
-    # bw = morphology.closing(contours > thresh, morphology.square(3))
-    # labels = measure.label(bw)
-    # dst = color.label2rgb(labels)
-    # plt.imshow(dst)
-    # plt.show()
-    cv2.imwrite("img/res/contours_color.jpg", dst)
+    width = img.size[0]
+    height = img.size[1]
+
+    # 定位一个种子,返回种子位置
+    def seed_dirt():
+        for j in range(height):
+            for i in range(width):
+                a = img.getpixel((i, j))
+                if a == 0:
+                    return i, j
+        print('no seed')
+
+    # 标记连通区域-4连通
+    def LableConnectedRagion4(labelmap, labelindex, quene):
+        while len(quene) != 0:
+            (m, n) = quene[0]
+            quene.remove(quene[0])
+            if img.getpixel((m, n + 1)) == 0 and labelmap[n + 1][m] == 0:
+                quene.append((m, n + 1))
+                labelindex += 1
+                labelmap[n + 1][m] = 1
+            if img.getpixel((m, n - 1)) == 0 and labelmap[n - 1][m] == 0:
+                quene.append((m, n - 1))
+                labelindex += 1
+                labelmap[n - 1][m] = 1
+            if img.getpixel((m + 1, n)) == 0 and labelmap[n][m + 1] == 0:
+                quene.append((m + 1, n))
+                labelindex += 1
+                labelmap[n][m + 1] = 1
+            if img.getpixel((m - 1, n)) == 0 and labelmap[n][m - 1] == 0:
+                quene.append((m - 1, n))
+                labelindex += 1
+                labelmap[n][m - 1] = 1
+
+    # 匹配标记矩阵输出第一个连通域图片
+    def save_image(label_map):
+        for i in range(len(label_map)):
+            for j in range(len(label_map[0])):
+                if label_map[i][j] != 0:
+                    new_img.putpixel((j, i), 0)
+        new_img.save(save_path)
+
+    # img = img.convert('1')
+    new_img = Image.new("1", (width, height), 255)
+    label_map = np.zeros((height, width))
+    label_index = 0
+    queue = []
+    (x, y) = seed_dirt()
+    queue.append((x, y))
+    label_index += 1
+    label_map[y][x] = 1
+    LableConnectedRagion4(label_map, label_index, queue)
+    save_image(label_map)
+
+
+def draw_seg():
+    def get_blob_contours():
+        with open("img/unet++-WithoutReg-rsp.json", "r") as f:
+            json1 = json.loads(f.read())
+            return json1.get("reqs/unetpp-yt.jpg").get("BlobContours")
+
+    def overlay_blob(pic_path, contours_path, save_path):
+        image = cv2.imread(pic_path)
+        h, w = image.shape[0:2]
+        contours = cv2.imread(contours_path)
+        h1, w1 = contours.shape[0:2]
+        fh, fw = (h / h1), (w / w1)
+        print(f"{fw},{fh}")
+        overlayer = cv2.resize(contours, (0, 0), fx=fw, fy=fh, interpolation=cv2.INTER_NEAREST)
+        output = image.copy()
+        alpha = 0.3
+        cv2.addWeighted(overlayer, alpha, image, 1 - alpha, 0, output)
+        cv2.imwrite(save_path, output)
+
+    pic_path = 'img/unetpp-yt.jpg'
+    contours_path = "img/res/unet_contours.jpg"
+    save_path = "img/res/unet_res.jpg"
+    blob_contours = get_blob_contours()
+    bi = base64.b64decode(blob_contours)
+    # 二进制数据流转np.ndarray [np.uint8: 8位像素]
+    img = cv2.imdecode(np.frombuffer(bi, np.uint8), cv2.IMREAD_COLOR)
+    rgb_img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY))
+    fill_color(rgb_img, contours_path)
+    overlay_blob(pic_path, contours_path, save_path)
 
 
 if __name__ == '__main__':
@@ -210,5 +205,7 @@ if __name__ == '__main__':
     # overlay()
     # json2jpg()
     # resize_test()
-    # overlay_blob()
-    fill_color()
+    # overlay_blob("img/unetpp-yt.jpg", "img/BlobContours.jpg")
+    # fill_color("img/BlobContours.jpg")PIL.PngImagePlugin.PngImageFile
+    # json2jpg()
+    draw_seg()
