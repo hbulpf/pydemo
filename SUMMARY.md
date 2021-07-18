@@ -35,6 +35,8 @@
   - [numpy](docs/libs/numpy.md)
   - [日志](docs/libs/logging.md)
   - [surprise](docs/libs/surprise.md)
+  - [open-cv](docs/libs/opencv/README.md)
+    - [faq](docs/libs/opencv/faq.md)
 
 - [小例子](docs/samples/README.md)
   - [递归遍历目录](docs/samples/递归遍历目录.md)

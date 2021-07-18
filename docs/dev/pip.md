@@ -38,6 +38,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 
 ### 源
 
+- pypi.org: https://pypi.org
 - 清华：https://pypi.tuna.tsinghua.edu.cn/simple
 - 阿里云：http://mirrors.aliyun.com/pypi/simple/
 - 华为云：https://repo.huaweicloud.com/repository/pypi/simple
@@ -45,6 +46,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 - 华中理工大学：http://pypi.hustunique.com/
 - 山东理工大学：http://pypi.sdutlinux.org/
 - 豆瓣：http://pypi.douban.com/simple/
+- 加州大学欧文分校: https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 ### 源设置
 
@@ -92,3 +94,6 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host =mirrors.aliyun.com
 ```
 
+## pip包下载
+
+1. whl 包下载站: 

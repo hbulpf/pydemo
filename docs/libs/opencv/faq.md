@@ -1,4 +1,4 @@
-# open-cv
+# 相关问题
 
 cv2和PIL.Image之间的转换
 https://blog.csdn.net/qq_38153833/article/details/88060268
