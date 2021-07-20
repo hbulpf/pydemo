@@ -37,7 +37,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 ## pip 源
 
 ### 源
-
+- https://pypi.python.org/simple
 - pypi.org: https://pypi.org
 - 清华：https://pypi.tuna.tsinghua.edu.cn/simple
 - 阿里云：http://mirrors.aliyun.com/pypi/simple/
