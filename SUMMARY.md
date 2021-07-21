@@ -30,6 +30,7 @@
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
   - [pep8](docs/dev/pep8.md)
+  - [代码检查](docs/dev/代码检查.md)
 
 - [常用库](docs/libs/README.md)
   - [numpy](docs/libs/numpy.md)
