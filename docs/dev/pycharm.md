@@ -1,5 +1,9 @@
 # PyCharm
 
+## PyCharm使用指导
+
+参考 [PyCharm使用指导](https://jetbrains.com.zh.xy2401.com/help/pycharm/)
+
 ## cmd进入pycharm所创建的虚拟环境
 
 打开pycharm的 `File | Settings | Project: mysite | Project Interpreter`
