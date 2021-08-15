@@ -37,6 +37,7 @@
   - [日志](docs/libs/logging.md)
   - [surprise](docs/libs/surprise.md)
   - [open-cv](docs/libs/opencv/README.md)
+    - [常用方法](docs/libs/opencv/my_cv.md)
     - [faq](docs/libs/opencv/faq.md)
 
 - [小例子](docs/samples/README.md)
