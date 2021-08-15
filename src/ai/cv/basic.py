@@ -7,6 +7,7 @@
 @File: basic.py
 @Project: PyCharm
 """
+import os
 
 import cv2
 import numpy as np
@@ -54,5 +55,55 @@ def read_video():
     cv2.destroyAllWindows()
 
 
+def get_single_chan(src_path, dest_path):
+    """
+    提取图片g通道
+    :param src_path:
+    :param dest_path:
+    :return:
+    """
+    img1 = cv2.imread(src_path)
+    if not is_allowed_file(src_path):
+        print(f"pic({src_path}) is not pic!")
+        return
+    g = img1[:, :, 1]
+    cv2.imwrite(dest_path, g)
+    cv2.destroyAllWindows()
+
+
+def is_allowed_file(src_path):
+    """
+    检查文件后缀名
+    :param src_path:
+    :return:
+    """
+    file_suffix = {'.jpg', '.jpeg', '.png'}
+    suffix_ok = False
+    for suffix in file_suffix:
+        if src_path.endswith(suffix):
+            suffix_ok = True
+            break
+    return suffix_ok
+
+
+def get_single_chan_dir(src_dir, dest_dir):
+    """
+    提取某个目录下面图片的g通道
+    :param src_dir:
+    :param dest_dir:
+    :return:
+    """
+    if not os.path.isdir(src_dir):
+        print(f"{src_dir} not exists")
+    if not os.path.isdir(dest_dir):
+        os.makedirs(dest_dir)
+    for fi in os.listdir(src_dir):
+        f_src = os.path.join(src_dir, fi)
+        f_dest = os.path.join(dest_dir, fi)
+        get_single_chan(f_src, f_dest)
+    print(f"finished to convert pic to g channel from src({src_dir}) to dest({dest_dir})")
+
+
 if __name__ == '__main__':
-    read_video()
+    # read_video()
+    get_single_chan_dir('./img', './img_tmp')
