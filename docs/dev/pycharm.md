@@ -16,6 +16,9 @@ E:\virtualenv\crawl1\Scripts>activate
 （这里E:\virtualenv\crawl1\是虚拟环境所在文件夹，Scripts是crawl1下的文件夹，这个文件夹里有activate激活组件）
 
 ## 代码模板
+
+file -->settings–>editor–>file and code templates
+
 ```
 #!/usr/bin/env python
 # _*_coding:utf-8_*_
