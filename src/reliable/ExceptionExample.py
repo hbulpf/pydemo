@@ -31,11 +31,35 @@ def test_Exception():
         raise ChildException
     except ParentException as e:
         print("catch Exception:%s" % e)
-    try:
-        raise ParentException
-    except ChildException as e:
-        print("catch Exception:%s" % e)
+    # try:
+    #     raise ParentException
+    # except ChildException as e:
+    #     print("catch Exception:%s" % e)
+
+
+def test_ret():
+    def divide(x, y):
+        try:
+            return x / y
+        except Exception:
+            return 0
+        finally:
+            return -1
+
+    print(divide(1, 0))
+
+
+def test_ret2():
+    def divide(x, y):
+        try:
+            return x / y
+        except ZeroDivisionError:
+            raise
+
+    print(divide(1, 0))
 
 
 if __name__ == '__main__':
     test_Exception()
+    test_ret()
+    test_ret2()
