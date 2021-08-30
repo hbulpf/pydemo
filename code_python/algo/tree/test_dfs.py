@@ -6,3 +6,11 @@
 @Author: RunAtWorld
 @File: test_dfs.py
 """
+import unittest
+
+from dfs import DFS
+
+
+class TestDfs(unittest.TestCase):
+    def setUp(self) -> None:
+        self.instance = DFS()
