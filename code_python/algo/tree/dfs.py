@@ -8,17 +8,17 @@ class DFS:
     def process(self, node: TreeNode):
         print(node.value, end=',')
 
-    def dfs_recursively(self, root: TreeNode):
+    def dfs_tree_recursively(self, root: TreeNode):
         """
         递归实现 dfs
         """
         if not root:
             return
         self.process(root)
-        self.dfs_recursively(root.left)
-        self.dfs_recursively(root.right)
+        self.dfs_tree_recursively(root.left)
+        self.dfs_tree_recursively(root.right)
 
-    def dfs_with_stack(self, root: TreeNode):
+    def dfs_tree_with_stack(self, root: TreeNode):
         """
         使用栈实现dfs
         """
@@ -43,6 +43,6 @@ if __name__ == '__main__':
     n2 = TreeNode(2, n4, n5)
     n3 = TreeNode(3, n6, n7)
     n0 = TreeNode(1, n2, n3)
-    sample.dfs_recursively(n0)
+    sample.dfs_tree_recursively(n0)
     print()
-    sample.dfs_with_stack(n0)
+    sample.dfs_tree_with_stack(n0)

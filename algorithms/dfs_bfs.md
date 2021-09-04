@@ -48,12 +48,11 @@ public class Solution {
 
 整体思路还是比较清晰的，使用栈来将要遍历的节点压栈，然后出栈后检查此节点是否还有未遍历的节点，有的话压栈，没有的话不断回溯(出栈)。
 
-```
+```java
 public static void dfsWithStack(Node root) { 
     if (root == null) { 
         return; 
     } 
- 
     Stack<Node> stack = new Stack<>(); 
     // 先把根节点压栈 
     stack.push(root); 
@@ -75,9 +74,63 @@ public static void dfsWithStack(Node root) {
 } 
 ```
 
+```python
+def dfs_tree_with_stack(self, root: TreeNode):
+    """
+    使用栈实现dfs
+    """
+    if not root:
+        return
+    stack = [root]
+    while stack:
+        node = stack.pop()
+        self.process(node)
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+```
+
 ### BFS
 
-广度优先遍历
+广度优先遍历树
+```java
+private static void bfs(Node root) { 
+    if (root == null) { 
+        return; 
+    } 
+    Queue<Node> stack = new LinkedList<>(); 
+    stack.add(root); 
+ 
+    while (!stack.isEmpty()) { 
+        Node node = stack.poll(); 
+        System.out.println("value = " + node.value); 
+        Node left = node.left; 
+        if (left != null) { 
+            stack.add(left); 
+        } 
+        Node right = node.right; 
+        if (right != null) { 
+            stack.add(right); 
+        } 
+    } 
+} 
+```
+
+```python
+def bfs_tree(self, root: TreeNode):
+    if not root:
+        return
+    queue = [root]
+    while queue:
+        node = queue.pop(0)
+        self.process(node)
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+```
+
 
 ## 参考
 
