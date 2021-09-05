@@ -7,7 +7,7 @@ def process_student():
     # 获取当前线程关联的student:
     std = local_school.student
     grade = local_school.grade
-    print('Hello, %s:grade %s (in %s)' % (std, grade, threading.current_thread().name))
+    print('Hello, %s:grade %s (in %s)\n' % (std, grade, threading.current_thread().name))
 
 def process_thread(name,grade):
     # 绑定ThreadLocal的student:

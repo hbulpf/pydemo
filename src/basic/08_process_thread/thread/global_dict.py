@@ -23,3 +23,4 @@ def do_task_2():
     print(f'task2:{std} ,name:{std.name}')
 
 std_thread('Zhang Ming')
+std_thread('Zhu Yuanzhang')

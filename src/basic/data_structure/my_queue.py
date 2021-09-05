@@ -76,6 +76,36 @@ def get_bugs():
             break
     print('cosumer ok')
 
+class MyQueue:
+    def __init__(self):
+        self._alist=[]
+
+    def put(self,ele):
+        self._alist.append(ele)
+
+    def get(self):
+        return self._alist.pop(0)
+
+    def size(self):
+        return len(self._alist)
+
+    def is_empty(self):
+        return not self._alist
+
+    def show(self):
+        print(self._alist)
+
+
 if __name__ == '__main__':
     # multi_process()
-    get_bugs()
+    # get_bugs()
+    queue = MyQueue()
+    queue.put(1)
+    queue.put(4)
+    queue.put(6)
+    queue.show()
+    print(queue.get())
+    print(queue.get())
+    print(queue.get())
+    print(queue.is_empty())
+
