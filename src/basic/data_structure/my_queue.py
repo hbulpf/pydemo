@@ -6,6 +6,7 @@
 @Author: RunAtWorld
 @File: my_queue.py
 """
+import _queue
 from queue import Queue, LifoQueue, PriorityQueue
 
 def queue_test():
@@ -57,5 +58,24 @@ def multi_process():
     t2.start()
     t3.start()
 
+def get_bugs():
+    import queue
+    import time
+
+    q = queue.Queue(10)
+    for i in range(100):
+        q.put('A',block=True)
+        time.sleep(0.1)
+    print('write ok')
+
+    while True:
+        try:
+            data = q.get(block=False)
+        except _queue.Empty:
+            print('empty')
+            break
+    print('cosumer ok')
+
 if __name__ == '__main__':
-    multi_process()
+    # multi_process()
+    get_bugs()
