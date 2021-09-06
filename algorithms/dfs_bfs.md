@@ -139,7 +139,7 @@ def bfs_tree(self, root: TreeNode):
 
 ### 习题演练
 
-1. leetcode 104，111: 给定一个二叉树，找出其最大/最小深度。 
+1. [leetcode 104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)，[111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/): 给定一个二叉树，找出其最大/最小深度。 
 
    例如：给定二叉树 [3,9,20,null,null,15,7],
 
@@ -153,7 +153,7 @@ def bfs_tree(self, root: TreeNode):
 
    则它的最小深度 2，最大深度 3。
 
-   思路: 使用深度遍历的思想，递归遍历左右子树的最大/最小深度
+   思路: 使用深度遍历的思想，递归遍历左右子树的最大/最小深度.但在得到最小深度时，注意树某个子节点为空的情况。
 
    ```java
    /** 
@@ -165,9 +165,9 @@ def bfs_tree(self, root: TreeNode):
        if (node == null) { 
            return 0; 
        } 
-       int leftDepth = getMaxDepth(node.left) + 1; 
-       int rightDepth = getMaxDepth(node.right) + 1; 
-       return Math.max(leftDepth, rightDepth); 
+       int leftDepth = getMaxDepth(node.left); 
+       int rightDepth = getMaxDepth(node.right); 
+       return Math.max(leftDepth, rightDepth) + 1; 
    } 
     
    /** 
@@ -179,9 +179,9 @@ def bfs_tree(self, root: TreeNode):
        if (node == null) { 
            return 0; 
        } 
-       int leftDepth = getMinDepth(node.left) + 1; 
-       int rightDepth = getMinDepth(node.right) + 1; 
-       return Math.min(leftDepth, rightDepth); 
+       int leftDepth = getMinDepth(node.left); 
+       int rightDepth = getMinDepth(node.right); 
+       return leftDepth && rightDepth ? Math.min(leftDepth, rightDepth) + 1 : leftDepth + rightDepth + 1; 
    } 
    ```
 
@@ -209,14 +209,50 @@ def bfs_tree(self, root: TreeNode):
    
    使用bfs思路的代码
    
+   ```python
+    def levelOrder1(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
+        from collections import deque
+        q = deque([root])
+        res = []
+        while q:
+            level_len = len(q)
+            level = []
+            while level_len > 0:
+                node = q.popleft()
+                level.append(node.val)
+                level_len -= 1
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            res.append(level)
+        return res
    ```
    
-   ```
+   使用dfs思路的代码: 这题用 BFS 是显而易见的，但其实也可以用 DFS. 
    
-   使用dfs思路的代码
+   DFS 可以用递归来实现，其实只要在递归函数上加上一个「层」的变量即可，只要节点属于这一层，则把这个节点放入相当层的数组里
    
-   ```
-   
+   ```python
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        """
+        使用DFS的方法
+        """
+        travel_list = []
+
+        def dfs(root: TreeNode, level: int):
+            if not root:
+                return
+            if len(travel_list) < level + 1:
+                travel_list.append([])
+            travel_list[level].append(root.val)
+            dfs(root.left, level + 1)
+            dfs(root.right, level + 1)
+
+        dfs(root, 0)
+        return travel_list
    ```
 
 ### 应用

@@ -7,7 +7,7 @@ from tree_node import TreeNode
 
 class BFS():
     def process(self, node: TreeNode):
-        print(node.value, end=',')
+        print(node.val, end=',')
 
     def bfs_tree(self, root: TreeNode):
         if not root:

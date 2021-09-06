@@ -6,7 +6,7 @@ from algo.tree.tree_node import TreeNode
 
 class DFS:
     def process(self, node: TreeNode):
-        print(node.value, end=',')
+        print(node.val, end=',')
 
     def dfs_tree_recursively(self, root: TreeNode):
         """

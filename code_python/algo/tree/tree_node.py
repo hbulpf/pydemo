@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 class TreeNode:
-    def __init__(self, value, left, right):
+    def __init__(self, value, left=None, right=None):
         self.left = left
         self.right = right
-        self.value = value
+        self.val = value
