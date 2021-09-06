@@ -210,7 +210,7 @@ def bfs_tree(self, root: TreeNode):
    使用bfs思路的代码
    
    ```python
-    def levelOrder1(self, root: TreeNode) -> List[List[int]]:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:
             return []
         from collections import deque
