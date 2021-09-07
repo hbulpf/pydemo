@@ -32,6 +32,7 @@
 7. [leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 8. [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
 9. [软件工程技术面试个人指南](https://github.com/kdn251/interviews)
+10. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
 
 # 要看完的书
 
