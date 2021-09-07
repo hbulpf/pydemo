@@ -23,6 +23,7 @@
 2. 在线学习教材参考
    - [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
    - [莫烦PYTHON-Python 3 基础教程](https://mofanpy.com/)
+   - [python教程网](https://www.92python.com/)
 
 3. Python基础测验 完成上面的基础学习后，可以在下面的题目中小试牛刀：
    - [牛客网专项练习-编程语言Python](https://www.nowcoder.com/intelligentTest)
