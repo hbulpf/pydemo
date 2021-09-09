@@ -52,15 +52,16 @@ DFS是一直找邻，然后一直遍历下去，直到把所有的节点遍历�
 def DFS(M, i, visited):
     j = 0
     visited[i] = 1
-    print(i)   # 当然，你也可以干点别的...根据具体运用
-    for i in range(len(M)):
+    print(i, end='->')   #访问, 当然，你也可以干点别的...根据具体运用
+    for j in range(len(M)):
         if M[i][j] and not visited[j]:
             DFS(M, j, visited)
 
 def main(M):
     visited = [0]*len(M)
     for i in range(len(M)):
-        DFS(M, i, visited)
+        if not visited[k]:  # 注意这里也要判断
+            DFS(M, i, visited)
 
 M = [[0,1,1,1],[1,0,1,0],[1,1,0,1],[1,0,1,0]]
 main(M)
@@ -132,12 +133,12 @@ void DFSTrave(){
 
 #### Python版本
 
+BFS主要是用来寻找最短路径
+- 从某一点出发，加入队列，然后当这个点出队列，则马上把它的所有邻点加入队列，
+- 重复的做这个过程，直到所有点遍历完
+- 在此过程中可以有一些终止条件，可用来寻找最短距离/我们想要的目的。
+- 注意: 访问时不能在队列弹出时访问，应该在添加进队列时访问，这和树的bfs不太一样。
 ```
-# BFS主要是用来寻找最短路径
-# 从某一点出发，加入队列，然后当这个点出队列，则马上把它的所有邻点加入队列，
-# 重复的做这个过程，直到所有点遍历完
-# 在此过程中可以有一些终止条件，可用来寻找最短距离/我们想要的目的。
-
 def BFS(M):   # M邻接矩阵
     visited = [0]*len(M)
     queue = []
@@ -145,12 +146,13 @@ def BFS(M):   # M邻接矩阵
         if not visited[i]:
             visited[i] = 1
             queue.append(i)
-            print(i)
+            print(i, end='->') # 访问，根据实际问题，这个可以做别的处理
         while queue:
             cur = queue.pop(0)
             for j in range(len(M)):
                 if M[i][j] and not visited[j]:
-                    print j    # 根据实际问题，这个可以做别的处理
+                    #这里有可能会重复添加，因此将添加时作为访问时机，这和树的bfs不太一样。
+                    print(j, end='->')    # 访问，根据实际问题，这个可以做别的处理
                     queue.append(j)  # 把和节点i有关系的邻都依次的加入队列
                     visited[j] = 1   # 且做visited标记
 
