@@ -71,7 +71,6 @@ main(M)
 邻接矩阵版
 
 ```
-
 const int MAXV = 1000;     //最大顶点数 
 const int INF = 100000000;  //设INF为一个很大的数 
 int n,G[MAXV][MAXV];       //n为顶点数 
@@ -100,7 +99,6 @@ void DFSTrave(){   //遍历图G
 邻接表版
 
 ```
-
 const int MAXV = 1000;     //最大顶点数 
 const int INF = 100000000;  //设INF为一个很大的数 
 
