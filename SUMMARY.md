@@ -64,3 +64,7 @@
    - [python与anaconda配套](docs/tools/anaconda/python与anaconda配套.md)
 - [Jupyter](docs/tools/jupyter/README.md)
   - [Jupyterhub](docs/tools/jupyter/jupyterhub_service.md)
+
+
+## 其他
+- [学习计划](plan.md)
