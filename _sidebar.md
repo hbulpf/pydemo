@@ -5,7 +5,7 @@
   * [五大常用算法](algorithms/五大常用算法.md)
     * [常见题目汇总](algorithms/questions/README.md)
   * [OJ练习](algorithms/oj.md)
-
+  * [python小技巧](algorithms/python_tips.md)
 
 * LeetCode
   * [每日打卡](每日打卡.md)
@@ -13,3 +13,4 @@
   * [LeetCode题目分类](LeetCode题目分类.md)
   * [其它题目](extras.md)
   * [刷题要点总结](others/Attention.md)
+  
