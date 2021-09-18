@@ -2,6 +2,8 @@
 
 ## 常用内建库
 
+[python官方标准库学习](https://docs.python.org/zh-cn/3.7/library/index.html)
+
 1. [logging](logging.md):打印日志
 2. math: 加减乘除、乘方、求幂
 3. decimal: 常用的精度算法，如四舍五入、银行家算法
