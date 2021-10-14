@@ -6,7 +6,7 @@ for path,dir,file in os.walk('.'):
     k=False
     for name in file:
         if key in name:
-            print(path,'==>',name)
+            print(dir,path,'==>',name)
             k=True
     if k==True:
         print('-'*50)
