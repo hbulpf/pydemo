@@ -48,6 +48,8 @@
 - [小例子](docs/samples/README.md)
   - [递归遍历目录](docs/samples/递归遍历目录.md)
 
+- [设计模式](docs/design_patterns/README.md)
+
 ## 项目进阶
 
 * [爬虫](docs/spiders/README.md)
