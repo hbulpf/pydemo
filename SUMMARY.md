@@ -23,6 +23,7 @@
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
   - [pep8](docs/dev/pep8.md)
+  - [unittest](docs/dev/unittest.md)
   - [常见第三方模块](docs/dev/常见第三方模块.md)
   - [代码检查](docs/dev/代码检查.md)
   * [图形界面](docs/dev/图形界面.md)
