@@ -32,6 +32,7 @@
   * [访问数据库](docs/dev/访问数据库.md)
   * [文件操作](docs/dev/文件操作.md)
   * [json处理](docs/dev/json处理.md)
+  * [特别情况](docs/dev/特别情况.md)
   * [web开发](docs/dev/web开发/README.md)
     * [http](docs/dev/web开发/http.md)
     * [token](docs/dev/web开发/token.md)
