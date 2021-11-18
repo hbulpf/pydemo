@@ -41,6 +41,11 @@ Mac:myproject michael$ source venv/bin/activate
 (venv)Mac:myproject michael$
 ```
 
+windows环境下执行
+```
+venv\Scripts\activate
+```
+
 注意到命令提示符变了，有个`(venv)`前缀，表示当前环境是一个名为`venv`的Python环境。
 
 下面正常安装各种第三方包，并运行`python`命令：
