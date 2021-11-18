@@ -34,6 +34,18 @@ roommate.sort() # 对list进行排序,list元素本身顺序发生改变，无�
 r2=sorted(roommate,reverse=True)  # 对list进行排序,list本身顺序无改变，返回一个新的list
 ```
 
+使用 list 模拟队列
+```Python
+roommate.append('xinran') #入队
+a2 = roommate.pop(0) #出队
+```
+
+使用 list 模拟栈
+```Python
+roommate.append('xinran') #入栈
+a2 = roommate.pop() #出栈
+```
+
 为了提高效率还可以使用 dequeue。deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈：
 
 ```python
@@ -46,7 +58,20 @@ a1 = q.pop()
 print(a1)
 a2 = q.popleft()
 print(a2)
-q
+```
+
+模拟队列
+
+```Python
+q = deque(['a', 'b', 'c'])
+q.append('x') #入队
+a2 = q.popleft()  #出队
+```
+
+模拟栈
+```Python
+q.append('x') #入栈
+a2 = q.pop()  #出栈
 ```
 
 `deque` 除了实现list的 `append()` 和 `pop()` 外，还支持 `appendleft()` 和 `popleft()` ，这样就可以非常高效地往头部添加或删除元素。deque 除了从 `collections` 导入，也可以从 `queue` 模块导入。
@@ -119,10 +144,31 @@ if __name__ == '__main__':
 
 #### 二分查找
 
-算法模板
-```
-# 二分查找
+二分查找的前提是已经排好序。
 
+二分查找算法模板
+```python
+def binary_search(arr, key):
+    left = 0
+    right = len(arr) - 1
+    while left <= right:
+        # 特别注意这里的 <=
+        mid = (left + right) // 2
+        if arr[mid] < key:
+            left = mid
+        elif arr[mid] > key:
+            right = mid
+        else:
+            return mid
+    return -1
+```
+测试
+```python
+def test1():
+    arr = [4, 2, 5, 2, 8, 0, -1, 3, 7]
+    arr.sort()
+    print(arr, ":", binary_search(arr, 5))
+    print(arr, ":", binary_search(arr, 2))
 ```
 
 ### 搜索
