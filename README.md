@@ -1,9 +1,15 @@
 # 每日力扣 
 
+全量题目
 1. [每日打卡](每日打卡.md)
-2. [LeetCode全部题目](LeetCode全部题目.md)
-3. [LeetCode题目分类](LeetCode题目分类.md)
-4. [其它题目](extras.md)
+3. [LeetCode全部题目](LeetCode全部题目.md)
+4. [LeetCode题目分类](LeetCode题目分类.md)
+5. [其它题目](extras.md)
+
+力扣精选
+1. [初级算法](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2zsx1/) 帮助入门
+2. [算法面试题汇总](https://leetcode-cn.com/leetbook/detail/top-interview-questions/)
+3. [LeetCode 热题 HOT 100](https://leetcode-cn.com/problem-list/2cktkvj/)
 
 ## 总结
 
@@ -33,6 +39,7 @@
 8. [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
 9. [软件工程技术面试个人指南](https://github.com/kdn251/interviews)
 10. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
+11. [全栈潇晨](https://xiaochen1024.com/)
 
 # 要看完的书
 
