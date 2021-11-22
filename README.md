@@ -10,6 +10,7 @@
 1. [初级算法](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2zsx1/) 帮助入门
 2. [算法面试题汇总](https://leetcode-cn.com/leetbook/detail/top-interview-questions/)
 3. [LeetCode 热题 HOT 100](https://leetcode-cn.com/problem-list/2cktkvj/)
+4. [腾讯各事业群爱考的算法题Top10](https://leetcode-cn.com/circle/discuss/q1iaUL/)
 
 ## 总结
 
