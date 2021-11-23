@@ -45,11 +45,11 @@
 # 要看的书
 
 1. [力扣-数组](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-array.pdf)
-2. [力扣-字符串](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-string.pdf)
-3. [力扣-列表](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-list.pdf)
-4. [力扣-树](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-tree.pdf)
-5. [力扣-回溯](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-backtracking.pdf)
-6. [力扣-动态规划](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-dp.pdf)
+2. [力扣-字符串](https://hecloud.hnbdata.cn/leetbook/ebook/string/leetcode-string.pdf)
+3. [力扣-列表](https://hecloud.hnbdata.cn/leetbook/ebook/list/leetcode-list.pdf)
+4. [力扣-树](https://hecloud.hnbdata.cn/leetbook/ebook/tree/leetcode-tree.pdf)
+5. [力扣-回溯](https://hecloud.hnbdata.cn/leetbook/ebook/backtracking/leetcode-backtracking.pdf)
+6. [力扣-动态规划](https://hecloud.hnbdata.cn/leetbook/ebook/dp/leetcode-dp.pdf)
 
 
 # 练习平台
