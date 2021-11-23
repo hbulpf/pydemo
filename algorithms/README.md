@@ -1,4 +1,4 @@
-# 基本数据结构与算法
+# 基本数据结构
 
 ## 基本数据结构
 
@@ -124,23 +124,6 @@
 1. [堆](../../src/main/dev/algorithm/heap)
     1. 大根堆
     2. 小根堆
-
-
-## 五大常用算法
-
-1. [动态规划](../../src/main/dev/algorithm/dp)
-1. [贪心](../../src/main/dev/algorithm/greedy)
-1. [分治]()
-1. [回溯]()
-1. [分支界定]()
-
-## 练习总结
-
-1. [OJ 练习](oj.md)
-2. [google code jam](https://codingcompetitions.withgoogle.com/codejam)
-
-# 常见题目
-参考 [常见题目汇总](questions.md)
 
 # 参考  <!-- {docsify-ignore} -->
 
