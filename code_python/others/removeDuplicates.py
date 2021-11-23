@@ -13,8 +13,6 @@ class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         """
         使用逆序删除，巧妙避开删除元素时引起数组长度变化的影响
-        :param nums:
-        :return:
         """
         if not nums:
             return len(nums)
@@ -61,9 +59,21 @@ class Solution:
             i = j
         return cnt
 
+    def removeDuplicates4(self, nums: List[int]) -> int:
+        """
+        这里用到了List的 count函数，统计某个元素的个数
+        """
+        if not nums:
+            return len(nums)
+        for i in nums[:]:
+            if nums.count(i) != 1:
+                nums.pop(nums.index(i))
+        return len(nums)
+
 
 if __name__ == '__main__':
     nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+    print(nums.count(3))
     solution = Solution()
     print(solution.removeDuplicates(nums))
     print(nums)

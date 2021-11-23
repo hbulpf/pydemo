@@ -59,14 +59,14 @@
 
 1. 删除元素时会引起数组长度变化,因此**删除时从后面开始删除**可以避免此问题。
 
-   ```
+   ```python
    for k in range(left + 1, size):
    	nums.pop(-1)
    ```
 
    比如解决 `原地移除数组中重复元素` 问题时：
 
-   ```
+   ```python
    def removeDuplicates(self, nums: List[int]) -> int:
        """
        使用逆序删除，巧妙避开删除元素时会引起数组长度变化影响
@@ -77,6 +77,20 @@
            if nums[i] == nums[i-1]:
                del nums[i]
        return len(nums)
+   ```
+   
+   如果不限制原地，还是用下面的方法
+   ```python
+    def removeDuplicates(self, nums: List[int]) -> int:
+        """
+        这里用到了List的 count函数，统计某个元素的个数。但注意次方法建立了切片，不再是原地
+        """
+        if not nums:
+            return len(nums)
+            for i in nums[:]:
+            if nums.count(i) != 1:
+                nums.pop(nums.index(i))
+        return len(nums)
    ```
 
    
