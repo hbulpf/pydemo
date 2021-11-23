@@ -44,6 +44,8 @@
 
 # 要看完的书
 
+1. [力扣-数组](ebook/array/leetcode-array.pdf)
+
 
 # 练习平台
 
