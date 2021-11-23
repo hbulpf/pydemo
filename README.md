@@ -42,9 +42,14 @@
 10. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
 11. [全栈潇晨](https://xiaochen1024.com/)
 
-# 要看完的书
+# 要看的书
 
-1. [力扣-数组](ebook/array/leetcode-array.pdf)
+1. [力扣-数组](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-array.pdf)
+2. [力扣-字符串](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-string.pdf)
+3. [力扣-列表](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-list.pdf)
+4. [力扣-树](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-tree.pdf)
+5. [力扣-回溯](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-backtracking.pdf)
+6. [力扣-动态规划](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-dp.pdf)
 
 
 # 练习平台
