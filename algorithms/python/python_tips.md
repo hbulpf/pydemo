@@ -53,7 +53,16 @@
    ```
 
 3. 求列表最大值、最小值用 `max() ` / `min()`
-4. 
+4. 逆序遍历一个数字序列,可以使用 `range(start, stop[, step])` 函数
+   ```
+   for i in range(len(nums)-1,0,-1):
+       pass
+   ```
+5. 用好切片，切片可以让代码十分简洁, 下面两种写法是等价的。这用于解决[旋转数组](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2skh7/) 问题十分简洁。
+   ```
+   nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
+   nums[:] = nums[-k:] + nums[:-k]
+   ```
 
 ## 算法技巧类
 
@@ -93,4 +102,9 @@
         return len(nums)
    ```
 
-   
+2. 取模 实际会形成一个环。如
+    ```
+    for (int i = 0; i < length; i++) {
+      nums[(i + k) % length] = temp[i];
+    }
+    ```
