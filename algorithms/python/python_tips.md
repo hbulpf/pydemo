@@ -63,6 +63,7 @@
    nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
    nums[:] = nums[-k:] + nums[:-k]
    ```
+6. sort() 与 sorted(): `roommate.sort()` 对list进行排序,list元素本身顺序发生改变，无返回值; `r2=sorted(roommate,reverse=True)`  对list进行排序,list本身顺序无改变，返回一个新的list
 
 ## 算法技巧类
 
