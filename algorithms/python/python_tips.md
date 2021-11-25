@@ -65,6 +65,15 @@
    ```
 6. sort() 与 sorted(): `roommate.sort()` 对list进行排序,list元素本身顺序发生改变，无返回值; `r2=sorted(roommate,reverse=True)`  对list进行排序,list本身顺序无改变，返回一个新的list
 
+
+7. 要善用推导表达式
+
+   ```
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        return [nums1.pop(nums1.index(i)) for i in nums2 if i in nums1]
+   ```
+
+
 ## 算法技巧类
 
 1. 删除元素时会引起数组长度变化,因此**删除时从后面开始删除**可以避免此问题。
@@ -109,3 +118,31 @@
       nums[(i + k) % length] = temp[i];
     }
     ```
+
+3. 双指针的走动可以用一个while实现
+
+   ```python
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        """
+        双指针
+        如果数字小，就让该指针一直往下走，直到两个数相同,两个指针一起往后走。循环直到其中一个数组遍历完
+        """
+        nums1.sort()
+        nums2.sort()
+        res = []
+        i = 0
+        j = 0
+        while i < len(nums1) and j<len(nums2):
+            if nums1[i] > nums2[j]:
+                j += 1
+            elif nums1[i] < nums2[j]:
+                i+=1
+            else:
+                res.append(nums1[i])
+                i += 1
+                j += 1
+        return res
+   ```
+
+
+   
