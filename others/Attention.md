@@ -1,16 +1,42 @@
-一，数组相关的要考虑边界条件，包括数组为空，涉及INT_MAX/INT_MIN的情况
+# 刷题要点总结
+
+## 时间复杂度
+
+对于T(n) = a*T(n/b)+c*n^k;T(1) = c 这样的递归关系，有这样的结论：
+```
+if (a > b^k)   T(n) = O(n^(logb(a)));
+if (a = b^k)   T(n) = O(n^k*logn);
+if (a < b^k)   T(n) = O(n^k);
+```
+
+特别的，对于b=2，
+
+```
+a=1, b=2，k=1，
+T(n)=T(n/2)+n=O(n)
+
+a=2, b=2, k=1
+T(n)=2T(n/2)+n=O(nlgn)
+
+a=1, b=2, k=0
+T(n)=T(n/2)+c=O(lgn)
+```
+
+## Java
+
+一、数组相关的要考虑边界条件，包括数组为空，涉及INT_MAX/INT_MIN的情况
 越界的问题，如数组，或s.charAt
 <br/>
 
-二，用HashSet或HashMap要考虑的问题是可能会相同键值的情况被覆盖了，典型的是
+二、用HashSet或HashMap要考虑的问题是可能会相同键值的情况被覆盖了，典型的是
 https://leetcode.com/problems/contains-duplicate-ii/
 这个不能用HashSet，除非能解决这个问题
 <br/>
 
-三，涉及子数组的问题通常是动态规划，比如子数组最大乘积，最大和，最大什么序列之类的
+三、涉及子数组的问题通常是动态规划，比如子数组最大乘积，最大和，最大什么序列之类的
 <br/>
 
-四，关于数组当有时候从前往后不行的时候，不妨考虑是否可以从后往前。
+四、关于数组当有时候从前往后不行的时候，不妨考虑是否可以从后往前。
 <br/>
 
 五，限制次数为两次的，通常是以当前为分割线，前面和后面分别单独处理，最后合起来。或者数组从前往后一次，从后往前一次，两次结果合起来
@@ -99,3 +125,12 @@ return -1;
 三十，StringBuilder的insert(0, c)不要频繁调用，看源码要array copy，性能很差。不如append，最后reverse。
 
 三十一，List在allAll一个PriorityQueue时，是不会带顺序的，正确的做法是while(!queue.isEmpty()) {list.add(queue.poll());}
+
+
+## 其他
+
+木桶原理
+
+287. Find the Duplicate Number
+220. Contains Duplicate III
+164. Maximum Gap

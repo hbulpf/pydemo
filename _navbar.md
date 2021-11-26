@@ -4,6 +4,10 @@
   * [基本数据结构与算法](algorithms/README.md)
   * [五大常用算法](algorithms/五大常用算法.md)
 
+* Python专题
+  * [python算法总结](algorithms/python/python_summary.md)
+  * [python编程技巧](algorithms/python/python_tips.md)
+
 * LeetCode
   * [每日打卡](每日打卡.md)
   * [LeetCode全部题目](LeetCode全部题目.md)

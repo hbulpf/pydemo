@@ -1,4 +1,4 @@
-# 其它题目
+# 常见题目汇总
 
 ## Google
  - [Remove consecutive node from single list](code_java/src/solution/RemoveDuplicateList.java)
@@ -27,3 +27,37 @@
     4  0 12 -3
     -1 5 -5  8
     ```
+5. [原地删除排序数组中的重复项](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2gy9m/)
+   ```python
+   def removeDuplicates(self, nums: List[int]) -> int:
+    """
+    使用逆序删除，巧妙避开删除元素时引起数组长度变化的影响
+    """
+    if not nums:
+        return len(nums)
+    for i in range(len(nums)-1,0,-1):
+        if nums[i] == nums[i-1]:
+            nums.pop(i)
+    return len(nums)
+   ```
+   
+   ```python
+   def removeDuplicates(self, nums: List[int]) -> int:
+    """
+    这里用到了List的 count函数，统计某个元素的个数。但注意次方法建立了切片，不再是原地
+    """
+    if not nums:
+        return len(nums)
+        for i in nums[:]:
+        if nums.count(i) != 1:
+            nums.pop(nums.index(i))
+    return len(nums)
+   ```
+
+
+
+## 字符串题目
+
+### 逆波兰表达式
+
+后缀表达式又叫做逆波兰表达式。如 `a+b` 的逆波兰表达式为 `ab+`

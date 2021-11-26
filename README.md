@@ -1,24 +1,31 @@
 # 每日力扣 
 
+## 全量题目
 1. [每日打卡](每日打卡.md)
 2. [LeetCode全部题目](LeetCode全部题目.md)
 3. [LeetCode题目分类](LeetCode题目分类.md)
-4. [其它题目](extras.md)
-
-## 总结
-
-- [刷题要点总结](others/Attention.md)
-- [Facebook面试总结](others/Facebook.md)
-- [Bitset技巧](others/BitSet.md)
-- [Map新接口](others/Map.md)
-- [其它题目](extras.md)
 
 
-# 数据结构与算法
+## 力扣精选
+1. [初级算法](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2zsx1/) 帮助入门
+2. [算法面试题汇总](https://leetcode-cn.com/leetbook/detail/top-interview-questions/)
+3. [LeetCode 热题 HOT 100](https://leetcode-cn.com/problem-list/2cktkvj/)
+4. [腾讯各事业群爱考的算法题Top10](https://leetcode-cn.com/circle/discuss/q1iaUL/)
 
-* [基本数据结构与算法](algorithms/README.md)
-* [五大常用算法](algorithms/五大常用算法.md)
-* [OJ练习](algorithms/oj.md)
+## 练习总结
+
+- [基本数据结构](algorithms/README.md)
+- [五大常用算法](algorithms/五大常用算法.md)
+- [dfs/bfs](algorithms/dfs_bfs.md)
+- Python专题
+  * [python算法总结](algorithms/python/python_summary.md)
+  * [python编程技巧](algorithms/python/python_tips.md)
+- 其他
+  - [刷题要点总结](others/Attention.md)
+  - [系统设计](others/arch_design.md)
+  - [Facebook面试总结](others/Facebook.md)
+  - [Bitset技巧](others/BitSet.md)
+
 
 
 # 其他力扣学习资料
@@ -32,8 +39,23 @@
 7. [leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 8. [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
 9. [软件工程技术面试个人指南](https://github.com/kdn251/interviews)
+10. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
+11. [全栈潇晨](https://xiaochen1024.com/)
 
-# 要看完的书
+# 要看的书
+
+1. [力扣-数组](https://hecloud.hnbdata.cn/leetbook/ebook/array/leetcode-array.pdf)
+2. [力扣-字符串](https://hecloud.hnbdata.cn/leetbook/ebook/string/leetcode-string.pdf)
+3. [力扣-列表](https://hecloud.hnbdata.cn/leetbook/ebook/list/leetcode-list.pdf)
+4. [力扣-树](https://hecloud.hnbdata.cn/leetbook/ebook/tree/leetcode-tree.pdf)
+5. [力扣-回溯](https://hecloud.hnbdata.cn/leetbook/ebook/backtracking/leetcode-backtracking.pdf)
+6. [力扣-动态规划](https://hecloud.hnbdata.cn/leetbook/ebook/dp/leetcode-dp.pdf)
+
+
+# 练习平台
+
+1. [中文Leetcode平台](https://leetcode-cn.com/)
+2. [google code jam](https://codingcompetitions.withgoogle.com/codejam)
 
 
 ----------------------------------------
