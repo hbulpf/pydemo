@@ -5,9 +5,7 @@
 
 ### 旋转图像
 
-### 将图像顺时针旋转 90 度
-
-给定一个 *n* × *n* 的二维矩阵 `matrix` 表示一个图像。请你将图像顺时针旋转 90 度。
+[题目](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnhhkv/): 给定一个 *n* × *n* 的二维矩阵 `matrix` 表示一个图像。请你将图像顺时针旋转 90 度。
 
 ![image-20211128215334154](questions/image-20211128215334154.png)
 
@@ -40,3 +38,10 @@ def rotate(self, matrix: List[List[int]]) -> None:
 ```
 
 如果需要做顺时针旋转 180度、270度，方法也是类似。
+
+## 设计类
+
+### 打乱数组
+
+[题目](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xn6gq1/): 给你一个整数数组 nums ，设计算法来打乱一个没有重复元素的数组。
+
