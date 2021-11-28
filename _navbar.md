@@ -2,7 +2,7 @@
 
 * 算法
   * [基本数据结构与算法](algorithms/README.md)
-  * [五大常用算法](algorithms/五大常用算法.md)
+  * [五大算法思想](algorithms/五大算法思想.md)
 
 * Python专题
   * [python算法总结](algorithms/python/python_summary.md)
