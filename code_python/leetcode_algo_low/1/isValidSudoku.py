@@ -13,9 +13,24 @@ from typing import List
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         """
-        暴力的基础上稍微改进: 创建三个数组，把数字放到对应的数组，在放之前判断是否已经存在
+        暴力的基础上稍微改进: 创建三个数组，把数字放到对应的数组，然后判断是否重复
         """
-        pass
+        row = [[0] * 9] * 9
+        col = [[0] * 9] * 9
+        box = [[0] * 9] * 9
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if board[i][j] == '.':
+                    continue
+                num = ord(board[i][j]) - ord('0') - 1
+                row[i][num] += 1
+                col[j][num] += 1
+                # k是第几个单元格，9宫格数独横着和竖着都是3个单元格
+                k = int(i / 3) * 3 + int(j / 3)
+                box[num][k] += 1
+                if row[i][num] > 1 or col[j][num] > 1 or box[num][k] > 1:
+                    return False
+        return True
 
     def isValidSudoku1(self, board: List[List[str]]) -> bool:
         """
@@ -32,13 +47,13 @@ class Solution:
                     col_nums.append(board[r][c])
             if self.isRepetated(list(col_nums)):
                 return False
-        for r in range(0,9,3):
-            for c in range(0,9,3):
+        for r in range(0, 9, 3):
+            for c in range(0, 9, 3):
                 nine_nums = []
                 for i in range(3):
                     for j in range(3):
-                        if board[r+i][c+j] != '.':
-                            nine_nums.append(board[r+i][c+j])
+                        if board[r + i][c + j] != '.':
+                            nine_nums.append(board[r + i][c + j])
                 if self.isRepetated(list(nine_nums)):
                     return False
         return True
