@@ -38,3 +38,11 @@ print(name)
 
 idx = pic_path.rfind('/')
 print('rsps/' + 'boxed-' + pic_path[idx+1:])
+
+
+for i in range(3):
+    nums = []
+    print(nums)
+    for j in range(3):
+        nums.append(j)
+    print(nums)
