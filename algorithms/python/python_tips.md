@@ -7,21 +7,21 @@
 ### 常用的内置函数
 
 | 内置函数                                                     | 内置函数                                                     | 内置函数                                                     | 内置函数                                                     | 内置函数                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| [abs()](https://www.runoob.com/python3/python3-func-number-abs.html) | [dict()](https://www.runoob.com/python/python-func-dict.html) | [help()](https://www.runoob.com/python/python-func-help.html) | [min()](https://www.runoob.com/python3/python3-func-number-min.html) | [setattr()](https://www.runoob.com/python/python-func-setattr.html) |
-| [all()](https://www.runoob.com/python/python-func-all.html)  | [dir()](https://www.runoob.com/python/python-func-dir.html)  | [hex()](https://www.runoob.com/python3/python3-func-hex.html) | [next()](https://www.runoob.com/python/python-func-next.html) | [slice()](https://www.runoob.com/python/python-func-slice.html) |
-| [any()](https://www.runoob.com/python/python-func-any.html)  | [divmod()](https://www.runoob.com/python3/python3-func-divmod.html) | [id()](https://www.runoob.com/python/python-func-id.html)    | object()                                                     | [sorted()](https://www.runoob.com/python3/python3-func-sorted.html) |
-| [ascii()](https://www.runoob.com/python3/python3-func-ascii.html) | [enumerate()](https://www.runoob.com/python3/python3-func-enumerate.html) | [input()](https://www.runoob.com/python/python3-func-input.html) | [oct()](https://www.runoob.com/python/python3-func-oct.html) | [staticmethod()](https://www.runoob.com/python/python-func-staticmethod.html) |
-| [bin()](https://www.runoob.com/python/python-func-bin.html)  | [eval()](https://www.runoob.com/python/python-func-eval.html) | [int()](https://www.runoob.com/python/python-func-int.html)  | [open()](https://www.runoob.com/python3/python3-func-open.html) | [str()](https://www.runoob.com/python/python-func-str.html)  |
-| [bool()](https://www.runoob.com/python/python-func-bool.html) | [exec()](https://www.runoob.com/python3/python3-func-exec.html) | [isinstance()](https://www.runoob.com/python/python-func-isinstance.html) | [ord()](https://www.runoob.com/python3/python3-func-ord.html) | [sum()](https://www.runoob.com/python/python-func-sum.html)  |
-| [bytearray()](https://www.runoob.com/python/python-func-bytearray.html) | [filter()](https://www.runoob.com/python3/python3-func-filter.html) | [issubclass()](https://www.runoob.com/python/python-func-issubclass.html) | [pow()](https://www.runoob.com/python3/python3-func-number-pow.html) | [super()](https://www.runoob.com/python/python-func-super.html) |
-| [bytes()](https://www.runoob.com/python3/python3-func-bytes.html) | [float()](https://www.runoob.com/python/python-func-float.html) | [iter()](https://www.runoob.com/python/python-func-iter.html) | [print()](https://www.runoob.com/python/python-func-print.html) | [tuple()](https://www.runoob.com/python3/python3-func-tuple.html) |
-| [callable()](https://www.runoob.com/python/python-func-callable.html) | [format()](https://www.runoob.com/python/att-string-format.html) | [len()](https://www.runoob.com/python3/python3-string-len.html) | [property()](https://www.runoob.com/python/python-func-property.html) | [type()](https://www.runoob.com/python/python-func-type.html) |
-| [chr()](https://www.runoob.com/python3/python3-func-chr.html) | [frozenset()](https://www.runoob.com/python/python-func-frozenset.html) | [list()](https://www.runoob.com/python3/python3-att-list-list.html) | [range()](https://www.runoob.com/python3/python3-func-range.html) | [vars()](https://www.runoob.com/python/python-func-vars.html) |
-| [classmethod()](https://www.runoob.com/python/python-func-classmethod.html) | [getattr()](https://www.runoob.com/python/python-func-getattr.html) | [locals()](https://www.runoob.com/python/python-func-locals.html) | [repr()](https://www.runoob.com/python/python-func-repr.html) | [zip()](https://www.runoob.com/python3/python3-func-zip.html) |
-| [compile()](https://www.runoob.com/python/python-func-compile.html) | [globals()](https://www.runoob.com/python/python-func-globals.html) | [map()](https://www.runoob.com/python/python3-func-map.html) | [reversed()](https://www.runoob.com/python3/python3-func-reversed.html) | [__import__()](https://www.runoob.com/python/python-func-__import__.html) |
-| [complex()](https://www.runoob.com/python/python-func-complex.html) | [hasattr()](https://www.runoob.com/python/python-func-hasattr.html) | [max()](https://www.runoob.com/python3/python3-func-number-max.html) | [round()](https://www.runoob.com/python3/python3-func-number-round.html) | del 【关键字】                                               |
-| [delattr()](https://www.runoob.com/python/python-func-delattr.html) | [hash()](https://www.runoob.com/python/python-func-hash.html) | [memoryview()](https://www.runoob.com/python/python-func-memoryview.html) | [set()](https://www.runoob.com/python/python-func-set.html)  |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [`abs()`](https://docs.python.org/zh-cn/3.7/library/functions.html#abs) | [`delattr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#delattr) | [`hash()`](https://docs.python.org/zh-cn/3.7/library/functions.html#hash) | [`memoryview()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-memoryview) | [`set()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-set) |
+| [`all()`](https://docs.python.org/zh-cn/3.7/library/functions.html#all) | [`dict()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-dict) | [`help()`](https://docs.python.org/zh-cn/3.7/library/functions.html#help) | [`min()`](https://docs.python.org/zh-cn/3.7/library/functions.html#min) | [`setattr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#setattr) |
+| [`any()`](https://docs.python.org/zh-cn/3.7/library/functions.html#any) | [`dir()`](https://docs.python.org/zh-cn/3.7/library/functions.html#dir) | [`hex()`](https://docs.python.org/zh-cn/3.7/library/functions.html#hex) | [`next()`](https://docs.python.org/zh-cn/3.7/library/functions.html#next) | [`slice()`](https://docs.python.org/zh-cn/3.7/library/functions.html#slice) |
+| [`ascii()`](https://docs.python.org/zh-cn/3.7/library/functions.html#ascii) | [`divmod()`](https://docs.python.org/zh-cn/3.7/library/functions.html#divmod) | [`id()`](https://docs.python.org/zh-cn/3.7/library/functions.html#id) | [`object()`](https://docs.python.org/zh-cn/3.7/library/functions.html#object) | [`sorted()`](https://docs.python.org/zh-cn/3.7/library/functions.html#sorted) |
+| [`bin()`](https://docs.python.org/zh-cn/3.7/library/functions.html#bin) | [`enumerate()`](https://docs.python.org/zh-cn/3.7/library/functions.html#enumerate) | [`input()`](https://docs.python.org/zh-cn/3.7/library/functions.html#input) | [`oct()`](https://docs.python.org/zh-cn/3.7/library/functions.html#oct) | [`staticmethod()`](https://docs.python.org/zh-cn/3.7/library/functions.html#staticmethod) |
+| [`bool()`](https://docs.python.org/zh-cn/3.7/library/functions.html#bool) | [`eval()`](https://docs.python.org/zh-cn/3.7/library/functions.html#eval) | [`int()`](https://docs.python.org/zh-cn/3.7/library/functions.html#int) | [`open()`](https://docs.python.org/zh-cn/3.7/library/functions.html#open) | [`str()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-str) |
+| [`breakpoint()`](https://docs.python.org/zh-cn/3.7/library/functions.html#breakpoint) | [`exec()`](https://docs.python.org/zh-cn/3.7/library/functions.html#exec) | [`isinstance()`](https://docs.python.org/zh-cn/3.7/library/functions.html#isinstance) | [`ord()`](https://docs.python.org/zh-cn/3.7/library/functions.html#ord) | [`sum()`](https://docs.python.org/zh-cn/3.7/library/functions.html#sum) |
+| [`bytearray()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-bytearray) | [`filter()`](https://docs.python.org/zh-cn/3.7/library/functions.html#filter) | [`issubclass()`](https://docs.python.org/zh-cn/3.7/library/functions.html#issubclass) | [`pow()`](https://docs.python.org/zh-cn/3.7/library/functions.html#pow) | [`super()`](https://docs.python.org/zh-cn/3.7/library/functions.html#super) |
+| [`bytes()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-bytes) | [`float()`](https://docs.python.org/zh-cn/3.7/library/functions.html#float) | [`iter()`](https://docs.python.org/zh-cn/3.7/library/functions.html#iter) | [`print()`](https://docs.python.org/zh-cn/3.7/library/functions.html#print) | [`tuple()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-tuple) |
+| [`callable()`](https://docs.python.org/zh-cn/3.7/library/functions.html#callable) | [`format()`](https://docs.python.org/zh-cn/3.7/library/functions.html#format) | [`len()`](https://docs.python.org/zh-cn/3.7/library/functions.html#len) | [`property()`](https://docs.python.org/zh-cn/3.7/library/functions.html#property) | [`type()`](https://docs.python.org/zh-cn/3.7/library/functions.html#type) |
+| [`chr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#chr) | [`frozenset()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-frozenset) | [`list()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-list) | [`range()`](https://docs.python.org/zh-cn/3.7/library/functions.html#func-range) | [`vars()`](https://docs.python.org/zh-cn/3.7/library/functions.html#vars) |
+| [`classmethod()`](https://docs.python.org/zh-cn/3.7/library/functions.html#classmethod) | [`getattr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#getattr) | [`locals()`](https://docs.python.org/zh-cn/3.7/library/functions.html#locals) | [`repr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#repr) | [`zip()`](https://docs.python.org/zh-cn/3.7/library/functions.html#zip) |
+| [`compile()`](https://docs.python.org/zh-cn/3.7/library/functions.html#compile) | [`globals()`](https://docs.python.org/zh-cn/3.7/library/functions.html#globals) | [`map()`](https://docs.python.org/zh-cn/3.7/library/functions.html#map) | [`reversed()`](https://docs.python.org/zh-cn/3.7/library/functions.html#reversed) | [`__import__()`](https://docs.python.org/zh-cn/3.7/library/functions.html#__import__) |
+| [`complex()`](https://docs.python.org/zh-cn/3.7/library/functions.html#complex) | [`hasattr()`](https://docs.python.org/zh-cn/3.7/library/functions.html#hasattr) | [`max()`](https://docs.python.org/zh-cn/3.7/library/functions.html#max) | [`round()`](https://docs.python.org/zh-cn/3.7/library/functions.html#round) | del 【关键字】                                               |
 
 1. 把中文汉字、英文字母、特殊字符转换成数字。 这在算法中 常用来做 字母转成对应序号。如 a对应1,b对应2
 
@@ -53,16 +53,19 @@
    ```
 
 3. 求列表最大值、最小值用 `max() ` / `min()`
+
 4. 逆序遍历一个数字序列,可以使用 `range(start, stop[, step])` 函数
    ```
    for i in range(len(nums)-1,0,-1):
        pass
    ```
+
 5. 用好切片，切片可以让代码十分简洁, 下面两种写法是等价的。这用于解决[旋转数组](https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2skh7/) 问题十分简洁。
    ```
    nums[:] = nums[len(nums) - k:] + nums[:len(nums) - k]
    nums[:] = nums[-k:] + nums[:-k]
    ```
+
 6. sort() 与 sorted(): `roommate.sort()` 对list进行排序,list元素本身顺序发生改变，无返回值; `r2=sorted(roommate,reverse=True)`  对list进行排序,list本身顺序无改变，返回一个新的list
 
 
@@ -145,4 +148,4 @@
    ```
 
 
-   
+

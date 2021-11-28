@@ -1,6 +1,5 @@
 # 力扣初级算法
 
-
 ## 数组
 
 ### 旋转图像
@@ -38,6 +37,27 @@ def rotate(self, matrix: List[List[int]]) -> None:
 ```
 
 如果需要做顺时针旋转 180度、270度，方法也是类似。
+
+对于旋转90度，也可以采用先上线交换，再对角线交换的方法
+
+![](algo_low/image-20211128222943910.png)
+
+```python
+def rotate(self, matrix: List[List[int]]) -> None:
+    """
+    更巧的办法，不过不是原地:
+    1. 对 行 进行步长-1的分片，上下翻转
+    2. 对每行再zip获得每一列，然后把列当成行放回去，完成转置
+    """
+    matrix[::] = zip(*matrix[::-1])
+```
+上面的写法等价于
+```python
+j=0
+for i in zip(*matrix[::-1]):
+    matrix[j]=i
+    j+=1
+```
 
 ## 设计类
 

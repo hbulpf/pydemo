@@ -13,6 +13,14 @@ from typing import List
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         """
+        更巧的办法，不过不是原地:
+        1. 对 行 进行步长-1的分片，上下翻转
+        2. 对每行再zip获得每一列，然后把列当成行放回去，完成转置
+        """
+        matrix[::] = zip(*matrix[::-1])
+
+    def rotate1(self, matrix: List[List[int]]) -> None:
+        """
         Do not return anything, modify matrix in-place instead.
         """
         width = len(matrix)
