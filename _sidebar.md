@@ -2,6 +2,7 @@
   * [基本数据结构](algorithms/README.md)
   * [图](algorithms/graph.md)
   * [dfs/bfs](algorithms/dfs_bfs.md)
+  * [力扣初级算法](algorithms/algo_low.md)
   * [五大算法思想](algorithms/五大算法思想.md)
   * [常见题目汇总](algorithms/questions.md)
   * [OJ练习](algorithms/oj.md)
