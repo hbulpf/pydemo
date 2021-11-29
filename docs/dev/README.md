@@ -17,3 +17,11 @@
 10. 异步IO
 11. MicroPython
 12. [pep8](pep8.md)
+
+## 分专题汇总
+
+1. [Python字符串操作汇总](https://www.jb51.net/Special/636.htm)
+2. [Python函数使用汇总](https://www.jb51.net/Special/642.htm)
+3. [Python编码操作汇总](https://www.jb51.net/Special/788.htm)
+4. [Python面向对象设计](https://www.jb51.net/Special/684.htm)
+5. [Python数据结构与算法](https://www.jb51.net/Special/663.htm)

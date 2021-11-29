@@ -22,6 +22,7 @@
   - [源码安装](docs/dev/源码安装.md)
   - [pip](docs/dev/pip.md)
   - [pycharm](docs/dev/pycharm.md)
+  - [魔术方法汇总](docs/dev/魔术方法汇总.md)
   - [pep8](docs/dev/pep8.md)
   - [unittest](docs/dev/unittest.md)
   - [常见第三方模块](docs/dev/常见第三方模块.md)
