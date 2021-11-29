@@ -167,6 +167,7 @@ def combine():
             'authority': []
         })['authority'].append(i['authority'])
     print(m.values())
+    print(m)
 
 
 if __name__ == '__main__':
