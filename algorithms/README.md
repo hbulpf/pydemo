@@ -181,7 +181,8 @@ AVL树,又叫平衡二叉树。
    
 1. 选择排序 selection sort
 2. 堆排序 heap sort
-   
+
+
 #### 归并排序 merge sort
 
 ### 数字排序(integer sort)
