@@ -1,4 +1,5 @@
 import math
+from functools import reduce
 
 
 def my_abs(x):
@@ -46,3 +47,10 @@ elif quadratic(1, 3, -4) != (1.0, -4.0):
     print('测试失败')
 else:
     print('测试成功')
+
+
+DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+def char2num(s):
+    return DIGITS[s]
+def str2int(s):
+    return reduce(lambda x, y: x * 10 + y, map(char2num, s))

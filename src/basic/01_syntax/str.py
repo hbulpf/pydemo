@@ -37,8 +37,7 @@ name = pic_path[:idx - 1] + '-tmp' + pic_path[idx:]
 print(name)
 
 idx = pic_path.rfind('/')
-print('rsps/' + 'boxed-' + pic_path[idx+1:])
-
+print('rsps/' + 'boxed-' + pic_path[idx + 1:])
 
 for i in range(3):
     nums = []
@@ -46,3 +45,15 @@ for i in range(3):
     for j in range(3):
         nums.append(j)
     print(nums)
+
+print("-----")
+print(int(str(110), base=2))  # 实现2进制到10进制转换
+print(bin(15))  # 实现10进制到2进制转换
+print(oct(255))  # 实现10进制到2进制转换
+print(hex(255)) # 实现10进制到16进制转换
+
+print("-----")
+print(format(-15, '#b'), format(-15, 'b'))
+print(format(10, '#o'), format(10, 'o'))
+print(format(255, '#x'), format(255, 'X'))
+print(int(str(110),base=2))

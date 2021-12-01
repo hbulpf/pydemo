@@ -17,6 +17,7 @@
   * [内建函数](docs/python/内建函数.md)
   * [常用样例](docs/python/常用样例.md)
   * [数据结构](docs/python/数据结构.md)
+  * [常用技巧](docs/python/tips.md)
 
 - [开发技能](docs/dev/README.md)
   - [源码安装](docs/dev/源码安装.md)
