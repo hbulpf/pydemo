@@ -183,7 +183,7 @@ print(k1, v1, o)
         for k in arr:
             print("{0:10}{1:6}{2:6}{3:6}{4:6}".format(k['name'], k['height'], k['chinese'], k['english'], k['math']))
     ```
-    
+
 5. 对元组进行自定义排序
 
     ```
@@ -201,8 +201,6 @@ print(k1, v1, o)
     L2 = sorted(L, key=lambda x: -x[1])
     print(L2)
     ```
-
-
 
 ## 数据聚合
 
