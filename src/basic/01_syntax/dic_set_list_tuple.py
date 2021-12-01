@@ -50,3 +50,17 @@ print(roommate)
 print(len(roommate))
 
 print([i for i in range(10)])
+
+
+L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
+def by_name(t):
+    return t[0].lower()
+def by_score(t):
+    #默认排列顺序为从低到高t[1]， 要使其从高到低，将分数先取负数-t[1]即可
+    return -t[1]
+L2 = sorted(L, key=by_name)
+print(L2)
+L2 = sorted(L, key=by_score)
+print(L2)
+L2 = sorted(L, key=lambda x: -x[1])
+print(L2)

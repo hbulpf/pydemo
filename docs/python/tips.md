@@ -163,25 +163,46 @@ print(k1, v1, o)
 1. 进行排序，一般使用 `sort()` 或 `sorted()`。
 2. 如果需要降序，设置前面两个函数 `reverse = True`。
 3. 对于列表，key 的关键字参数可以实现做某种操作后排序:
-```python
-sorted([36, 5, -12, 9, -21], key=abs) #结果为[5, 9, -12, -21, 36]
-sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower) #忽略大小写的排序
-```
-4. 如果需要自定义排序，可以对key用用lambda表达式写出排序规则，实现字典的自定义排序
-```python
-def dict_sort_lambda():
-    arr = [
-        {'name': 'zhangfei', 'height': 181, 'chinese': 81, 'english': 72, 'math': 72},
-        {'name': 'zhouyu', 'height': 181, 'chinese': 84, 'english': 72, 'math': 72},
-        {'name': 'zhugeliang', 'height': 181, 'chinese': 84, 'english': 78, 'math': 72},
-        {'name': 'guanyu', 'height': 181, 'chinese': 71, 'english': 60, 'math': 64},
-        {'name': 'mayun', 'height': 191, 'chinese': 51, 'english': 70, 'math': 44}
-    ]
-    arr.sort(key=lambda x: (x['height'], -x['chinese'], x['english'], -x['math'], x['name']))
-    print("{0:10}{1:6}{2:6}{3:6}{4:6}".format('name', 'height', 'chinese', 'english', 'math'))
-    for k in arr:
-        print("{0:10}{1:6}{2:6}{3:6}{4:6}".format(k['name'], k['height'], k['chinese'], k['english'], k['math']))
-```
+    ```python
+    sorted([36, 5, -12, 9, -21], key=abs) #结果为[5, 9, -12, -21, 36]
+    sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower) #忽略大小写的排序
+    ```
+
+4. 如果需要自定义排序，可以对key用用lambda表达式写出排序规则，实现对象的自定义排序
+    ```python
+    def dict_sort_lambda():
+        arr = [
+            {'name': 'zhangfei', 'height': 181, 'chinese': 81, 'english': 72, 'math': 72},
+            {'name': 'zhouyu', 'height': 181, 'chinese': 84, 'english': 72, 'math': 72},
+            {'name': 'zhugeliang', 'height': 181, 'chinese': 84, 'english': 78, 'math': 72},
+            {'name': 'guanyu', 'height': 181, 'chinese': 71, 'english': 60, 'math': 64},
+            {'name': 'mayun', 'height': 191, 'chinese': 51, 'english': 70, 'math': 44}
+        ]
+        arr.sort(key=lambda x: (x['height'], -x['chinese'], x['english'], -x['math'], x['name']))
+        print("{0:10}{1:6}{2:6}{3:6}{4:6}".format('name', 'height', 'chinese', 'english', 'math'))
+        for k in arr:
+            print("{0:10}{1:6}{2:6}{3:6}{4:6}".format(k['name'], k['height'], k['chinese'], k['english'], k['math']))
+    ```
+    
+5. 对元组进行自定义排序
+
+    ```
+    L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
+    def by_name(t):  
+        return t[0].lower()
+    def by_score(t):
+        #默认排列顺序为从低到高t[1]， 要使其从高到低，将分数先取负数-t[1]即可
+        return -t[1]
+    L2 = sorted(L, key=by_name)
+    print(L2)
+    L2 = sorted(L, key=by_score)
+    print(L2)
+
+    L2 = sorted(L, key=lambda x: -x[1])
+    print(L2)
+    ```
+
+
 
 ## 数据聚合
 
