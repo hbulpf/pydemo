@@ -142,7 +142,59 @@ def split_pic(src_path, dest_dir, row_num=2, col_num=2, need_gray_convertion=Fal
     cv2.destroyAllWindows()
 
 
+def change_pixels(src_path, dest_path=r'./dest.jpg'):
+    """
+    逐个修改图片的像素点
+    :param src_path:
+    :param dest_path:
+    :return:
+    """
+    if not os.path.exists(src_path):
+        print(f"{src_path} not exists")
+        return
+    img = cv2.imread(src_path)
+    height, width, _ = img.shape
+    print(img.shape)
+    for y in range(height):
+        print('Line ', y, '  ')
+        for x in range(width):
+            if img[y, x][0] == 1 or img[y, x][1] == 1 or img[y, x][2] == 1:
+                print('(%d,%d):' % (x, y), img[y, x], end=',')
+                img[y, x] = [0, 0, 255]
+    cv2.imwrite(dest_path, img)
+    cv2.destroyAllWindows()
+    print("change all pixels successfully!")
+
+
+def overlap_pics(pic1_path, pic2_path, dest_path=r'./dest.jpg'):
+    """
+    两张图片叠加
+    :param pic1_path:
+    :param pic2_path:
+    :param des_path:
+    :return:
+    """
+    if not os.path.exists(pic1_path) or not os.path.exists(pic2_path):
+        print(f"{pic1_path} or {pic2_path} not exists")
+        return
+
+    img1 = cv2.imread(pic1_path)
+    img2 = cv2.imread(pic2_path)
+    # height, width, _ = img2.shape
+    height, width = 364, 547
+    # 图像融合
+    combine = cv2.addWeighted(cv2.resize(img1, (width, height)), 0.5, cv2.resize(img2, (width, height)), 0.5, 0)
+    # cv2.imshow('combine', combine)
+    # cv2.waitKey(0)
+    cv2.imwrite(dest_path, combine)
+    cv2.destroyAllWindows()
+    print("change all pixels successfully!")
+
+
 if __name__ == '__main__':
     # read_video()
     # get_single_chan_dir('./img', './img_tmp')
-    split_pic('./img/taxi1.jpg', 'img_tmp/', need_gray_convertion=True)
+    # split_pic('./img/taxi.jpg', 'img_tmp/', need_gray_convertion=True)
+    # change_pixels('./img/200dk_blobmask.jpg','./img/200dk_blobmask_new.jpg')
+    overlap_pics(r'E:\atlas\opt_worksapce\opt_test_pics\200dk_grey\12.jpg', r'./img/200dk_blobmask_new.jpg',
+                 r'./img/200dk_overlap3.jpg')
