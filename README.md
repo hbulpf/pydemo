@@ -41,6 +41,7 @@
 9. [软件工程技术面试个人指南](https://github.com/kdn251/interviews)
 10. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/)
 11. [全栈潇晨](https://xiaochen1024.com/)
+12. [Python算法与数据结构视频教程](https://github.com/PegasusWang/python_data_structures_and_algorithms): [博客](https://pegasuswang.github.io/python_data_structures_and_algorithms/)
 
 # 要看的书
 
