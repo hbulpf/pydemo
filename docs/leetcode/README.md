@@ -1,123 +1,131 @@
-# LeetCode作业集
+# 用Python实现LeetCode
 
-1. 20190122
-   1.  [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)(递归->动态规划)
-   2.  [198. House Robber](https://leetcode.com/problems/house-robber/)(递归->动态规划)
-   3.  [91. Decode Ways](https://leetcode.com/problems/decode-ways/)(动态规划)
-   4.  [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)(动态规划)
-   5.  [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)(数组)
-2. 20190123
-   1.  [21.  Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)【链表】
-   2.  [100. Same Tree](https://leetcode.com/problems/same-tree/)【树】
-   3.  [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)【栈】
-   4.  [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)【查找】
-   5.  [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)【数组】
-   6.  [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) 【排序】
-   7.  [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)【字符串】
-3. 20190124
-   1.  [51. N-Queens](https://leetcode.com/problems/n-queens/)【回溯法】（未完成）
-   2.  [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)【贪心】
-   3.  [75. Sort Colors](https://leetcode.com/problems/sort-colors/)【排序】
-   4.  [414. Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)【查找】
-   5.  [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)【链表】
-   6.  [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)【栈或者队列】
-   7.  [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)【树】
-   8.  [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)【查找】
-   9.  [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)【查找】
-   10.  [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)【查找】
-   11.  [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)【栈或者队列】
-4. 20190125
-   1.  [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)【链表】
-   2.  [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)【递归】
-   3.  [134. Gas Station](https://leetcode.com/problems/gas-station/)【贪心】
-   4.  [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)【树】
-   5.  [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)【树】
-   6.  [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)【栈】
-   7.  [127. Word Ladder](https://leetcode.com/problems/word-ladder/)【查找】
-   8.  [79. Word Search](https://leetcode.com/problems/word-search/)【查找】
-   9.  [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)【数组】
-5. 20190127
-   1.  [86. Partition List](https://leetcode.com/problems/partition-list/)【链表】
-   2.  [55. Jump Game](https://leetcode.com/problems/jump-game/)【贪心】
-   3.  [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)【树】
-   4.  [77. Combinations](https://leetcode.com/problems/combinations/)【查找】
-   5.  [39. Combination Sum](https://leetcode.com/problems/combination-sum/)【查找】
-   6.  [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)【数组】
-   7.  [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)【数组】
-   8.  [71. Simplify Path](https://leetcode.com/problems/simplify-path/)【字符串】
-   9.  [67. Add Binary](https://leetcode.com/problems/add-binary/)【字符串】
-6. 20190128
-   1.  [83. Remove Duplicates from Sorted List](https://leetcode.com/problemset/all/?search=remove-duplicates-from-sorted-list )【链表】
-   2.  [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)【链表】
-   3.  [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)【贪心】
-   4.  [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)【数组】
-   5.  [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)【树】
-   6.  [112. Path Sum](https://leetcode.com/problems/path-sum/)【树】
-   7.  [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)【树】
-   8.  [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)【栈】
-   9.  [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)【查找】
-7. 20190129
-   1.  [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)【链表】
-   2.  [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)【贪心】
-   3.  [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)【树】
-   4.  [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)【树】
-   5.  [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)【栈】
-   6.  [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)【查找】
-   7.  [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)【查找】
-   8.  [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)【数组】
-   9.  [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)【数组】*
-8. 20190131
-   1.  [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)【链表】
-   2.  [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)【贪心】
-   3.  [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)【树】
-   4.  [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)【树】
-   5.  [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)【树】
-   6.  [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)【树】
-   7.  [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)【查找】
-   8.  [66. Plus One](https://leetcode.com/problems/plus-one/)【数组】
-   9.  [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)【数组】
-9. 20190201
-   1.  [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)【链表】
-   2.  [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)【模拟】
-   3.  [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)【树】
-   4.  [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)【树】
-   5.  [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)【查找】
-   6.  [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)【数组】
-   7.  [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)【数组】
-   8.  [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)【字符串】
-   9.  [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)【字符串】
-10. 20190202
-    1.  [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)【树】
-    2.  [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)【树】
-    3.  [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)【树】
-    4.  [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)【树】
-    5.  [48. Rotate Image](https://leetcode.com/problems/rotate-image/)【数组】
-    6.  [31. Next Permutation](https://leetcode.com/problems/next-permutation/)【数组】
-    7.  [27. Remove Element](https://leetcode.com/problems/remove-element/)【数组】
-    8.  [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)【数组】
-    9.  [38. Count and Say](https://leetcode.com/problems/count-and-say/)【字符串】
-11. 20190205
-    1.  [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)【字符串】
-    2.  [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)【字符串】
-    3.  [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)【字符串】
-    4.  [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)【数组】
-    5.  [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)【树】
-    6.  [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)【数组】
-    7.  [57. Insert Interval](https://leetcode.com/problems/insert-interval/)【数组】
-    8.  [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)【分治】
-    9.  [46. Permutations](https://leetcode.com/problems/permutations/)【分治】
-12. 20190207
-    1.  [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)【字符串】
-    2.  [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)【字符串】
-    3.  [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)【字符串】
-    4.  [139. Word Break](https://leetcode.com/problems/word-break/)【动态规划】
-    5.  [140. Word Break II](https://leetcode.com/problems/word-break-ii/)【动态规划】
-    6.  [78. Subsets](https://leetcode.com/problems/subsets/)【动态规划
-    7.  [120. Triangle](https://leetcode.com/problems/triangle/)【动态规划】
-    8.  [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)【动态规划】
-    9.  [1. Two Sum](https://leetcode.com/problems/two-sum/)【哈希】
+题目来自《何海涛. 剑指 Offer[M]. 电子工业出版社, 2012.》，刷题网站推荐：
 
+- [牛客网(opens new window)](https://www.nowcoder.com/ta/coding-interviews?from=cyc_github)
+- [Leetcode(opens new window)](https://leetcode-cn.com/problemset/lcof/)
+
+## 数组与矩阵
+
+- [3. 数组中重复的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/3. 数组中重复的数字.html)
+- [4. 二维数组中的查找](http://www.cyc2018.xyz/算法/剑指 Offer 题解/4. 二维数组中的查找.html)
+- [5. 替换空格](http://www.cyc2018.xyz/算法/剑指 Offer 题解/5. 替换空格.html)
+- [29. 顺时针打印矩阵](http://www.cyc2018.xyz/算法/剑指 Offer 题解/29. 顺时针打印矩阵.html)
+- [50. 第一个只出现一次的字符位置](http://www.cyc2018.xyz/算法/剑指 Offer 题解/50. 第一个只出现一次的字符位置.html)
+
+## 栈队列堆
+
+- [9. 用两个栈实现队列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/9. 用两个栈实现队列.html)
+- [30. 包含 min 函数的栈](http://www.cyc2018.xyz/算法/剑指 Offer 题解/30. 包含 min 函数的栈.html)
+- [31. 栈的压入、弹出序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/31. 栈的压入、弹出序列.html)
+- [40. 最小的 K 个数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/40. 最小的 K 个数.html)
+- [41.1 数据流中的中位数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/41.1 数据流中的中位数.html)
+- [41.2 字符流中第一个不重复的字符](http://www.cyc2018.xyz/算法/剑指 Offer 题解/41.2 字符流中第一个不重复的字符.html)
+- [59. 滑动窗口的最大值](http://www.cyc2018.xyz/算法/剑指 Offer 题解/59. 滑动窗口的最大值.html)
+
+## 双指针
+
+- [57.1 和为 S 的两个数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/57.1 和为 S 的两个数字.html)
+- [57.2 和为 S 的连续正数序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/57.2 和为 S 的连续正数序列.html)
+- [58.1 翻转单词顺序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/58.1 翻转单词顺序列.html)
+- [58.2 左旋转字符串](http://www.cyc2018.xyz/算法/剑指 Offer 题解/58.2 左旋转字符串.html)
+
+## 链表
+
+- [6. 从尾到头打印链表](http://www.cyc2018.xyz/算法/剑指 Offer 题解/6. 从尾到头打印链表.html)
+- [18.1 在 O(1) 时间内删除链表节点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/18.1 在 O(1) 时间内删除链表节点.html)
+- [18.2 删除链表中重复的结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/18.2 删除链表中重复的结点.html)
+- [22. 链表中倒数第 K 个结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/22. 链表中倒数第 K 个结点.html)
+- [23. 链表中环的入口结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/23. 链表中环的入口结点.html)
+- [24. 反转链表](http://www.cyc2018.xyz/算法/剑指 Offer 题解/24. 反转链表.html)
+- [25. 合并两个排序的链表](http://www.cyc2018.xyz/算法/剑指 Offer 题解/25. 合并两个排序的链表.html)
+- [35. 复杂链表的复制](http://www.cyc2018.xyz/算法/剑指 Offer 题解/35. 复杂链表的复制.html)
+- [52. 两个链表的第一个公共结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/52. 两个链表的第一个公共结点.html)
+
+## 树
+
+- [7. 重建二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/7. 重建二叉树.html)
+- [8. 二叉树的下一个结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/8. 二叉树的下一个结点.html)
+- [26. 树的子结构](http://www.cyc2018.xyz/算法/剑指 Offer 题解/26. 树的子结构.html)
+- [27. 二叉树的镜像](http://www.cyc2018.xyz/算法/剑指 Offer 题解/27. 二叉树的镜像.html)
+- [28. 对称的二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/28. 对称的二叉树.html)
+- [32.1 从上往下打印二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/32.1 从上往下打印二叉树.html)
+- [32.2 把二叉树打印成多行](http://www.cyc2018.xyz/算法/剑指 Offer 题解/32.2 把二叉树打印成多行.html)
+- [32.3 按之字形顺序打印二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/32.3 按之字形顺序打印二叉树.html)
+- [33. 二叉搜索树的后序遍历序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/33. 二叉搜索树的后序遍历序列.html)
+- [34. 二叉树中和为某一值的路径](http://www.cyc2018.xyz/算法/剑指 Offer 题解/34. 二叉树中和为某一值的路径.html)
+- [36. 二叉搜索树与双向链表](http://www.cyc2018.xyz/算法/剑指 Offer 题解/36. 二叉搜索树与双向链表.html)
+- [37. 序列化二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/37. 序列化二叉树.html)
+- [54. 二叉查找树的第 K 个结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/54. 二叉查找树的第 K 个结点.html)
+- [55.1 二叉树的深度](http://www.cyc2018.xyz/算法/剑指 Offer 题解/55.1 二叉树的深度.html)
+- [55.2 平衡二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/55.2 平衡二叉树.html)
+- [68. 树中两个节点的最低公共祖先](http://www.cyc2018.xyz/算法/剑指 Offer 题解/68. 树中两个节点的最低公共祖先.html)
+
+## 贪心思想
+
+- [14. 剪绳子](http://www.cyc2018.xyz/算法/剑指 Offer 题解/14. 剪绳子.html)
+- [63. 股票的最大利润](http://www.cyc2018.xyz/算法/剑指 Offer 题解/63. 股票的最大利润.html)
+
+## 二分查找
+
+- [11. 旋转数组的最小数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/11. 旋转数组的最小数字.html)
+- [53. 数字在排序数组中出现的次数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/53. 数字在排序数组中出现的次数.html)
+
+## 分治
+
+- [16. 数值的整数次方](http://www.cyc2018.xyz/算法/剑指 Offer 题解/16. 数值的整数次方.html)
+
+## 搜索
+
+- [12. 矩阵中的路径](http://www.cyc2018.xyz/算法/剑指 Offer 题解/12. 矩阵中的路径.html)
+- [13. 机器人的运动范围](http://www.cyc2018.xyz/算法/剑指 Offer 题解/13. 机器人的运动范围.html)
+- [38. 字符串的排列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/38. 字符串的排列.html)
+
+## 排序
+
+- [21. 调整数组顺序使奇数位于偶数前面](http://www.cyc2018.xyz/算法/剑指 Offer 题解/21. 调整数组顺序使奇数位于偶数前面.html)
+- [45. 把数组排成最小的数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/45. 把数组排成最小的数.html)
+- [51. 数组中的逆序对](http://www.cyc2018.xyz/算法/剑指 Offer 题解/51. 数组中的逆序对.html)
+
+## 动态规划
+
+- [10.1 斐波那契数列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.1 斐波那契数列.html)
+- [10.2 矩形覆盖](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.2 矩形覆盖.html)
+- [10.3 跳台阶](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.3 跳台阶.html)
+- [10.4 变态跳台阶](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.4 变态跳台阶.html)
+- [42. 连续子数组的最大和](http://www.cyc2018.xyz/算法/剑指 Offer 题解/42. 连续子数组的最大和.html)
+- [47. 礼物的最大价值](http://www.cyc2018.xyz/算法/剑指 Offer 题解/47. 礼物的最大价值.html)
+- [48. 最长不含重复字符的子字符串](http://www.cyc2018.xyz/算法/剑指 Offer 题解/48. 最长不含重复字符的子字符串.html)
+- [49. 丑数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/49. 丑数.html)
+- [60. n 个骰子的点数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/60. n 个骰子的点数.html)
+- [66. 构建乘积数组](http://www.cyc2018.xyz/算法/剑指 Offer 题解/66. 构建乘积数组.html)
+
+## 数学
+
+- [39. 数组中出现次数超过一半的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/39. 数组中出现次数超过一半的数字.html)
+- [62. 圆圈中最后剩下的数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/62. 圆圈中最后剩下的数.html)
+- [43. 从 1 到 n 整数中 1 出现的次数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/43. 从 1 到 n 整数中 1 出现的次数.html)
+
+## 位运算
+
+- [15. 二进制中 1 的个数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/15. 二进制中 1 的个数.html)
+- [56. 数组中只出现一次的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/56. 数组中只出现一次的数字.html)
+
+## 其它
+
+- [17. 打印从 1 到最大的 n 位数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/17. 打印从 1 到最大的 n 位数.html)
+- [19. 正则表达式匹配](http://www.cyc2018.xyz/算法/剑指 Offer 题解/19. 正则表达式匹配.html)
+- [20. 表示数值的字符串](http://www.cyc2018.xyz/算法/剑指 Offer 题解/20. 表示数值的字符串.html)
+- [44. 数字序列中的某一位数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/44. 数字序列中的某一位数字.html)
+- [46. 把数字翻译成字符串](http://www.cyc2018.xyz/算法/剑指 Offer 题解/46. 把数字翻译成字符串.html)
+- [61. 扑克牌顺子](http://www.cyc2018.xyz/算法/剑指 Offer 题解/61. 扑克牌顺子.html)
+- [64. 求 1+2+3+...+n](http://www.cyc2018.xyz/算法/剑指 Offer 题解/64. 求 1+2+3+...+n.html)
+- [65. 不用加减乘除做加法](http://www.cyc2018.xyz/算法/剑指 Offer 题解/65. 不用加减乘除做加法.html)
+- [67. 把字符串转换成整数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/67. 把字符串转换成整数.html)
 
 # 参考
 
-1. [leetcode_python](https://codechina.csdn.net/AiShow/leetcode_python)
+1. [PADS, Python algorithms and data structures](https://www.ics.uci.edu/~eppstein/PADS/). David Eppstein
+2. [Python算法与数据结构视频教程](https://github.com/PegasusWang/python_data_structures_and_algorithms): [博客](https://pegasuswang.github.io/python_data_structures_and_algorithms/)
+3. [leetcode-python](https://github.com/shichao-an/leetcode-python)
+4. [leetcode_python](https://codechina.csdn.net/AiShow/leetcode_python)

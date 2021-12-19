@@ -52,21 +52,22 @@
     - [常用方法](docs/libs/opencv/my_cv.md)
     - [faq](docs/libs/opencv/faq.md)
 
-- [小例子](docs/samples/README.md)
-  - [递归遍历目录](docs/samples/递归遍历目录.md)
+- [力扣](docs/design_patterns/README.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
 ## 项目进阶
 
-* [爬虫](docs/spiders/README.md)
-  * [requests](docs/spiders/requests.md)
-  * [Fiddler](docs/spiders/Fiddler.md)
-  * [mitmproxy](docs/spiders/mitmproxy.md)
-  * [scapy](docs/spiders/scapy.md)
-  * [Scrapy](docs/spiders/Scrapy.md)
-  * [urllib](docs/spiders/urllib.md)
-  * [wireshark](docs/spiders/wireshark.md)
+* [小例子](docs/samples/README.md)
+  * [递归遍历目录](docs/samples/递归遍历目录.md)
+* [爬虫](docs/projects/spiders/README.md)
+  * [requests](docs/projects/spiders/requests.md)
+  * [Fiddler](docs/projects/spiders/Fiddler.md)
+  * [mitmproxy](docs/projects/spiders/mitmproxy.md)
+  * [scapy](docs/projects/spiders/scapy.md)
+  * [Scrapy](docs/projects/spiders/Scrapy.md)
+  * [urllib](docs/projects/spiders/urllib.md)
+  * [wireshark](docs/projects/spiders/wireshark.md)
 
 ## 人工智能
 
