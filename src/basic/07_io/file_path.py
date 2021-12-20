@@ -3,8 +3,8 @@ import sys
 
 
 def traverse_dir(file_dir):
-    for path, dir, file in os.walk(file_dir):
-        for name in file:
+    for path, dir, files in os.walk(file_dir):
+        for name in files:
             print(dir, path, '==>', name)
 
 
@@ -36,7 +36,12 @@ def batch_rename_file(dir_path):
                 print(os.path.join(dir_path, old_name), " ===> ", os.path.join(dir_path, new_name))
                 os.rename(os.path.join(dir_path, old_name), os.path.join(dir_path, new_name))
 
+def generate_dir(file_dir):
+    for path, dir, files in os.walk(file_dir):
+        for name in files:
+            print("[{0}](docs/其他/docsify/docs-zh/{0})".format(name))
 
 if __name__ == '__main__':
     traverse_dir('.')
     # batch_rename_file(r'F:\src_sfyh\LeetcodeEveryday\code_python\solution')
+    generate_dir(r'E:\src_ui\web_ui_notes\docs\其他\docsify\docs-zh')
