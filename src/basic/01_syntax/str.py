@@ -50,10 +50,13 @@ print("-----")
 print(int(str(110), base=2))  # 实现2进制到10进制转换
 print(bin(15))  # 实现10进制到2进制转换
 print(oct(255))  # 实现10进制到2进制转换
-print(hex(255)) # 实现10进制到16进制转换
+print(hex(255))  # 实现10进制到16进制转换
 
 print("-----")
 print(format(-15, '#b'), format(-15, 'b'))
 print(format(10, '#o'), format(10, 'o'))
 print(format(255, '#x'), format(255, 'X'))
-print(int(str(110),base=2))
+print(int(str(110), base=2))
+
+a, b, c = 1, 23.32, "ok"
+print("Case #%i: %.02f %s" % (a, b, c))
