@@ -101,6 +101,32 @@ if __name__ == '__main__':
     print(queue.is_empty())
 ```
 
+### 通过栈实现队列 
+
+```
+class OurQueue:
+    """
+    使用栈模拟双端队列
+    从in_stack进入,从out_stack出
+    """
+
+    def __init__(self):
+        self.__in_stack = list()
+        self.__out_stack = list()
+
+    def __len__(self):
+        return len(self.__in_stack) + len(self.__out_stack)
+
+    def push(self, obj):
+        self.__in_stack.append(obj)
+
+    def pop(self):
+        if not self.__out_stack:
+            self.__out_stack = self.__in_stack[::-1]
+            self.__in_stack = []
+        return self.__out_stack.pop()
+```
+
 ### 常用队列
 
 Python的Queue模块中提供了同步的、线程安全的队列类，包括FIFO（先入先出)队列Queue，LIFO（后入先出）队列LifoQueue，和优先级队列PriorityQueue。这些队列都实现了锁原语，能够在多线程中直接使用。可以使用队列来实现线程间的同步。
