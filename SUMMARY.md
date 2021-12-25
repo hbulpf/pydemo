@@ -56,6 +56,7 @@
   - [算法总结](docs/leetcode/python_summary.md)
   - [算法技巧](docs/leetcode/algo_tips.md)
   - [bfs和dfs专题](docs/leetcode/bfs-dfs.md)
+  - [栈和队列专题](docs/leetcode/stack-queue.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
