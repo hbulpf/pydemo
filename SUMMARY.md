@@ -16,7 +16,6 @@
   * [多个虚拟环境](docs/python/virtualenv.md)
   * [内建函数](docs/python/内建函数.md)
   * [常用样例](docs/python/常用样例.md)
-  * [数据结构](docs/python/数据结构.md)
   * [常用技巧](docs/python/tips.md)
 
 - [开发技能](docs/dev/README.md)
@@ -52,7 +51,11 @@
     - [常用方法](docs/libs/opencv/my_cv.md)
     - [faq](docs/libs/opencv/faq.md)
 
-- [力扣](docs/design_patterns/README.md)
+- [力扣](docs/leetcode/README.md)
+  - [数据结构](docs/leetcode/data_structure.md)
+  - [算法总结](docs/leetcode/python_summary.md)
+  - [算法技巧](docs/leetcode/algo_tips.md)
+  - [bfs和dfs专题](docs/leetcode/bfs-dfs.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
