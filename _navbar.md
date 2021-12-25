@@ -9,10 +9,6 @@
   * [力扣初级算法](algorithms/algo_low.md)
   * [五大算法思想](algorithms/五大算法思想.md)
 
-* Python专题
-  * [python算法总结](algorithms/python/python_summary.md)
-  * [python编程技巧](algorithms/python/python_tips.md)
-
 * LeetCode
   * [每日打卡](每日打卡.md)
   * [LeetCode全部题目](LeetCode全部题目.md)
