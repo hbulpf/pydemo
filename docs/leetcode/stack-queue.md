@@ -1,6 +1,8 @@
-# 数据结构
+# 栈和队列
 
-## 队列和栈
+在 Python 的标准库中，有两个类实现了队列。第一是 Queue 类，这是一个同步实现，意味着多个进程可以同时访问同一个对象,主要实现并发机制, 它在执行同步的时候使用的信号机制会拖慢执行速度。第二是 Deque 类（Double EndedQueue，即双向队列），除了提供标准方法，即在尾部使用append(element) 添加元素和在头部使用 popleft() 提取元素之外，它还提供了额外方法，用于在队列头部使用 appendleft(element) 添加元素和在尾部使用 pop() 提取元素。
+
+## 使用list实现栈和队列
 
 python中对于栈和队列的问题，一般可以用 list 和 dequere 来模拟。
 
@@ -20,6 +22,18 @@ roommate.sort() # 对list进行排序,list元素本身顺序发生改变，无�
 r2=sorted(roommate,reverse=True)  # 对list进行排序,list本身顺序无改变，返回一个新的list
 ```
 
+使用 list 模拟队列
+```Python
+roommate.append('xinran') #入队
+a2 = roommate.pop(0) #出队
+```
+
+使用 list 模拟栈
+```Python
+roommate.append('xinran') #入栈
+a2 = roommate.pop() #出栈
+```
+
 为了提高效率还可以使用 dequeue。deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈：
 
 ```python
@@ -32,14 +46,88 @@ a1 = q.pop()
 print(a1)
 a2 = q.popleft()
 print(a2)
-q
 ```
 
-`deque` 除了实现list的 `append()` 和 `pop()` 外，还支持 `appendleft()` 和 `popleft()` ，这样就可以非常高效地往头部添加或删除元素。deque 除了从 `collections` 导入，也可以从 `queue` 模块导入。
+模拟队列
 
-### 队列
+```Python
+q = deque(['a', 'b', 'c'])
+q.append('x') #入队
+a2 = q.popleft()  #出队
+```
 
-#### 常用队列
+模拟栈
+```Python
+q.append('x') #入栈
+a2 = q.pop()  #出栈
+```
+
+`deque` 除了实现list的 `append()` 和 `pop()` 外，还支持 `appendleft()` 和 `popleft()` ，这样就可以非常高效地往头部添加或删除元素。
+
+deque 除了从 `collections` 导入，也可以从 `queue` 模块导入。
+
+## 队列
+
+### 通过 list 实现队列
+```python
+class MyQueue:
+    def __init__(self):
+        self._alist=[]
+
+    def put(self,ele):
+        self._alist.append(ele)
+
+    def get(self):
+        return self._alist.pop(0)
+
+    def size(self):
+        return len(self._alist)
+
+    def is_empty(self):
+        return not self._alist
+
+    def show(self):
+        print(self._alist)
+
+if __name__ == '__main__':
+    queue = MyQueue()
+    queue.put(1)
+    queue.put(4)
+    queue.put(6)
+    queue.show()
+    print(queue.get())
+    print(queue.get())
+    print(queue.get())
+    print(queue.is_empty())
+```
+
+### 通过栈实现队列 
+
+```
+class OurQueue:
+    """
+    使用栈模拟双端队列
+    从in_stack进入,从out_stack出
+    """
+
+    def __init__(self):
+        self.__in_stack = list()
+        self.__out_stack = list()
+
+    def __len__(self):
+        return len(self.__in_stack) + len(self.__out_stack)
+
+    def push(self, obj):
+        self.__in_stack.append(obj)
+
+    def pop(self):
+        if not self.__out_stack:
+            self.__out_stack = self.__in_stack[::-1]
+            self.__in_stack = []
+        return self.__out_stack.pop()
+```
+
+### 常用队列
 
 Python的Queue模块中提供了同步的、线程安全的队列类，包括FIFO（先入先出)队列Queue，LIFO（后入先出）队列LifoQueue，和优先级队列PriorityQueue。这些队列都实现了锁原语，能够在多线程中直接使用。可以使用队列来实现线程间的同步。
 
@@ -89,7 +177,7 @@ print("优先级队列：%s;是否为空：%s,多大,%s;是否满,%s" %(pq.queue
 优先级队列：[1, 3, 2, 4];是否为空：False,多大,4;是否满,False
 ```
 
-#### 生产者消费者模式
+### 生产者消费者模式
 
 生产者消费者模式并不是GOF提出的众多模式之一，但它依然是开发同学编程过程中最常用的一种模式
 
@@ -170,7 +258,7 @@ print('cosumer ok')
 
 加上block=False 的参数，问题迎刃而解。
 
-### 栈
+
 
 ## 参考
 

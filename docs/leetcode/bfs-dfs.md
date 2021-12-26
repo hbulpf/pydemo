@@ -1,3 +1,3 @@
-# bfs和dfs
+# bfs和dfs专题
 
 [python实现图的DFS和BFS](https://blog.csdn.net/weizhifei1234/article/details/88787352)
