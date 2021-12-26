@@ -59,6 +59,7 @@
   - [栈和队列专题](docs/leetcode/stack-queue.md)
   - [堆与优先级队列](docs/leetcode/heap.md)
   - [二叉树](docs/leetcode/bi-tree.md)
+  - [并查集](docs/leetcode/union_find.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
