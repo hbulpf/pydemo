@@ -78,7 +78,6 @@
 ## 人工智能
 
 - [Anaconda](docs/tools/anaconda/README.md)
-   - [anaconda生成py36环境](docs/tools/anaconda/py37_To_py36.md)
    - [conda基本命令](docs/tools/anaconda/conda_cmd.md)
    - [python与anaconda配套](docs/tools/anaconda/python与anaconda配套.md)
 - [Jupyter](docs/tools/jupyter/README.md)
