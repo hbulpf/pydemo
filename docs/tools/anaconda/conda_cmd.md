@@ -62,6 +62,7 @@ conda create --name your_env_name python=3.5 numpy scipy
 ```bash
 source activate py36 #激活python3.6版本
 ```
+> 注意: windows环境下不加 source
 
 #### 退出虚拟环境
 退出py36虚拟环境
