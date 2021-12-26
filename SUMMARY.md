@@ -57,6 +57,8 @@
   - [算法技巧](docs/leetcode/algo_tips.md)
   - [bfs和dfs专题](docs/leetcode/bfs-dfs.md)
   - [栈和队列专题](docs/leetcode/stack-queue.md)
+  - [堆与优先级队列](docs/leetcode/heap.md)
+  - [二叉树](docs/leetcode/bi-tree.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
