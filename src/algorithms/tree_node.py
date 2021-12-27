@@ -113,3 +113,13 @@ if __name__ == '__main__':
     dfs_tree_with_stack(n1)
     print("\ndfs_recursive:")
     dfs_recursive(n1)
+"""
+bfs:
+1,2,3,4,5,6,7,8,9,
+bfs_recursive:
+1,2,3,4,5,6,7,8,9,
+dfs:
+1,2,4,8,5,9,3,6,7,
+dfs_recursive:
+1,2,4,8,5,9,3,6,7,
+"""
