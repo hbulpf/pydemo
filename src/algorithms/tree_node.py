@@ -39,7 +39,7 @@ def bfs_tree_with_queue(root: TreeNode):
 def bfs_recursive(root: TreeNode):
     """
     bfs 递归遍历树
-    bfs递归形式，是利用dfs的递归形式，在递归过程中记录每个node的level，然后将属于一个level的node放到一list里面
+    bfs递归形式，是利用dfs的递归形式，在递归过程中记录每个node的level，然后将属于一个level的node放入同一list
     """
     res = []
 
@@ -50,13 +50,14 @@ def bfs_recursive(root: TreeNode):
             sub_list = [root]
             res_list.append(sub_list)
         else:
-            res_list.append(root)
+            res_list[level].append(root)
         travel(root.left, level + 1, res_list)
         travel(root.right, level + 1, res_list)
 
     travel(root, 0, res)
-    for i in res:
-        print(i, end=',')
+    for arr in res:
+        for j in arr:
+            print(j, end=',')
 
 
 def dfs_tree_with_stack(root: TreeNode):
@@ -104,7 +105,6 @@ if __name__ == '__main__':
     n3 = TreeNode(3, n6, n7)
     n2 = TreeNode(2, n4, n5)
     n1 = TreeNode(1, n2, n3)
-    print(n1)
     print("bfs:")
     bfs_tree_with_queue(n1)
     print("\nbfs_recursive:")

@@ -78,8 +78,32 @@ def dfs_graph_with_stack(graph,s):
 
 ### 递归实现
 
-bfs递归形式，是利用dfs的递归形式，在递归过程中记录每个node的level，然后将属于一个level的node放到一list里面
+bfs递归形式，是利用dfs的递归形式，在递归过程中记录每个node的level，然后将属于一个level的node放入同一list
 
+```python
+def bfs_recursive(root: TreeNode):
+    """
+    bfs 递归遍历树
+    bfs递归形式，是利用dfs的递归形式，在递归过程中记录每个node的level，然后将属于一个level的node放入同一list
+    """
+    res = []
+
+    def travel(root: TreeNode, level, res_list):
+        if not root:
+            return
+        if level >= len(res_list):
+            sub_list = [root]
+            res_list.append(sub_list)
+        else:
+            res_list[level].append(root)
+        travel(root.left, level + 1, res_list)
+        travel(root.right, level + 1, res_list)
+
+    travel(root, 0, res)
+    for arr in res:
+        for j in arr:
+            print(j, end=',')
+```
 
 
 ### 非递归实现
