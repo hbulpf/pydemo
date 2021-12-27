@@ -36,7 +36,7 @@ DFS非递归实现要用到栈
 
 遍历树
 ```python
-def dfs_tree_with_stack(self, root: TreeNode):
+def dfs_tree_with_stack(root: TreeNode):
     """
     使用栈实现dfs
     """
@@ -45,7 +45,7 @@ def dfs_tree_with_stack(self, root: TreeNode):
     stack = [root]
     while stack:
         node = stack.pop()
-        self.process(node)
+        print(node.val, end=',')
         if node.right:
             stack.append(node.right)
         if node.left:
@@ -113,7 +113,7 @@ BFS非递归实现要用到队列
 
 遍历树
 ```python
-def bfs_tree_with_queue(self, root: TreeNode):
+def bfs_tree_with_queue(root: TreeNode):
     """
     bfs 使用队列遍历树
     """
@@ -122,7 +122,7 @@ def bfs_tree_with_queue(self, root: TreeNode):
     queue = [root]
     while queue:
         node = queue.pop(0)
-        self.process(node)
+        print(node.val, end=',')
         if node.left:
             queue.append(node.left)
         if node.right:
