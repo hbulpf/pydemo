@@ -150,6 +150,96 @@ def bfs_graph_with_queue(graph,s):
         print(vertex)       
 ```
 
+## 力扣题目
+
+1. leetcode [104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)，[111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/): 给定一个二叉树，找出其最大/最小深度。 
+
+   例如：给定二叉树 [3,9,20,null,null,15,7],
+
+   ```
+      3 
+     / \ 
+    9  20 
+      /  \ 
+     15   7 
+   ```
+
+   则它的最小深度 2，最大深度 3。
+
+   思路: 使用深度遍历的思想，递归遍历左右子树的最大/最小深度.但在得到最小深度时，注意树某个子节点为空的情况。
+
+   ```java
+   
+   ```
+   
+2. leetcode 102: 给你一个二叉树，请你返回其按层序遍历得到的节点值。(即逐层地，从左到右访问所有节点)。示例，给定二叉树：[3,9,20,null,null,15,7]。
+
+   ```
+      3 
+     / \ 
+    9  20 
+      /  \ 
+     15   7 
+   ```
+
+   返回其层次遍历结果：
+
+   ```
+   [ 
+     [3], 
+     [9,20], 
+     [15,7] 
+   ] 
+   ```
+   
+   思路: 这道题是广度优先遍历的变种，只需要在广度优先遍历的过程中，把每一层的节点都添加到同一个数组中即可，问题的关键在于遍历同一层节点前，必须事先算出同一层的节点个数有多少(即队列已有元素个数)。
+   
+   使用bfs思路的代码
+   
+   ```python
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
+        from collections import deque
+        q = deque([root])
+        res = []
+        while q:
+            level_len = len(q)
+            level = []
+            while level_len > 0:
+                node = q.popleft()
+                level.append(node.val)
+                level_len -= 1
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            res.append(level)
+        return res
+   ```
+   
+   使用dfs思路的代码: 这题用 BFS 是显而易见的，但其实也可以用 DFS. 
+   
+   DFS 可以用递归来实现，其实只要在递归函数上加上一个「层」的变量即可，只要节点属于这一层，则把这个节点放入相当层的数组里
+   
+   ```python
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        travel_list = []
+   
+        def dfs(root: TreeNode, level: int):
+            if not root:
+             return
+            if len(travel_list) < level + 1:
+                travel_list.append([])
+            travel_list[level].append(root.val)
+            dfs(root.left, level + 1)
+            dfs(root.right, level + 1)
+   
+        dfs(root, 0)
+        return travel_list
+    ```
+
+
 ## 参考
 
 1. [python实现图的DFS和BFS](https://blog.csdn.net/weizhifei1234/article/details/88787352)
