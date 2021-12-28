@@ -5,4 +5,4 @@
 
 ## 力扣题目
 
-leetcode 爬楼梯
+leetcode [70.爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
