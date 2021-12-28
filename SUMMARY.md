@@ -53,13 +53,15 @@
 
 - [力扣](docs/leetcode/README.md)
   - [数据结构](docs/leetcode/data_structure.md)
+    - [bfs和dfs专题](docs/leetcode/bfs-dfs.md)
+    - [栈和队列专题](docs/leetcode/stack-queue.md)
+    - [堆与优先级队列](docs/leetcode/heap.md)
+    - [二叉树](docs/leetcode/bi-tree.md)
+    - [并查集](docs/leetcode/union_find.md)
   - [算法总结](docs/leetcode/python_summary.md)
+    - [贪婪算法](docs/leetcode/greedy.md)
+    - [动态规划](docs/leetcode/dp.md)
   - [算法技巧](docs/leetcode/algo_tips.md)
-  - [bfs和dfs专题](docs/leetcode/bfs-dfs.md)
-  - [栈和队列专题](docs/leetcode/stack-queue.md)
-  - [堆与优先级队列](docs/leetcode/heap.md)
-  - [二叉树](docs/leetcode/bi-tree.md)
-  - [并查集](docs/leetcode/union_find.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
