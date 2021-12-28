@@ -64,7 +64,10 @@
    nums[:] = nums[-k:] + nums[:-k]
    ```
 
-6. sort() 与 sorted(): `roommate.sort()` 对list进行排序,list元素本身顺序发生改变，无返回值; `r2=sorted(roommate,reverse=True)`  对list进行排序,list本身顺序无改变，返回一个新的list
+6. sort() 与 sorted(): 
+
+   - `roommate.sort()` 对list进行排序,list元素本身顺序发生改变，无返回值; 
+   - `r2=sorted(roommate,reverse=True)`  对list进行排序,list本身顺序无改变，返回一个新的list
 
 
 7. 要善用推导表达式
@@ -74,6 +77,26 @@
         return [nums1.pop(nums1.index(i)) for i in nums2 if i in nums1]
    ```
 
+8. sum/max/min的使用: 都可以传入一个序列
+
+   如果按照升序排序，那从最后一个往前取，就是降序。
+   ```
+   def min_scalar_prod(x, y):
+       x = sorted(x)
+       y = sorted(y)
+       return sum(x[i] * y[-i - 1] for i in range(len(x)))
+   ```
+
+   求序列中的最小值、最大值
+   ```
+   tab = [22, 3, 2, 4, 21, 32]
+   print(max((tab[i], i) for i in range(len(tab))))
+   print(max((-tab[i], i) for i in range(len(tab))))
+   print(min((tab[i], i) for i in range(len(tab))))
+   #  (32, 5)
+   #  (-2, 2)
+   #  (2, 2)
+   ```   
 
 ## 算法技巧类
 

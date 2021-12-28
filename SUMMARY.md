@@ -58,10 +58,10 @@
     - [堆与优先级队列](docs/leetcode/heap.md)
     - [二叉树](docs/leetcode/bi-tree.md)
     - [并查集](docs/leetcode/union_find.md)
-  - [算法总结](docs/leetcode/python_summary.md)
-    - [贪婪算法](docs/leetcode/greedy.md)
-    - [动态规划](docs/leetcode/dp.md)
-  - [算法技巧](docs/leetcode/algo_tips.md)
+  - [算法总结](docs/leetcode/algo/python_summary.md)
+    - [贪婪算法](docs/leetcode/algo/greedy.md)
+    - [动态规划](docs/leetcode/algo/dp.md)
+    - [算法技巧](docs/leetcode/algo/algo_tips.md)
 
 - [设计模式](docs/design_patterns/README.md)
 
