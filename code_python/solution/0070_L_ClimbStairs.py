@@ -9,12 +9,15 @@ class Solution(object):
         ...
         f(n) = f(n-1)+f(n-2)
         """
-        if n == 1: return 1
-        if n == 2: return 2
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
         l = 1
         r = 2
-        for i in range(3,n+1):
-            sum_ = l+r
+        for i in range(3, n + 1):
+            _sum = l + r
             l = r
-            r = sum_
+            r = _sum
         return r
+
