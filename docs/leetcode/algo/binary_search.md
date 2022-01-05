@@ -47,3 +47,21 @@ print(arr, ":", bisect(arr, 5))
 ## 连续域的二分查找
 
 这种技术同样可以用在以下情况：函数 f 的区间为连续，且希望找到最小值 x0 ，使得对于所有 x ≥ x0 ，都有 f (x) = 1。此时，时间复杂度取决于 x0 需要的精确度。
+
+```
+def continuous_binary_search(f, target, lo, hi):
+    while hi - lo > 1e-4:  # 设置精度
+        mid = (lo + hi) / 2  # 浮点数除法
+        if f(hi) > target:
+            hi = mid
+        else:
+            lo = mid
+    return lo
+```
+
+测试
+```
+def test_continuous_binary_search():
+    f = lambda x: x ** 2
+    print(continuous_binary_search(f, 16, 2.22, 9))
+```
