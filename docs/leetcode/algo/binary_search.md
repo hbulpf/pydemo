@@ -65,3 +65,20 @@ def test_continuous_binary_search():
     f = lambda x: x ** 2
     print(continuous_binary_search(f, 16, 2.22, 9))
 ```
+
+## 无上界的连续域查找
+
+## 三分查找
+
+## 在区间 [0, pow(2,k)) 中的查找
+
+## 逆函数
+
+## 力扣题目
+
+填充蓄水池
+某个连通容器系统由 n 个瓶壁高度不同的容器互相连通组成，我们想计算将系统的液位提升到一个指定高度所需注入的水量。或者，假设向系统中注入体积为 V 的液体，想确定系统的液面高度，可以使用以下方式
+
+```
+level = continuous_binary_search(lambda level: volume(level) >= V, 0, hi)
+```
