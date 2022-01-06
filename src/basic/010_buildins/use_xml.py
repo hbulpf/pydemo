@@ -23,3 +23,4 @@ parser.StartElementHandler = handler.start_element
 parser.EndElementHandler = handler.end_element
 parser.CharacterDataHandler = handler.char_data
 parser.Parse(xml)
+
