@@ -10,17 +10,19 @@ class DefaultSaxHandler(object):
     def char_data(self, text):
         print('sax:char_data: %s' % text)
 
-xml = r'''<?xml version="1.0"?>
-<ol>
-    <li><a href="/python">Python</a></li>
-    <li><a href="/ruby">Ruby</a></li>
-</ol>
-'''
+def use_sax():
+    xml = r'''<?xml version="1.0"?>
+    <ol>
+        <li><a href="/python">Python</a></li>
+        <li><a href="/ruby">Ruby</a></li>
+    </ol>
+    '''
+    handler = DefaultSaxHandler()
+    parser = ParserCreate()
+    parser.StartElementHandler = handler.start_element
+    parser.EndElementHandler = handler.end_element
+    parser.CharacterDataHandler = handler.char_data
+    parser.Parse(xml)
 
-handler = DefaultSaxHandler()
-parser = ParserCreate()
-parser.StartElementHandler = handler.start_element
-parser.EndElementHandler = handler.end_element
-parser.CharacterDataHandler = handler.char_data
-parser.Parse(xml)
-
+if __name__ == '__main__':
+    use_sax()

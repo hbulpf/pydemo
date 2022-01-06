@@ -15,6 +15,7 @@
   * [常见内建模块](docs/python/常见内建模块.md)
   * [多个虚拟环境](docs/python/virtualenv.md)
   * [内建函数](docs/python/内建函数.md)
+  * [xml](docs/python/xml.md)
   * [常用样例](docs/python/常用样例.md)
   * [常用技巧](docs/python/tips.md)
 
@@ -69,6 +70,9 @@
 
 * [小例子](docs/samples/README.md)
   * [递归遍历目录](docs/samples/递归遍历目录.md)
+
+* [自动化办公](docs/office/README.md)
+  * [excel](docs/office/excel.md)
 * [爬虫](docs/projects/spiders/README.md)
   * [requests](docs/projects/spiders/requests.md)
   * [Fiddler](docs/projects/spiders/Fiddler.md)

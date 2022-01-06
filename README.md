@@ -18,8 +18,8 @@
 
 #### 学习资料
 
-1. [Python官方API](https://docs.python.org/zh-cn/3.7/)
-   * [官方标准库学习](https://docs.python.org/zh-cn/3.7/library/index.html)
+1. [Python官方API](https://docs.python.org/zh-cn/3.7/) 
+   * [官方标准库学习](https://docs.python.org/zh-cn/3.7/library/index.html) 可在python安装目录的doc目录下找到版本对应的chm格式使用手册
 
 2. 在线学习教材参考
    - [廖雪峰的官方网站-Python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
