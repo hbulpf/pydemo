@@ -2,7 +2,10 @@
 
 
 ## 参考
+1. [Python 自动化操作 Excel 看这一篇就够了](https://zhuanlan.zhihu.com/p/259583430)
+2. [python如何处理excel数据](https://www.php.cn/python-tutorials-415669.html)
 
+## FAQ
 1. 在运用python中xlrd库读取.xlsx文件时报错，无法读取。
    
     ```
