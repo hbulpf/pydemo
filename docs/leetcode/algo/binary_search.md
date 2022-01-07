@@ -39,6 +39,7 @@ def test1():
 ### 中级-找分割点
 > [力扣278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
 
+这种要特别注意边界问题。
 ```
 def firstBadVersion(self, n):
     left = 1
