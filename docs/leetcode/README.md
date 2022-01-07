@@ -3,9 +3,11 @@
 题目来自《何海涛. 剑指 Offer[M]. 电子工业出版社, 2012.》，刷题网站推荐：
 
 - [牛客网](https://www.nowcoder.com/ta/coding-interviews?from=cyc_github)
-- [Leetcode](https://leetcode-cn.com/problemset/lcof/)
+- [Leetcode](https://leetcode-cn.com/problemset/)
 
-## 数组与矩阵
+## 按类型
+
+### 数组与矩阵
 
 - [3. 数组中重复的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/3. 数组中重复的数字.html)
 - [4. 二维数组中的查找](http://www.cyc2018.xyz/算法/剑指 Offer 题解/4. 二维数组中的查找.html)
@@ -13,7 +15,7 @@
 - [29. 顺时针打印矩阵](http://www.cyc2018.xyz/算法/剑指 Offer 题解/29. 顺时针打印矩阵.html)
 - [50. 第一个只出现一次的字符位置](http://www.cyc2018.xyz/算法/剑指 Offer 题解/50. 第一个只出现一次的字符位置.html)
 
-## 栈队列堆
+### 栈队列堆
 
 - [9. 用两个栈实现队列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/9. 用两个栈实现队列.html)
 - [30. 包含 min 函数的栈](http://www.cyc2018.xyz/算法/剑指 Offer 题解/30. 包含 min 函数的栈.html)
@@ -23,14 +25,14 @@
 - [41.2 字符流中第一个不重复的字符](http://www.cyc2018.xyz/算法/剑指 Offer 题解/41.2 字符流中第一个不重复的字符.html)
 - [59. 滑动窗口的最大值](http://www.cyc2018.xyz/算法/剑指 Offer 题解/59. 滑动窗口的最大值.html)
 
-## 双指针
+### 双指针
 
 - [57.1 和为 S 的两个数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/57.1 和为 S 的两个数字.html)
 - [57.2 和为 S 的连续正数序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/57.2 和为 S 的连续正数序列.html)
 - [58.1 翻转单词顺序列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/58.1 翻转单词顺序列.html)
 - [58.2 左旋转字符串](http://www.cyc2018.xyz/算法/剑指 Offer 题解/58.2 左旋转字符串.html)
 
-## 链表
+### 链表
 
 - [6. 从尾到头打印链表](http://www.cyc2018.xyz/算法/剑指 Offer 题解/6. 从尾到头打印链表.html)
 - [18.1 在 O\(1\) 时间内删除链表节点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/18.1 在 O\(1\) 时间内删除链表节点.html)
@@ -42,7 +44,7 @@
 - [35. 复杂链表的复制](http://www.cyc2018.xyz/算法/剑指 Offer 题解/35. 复杂链表的复制.html)
 - [52. 两个链表的第一个公共结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/52. 两个链表的第一个公共结点.html)
 
-## 树
+### 树
 
 - [7. 重建二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/7. 重建二叉树.html)
 - [8. 二叉树的下一个结点](http://www.cyc2018.xyz/算法/剑指 Offer 题解/8. 二叉树的下一个结点.html)
@@ -61,33 +63,33 @@
 - [55.2 平衡二叉树](http://www.cyc2018.xyz/算法/剑指 Offer 题解/55.2 平衡二叉树.html)
 - [68. 树中两个节点的最低公共祖先](http://www.cyc2018.xyz/算法/剑指 Offer 题解/68. 树中两个节点的最低公共祖先.html)
 
-## 贪心思想
+### 贪心思想
 
 - [14. 剪绳子](http://www.cyc2018.xyz/算法/剑指 Offer 题解/14. 剪绳子.html)
 - [63. 股票的最大利润](http://www.cyc2018.xyz/算法/剑指 Offer 题解/63. 股票的最大利润.html)
 
-## 二分查找
+### 二分查找
 
 - [11. 旋转数组的最小数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/11. 旋转数组的最小数字.html)
 - [53. 数字在排序数组中出现的次数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/53. 数字在排序数组中出现的次数.html)
 
-## 分治
+### 分治
 
 - [16. 数值的整数次方](http://www.cyc2018.xyz/算法/剑指 Offer 题解/16. 数值的整数次方.html)
 
-## 搜索
+### 搜索
 
 - [12. 矩阵中的路径](http://www.cyc2018.xyz/算法/剑指 Offer 题解/12. 矩阵中的路径.html)
 - [13. 机器人的运动范围](http://www.cyc2018.xyz/算法/剑指 Offer 题解/13. 机器人的运动范围.html)
 - [38. 字符串的排列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/38. 字符串的排列.html)
 
-## 排序
+### 排序
 
 - [21. 调整数组顺序使奇数位于偶数前面](http://www.cyc2018.xyz/算法/剑指 Offer 题解/21. 调整数组顺序使奇数位于偶数前面.html)
 - [45. 把数组排成最小的数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/45. 把数组排成最小的数.html)
 - [51. 数组中的逆序对](http://www.cyc2018.xyz/算法/剑指 Offer 题解/51. 数组中的逆序对.html)
 
-## 动态规划
+### 动态规划
 
 - [10.1 斐波那契数列](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.1 斐波那契数列.html)
 - [10.2 矩形覆盖](http://www.cyc2018.xyz/算法/剑指 Offer 题解/10.2 矩形覆盖.html)
@@ -100,18 +102,18 @@
 - [60. n 个骰子的点数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/60. n 个骰子的点数.html)
 - [66. 构建乘积数组](http://www.cyc2018.xyz/算法/剑指 Offer 题解/66. 构建乘积数组.html)
 
-## 数学
+### 数学
 
 - [39. 数组中出现次数超过一半的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/39. 数组中出现次数超过一半的数字.html)
 - [62. 圆圈中最后剩下的数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/62. 圆圈中最后剩下的数.html)
 - [43. 从 1 到 n 整数中 1 出现的次数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/43. 从 1 到 n 整数中 1 出现的次数.html)
 
-## 位运算
+### 位运算
 
 - [15. 二进制中 1 的个数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/15. 二进制中 1 的个数.html)
 - [56. 数组中只出现一次的数字](http://www.cyc2018.xyz/算法/剑指 Offer 题解/56. 数组中只出现一次的数字.html)
 
-## 其它
+### 其它
 
 - [17. 打印从 1 到最大的 n 位数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/17. 打印从 1 到最大的 n 位数.html)
 - [19. 正则表达式匹配](http://www.cyc2018.xyz/算法/剑指 Offer 题解/19. 正则表达式匹配.html)
@@ -122,6 +124,28 @@
 - [64. 求 1+2+3+...+n](http://www.cyc2018.xyz/算法/剑指 Offer 题解/64. 求 1+2+3+...+n.html)
 - [65. 不用加减乘除做加法](http://www.cyc2018.xyz/算法/剑指 Offer 题解/65. 不用加减乘除做加法.html)
 - [67. 把字符串转换成整数](http://www.cyc2018.xyz/算法/剑指 Offer 题解/67. 把字符串转换成整数.html)
+
+## 20天刷题计划
+
+### 算法入门
+
+> [leetcode算法入门](https://leetcode-cn.com/study-plan/algorithms/?progress=2ydlbzs)
+> 日均 2~3 题 ｜ 周期 20 天
+> 简单 18, 中等 13, 困难 0
+
+
+### 算法基础
+
+> 日均 2~3 题 ｜ 周期 21 天
+> 简单 3, 中等 42, 困难 2
+
+
+
+### 算法进阶
+
+> 日均 2~3 题 ｜ 周期 27 天  
+> 简单 2, 中等 34, 困难 24
+
 
 # 参考
 
