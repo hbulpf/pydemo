@@ -4,6 +4,9 @@
 
 ## 二分查找模板
 
+### 初级-找某个值
+
+> [力扣704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 ```python
 def binary_search(arr, key):
     left = 0
@@ -31,6 +34,30 @@ def test1():
     print(arr, ":", binary_search(arr, 2))
     print(arr, ":", binary_search(arr, 4))
 ```
+
+
+### 中级-找分割点
+> [力扣278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
+
+```
+def firstBadVersion(self, n):
+    left = 1
+    right = n
+    mid = 0
+    while left < right:
+        # 特别注意这里的 <
+        mid = (right + left) // 2
+        if isBadVersion(mid):
+            # 特别注意这里的 mid，不是mid+1
+            right = mid
+        else:
+            left = mid + 1
+    return right
+```
+找分割点的关键在于: left < right 的时候就要结束循环。不能等 left = right 再结束循环。
+由于右边是分割点，因此 right = mid, 不要写成 right = mid + 1。
+如果左边是分割点，相应地应该写成 left = mid
+
 
 ## 标准类库
 
