@@ -130,7 +130,7 @@
 ### 算法入门
 
 > [leetcode算法入门](https://leetcode-cn.com/study-plan/algorithms/?progress=2ydlbzs)
-> 日均 2~3 题 ｜ 周期 20 天
+> 日均 2~3 题 ｜ 周期 14 天
 > 简单 18, 中等 13, 困难 0
 
 
