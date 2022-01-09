@@ -26,3 +26,5 @@ def sortedSquares(self, nums: List[int]) -> List[int]:
         i -= 1
     return ans
 ```        
+
+> [力扣283. 移动零](https://leetcode-cn.com/problems/move-zeroes/submissions/)
