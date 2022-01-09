@@ -59,6 +59,7 @@ def firstBadVersion(self, n):
 由于右边是分割点，因此 right = mid, 不要写成 right = mid + 1。
 如果左边是分割点，相应地应该写成 left = mid
 
+> [力扣35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
 
 ## 标准类库
 
