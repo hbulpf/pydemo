@@ -62,6 +62,7 @@
   - [算法总结](docs/leetcode/algo/python_summary.md)
     - [二分查找](docs/leetcode/algo/binary_search.md)
     - [双指针](docs/leetcode/algo/two_points.md)
+    - [旋转变换](docs/leetcode/algo/rotating.md)
     - [贪婪算法](docs/leetcode/algo/greedy.md)
     - [动态规划](docs/leetcode/algo/dp.md)
     - [算法技巧](docs/leetcode/algo/algo_tips.md)

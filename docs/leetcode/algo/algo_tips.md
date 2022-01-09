@@ -179,3 +179,17 @@
     b ^= a;
     a ^= b;
     ```
+
+5. 如果要原地修改数组的值，用  `nums[:] = nums[-k:] + nums[:-k]` 而不是 ` nums = nums[-k:] + nums[:-k]`
+    ```
+    def rotate2(self, nums: List[int], k: int) -> None:
+        k %= len(nums)
+        print(id(nums))
+        nums = nums[-k:] + nums[:-k]
+        print(id(nums))
+    ```
+    结果如下,发现修改了地址。而 `nums[:]` 没有修改。
+    ```
+    2381238593480
+    2381238655624
+    ```
