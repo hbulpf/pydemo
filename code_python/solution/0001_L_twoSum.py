@@ -18,6 +18,7 @@ class Solution:
         for i, v in enumerate(nums):
             tmp = target - v
             if num_dict.get(tmp) is not None:
+                # 这里注意 is not None 和 not 是有区别的。not 0 也是false,所以如果只想表示判空，要用 is not None
                 return [i, num_dict.get(tmp)]
             else:
                 num_dict[v] = i
