@@ -96,7 +96,10 @@
    #  (32, 5)
    #  (-2, 2)
    #  (2, 2)
-   ```   
+   ``` 
+
+9. 注意 `is not None` 和 `not` 是有区别的。`not 0` 结果也是`false`,所以如果只想表示判空，要用 `is not None`。  
+    比如针对 [力扣1. 两数之和](https://leetcode-cn.com/problems/two-sum/)。使用dict取出的值有可能有 0，就会导致和None的情况混在一起，产生错误。
 
 ## 算法技巧类
 
