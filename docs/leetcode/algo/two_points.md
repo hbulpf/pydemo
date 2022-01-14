@@ -28,3 +28,13 @@ def sortedSquares(self, nums: List[int]) -> List[int]:
 ```        
 
 > [力扣283. 移动零](https://leetcode-cn.com/problems/move-zeroes/submissions/)
+
+## 双指针操作链表
+
+双指针操作链表，有时十分考验编程技巧。
+
+如果 [力扣 19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) 就十分考验编程技巧。
+a. 双指针直接想法 难点在于临界值的选择控制。这种通常不好找(也能找)。尤其是当需要删除的接点是head时更难处理。
+b. 构造头结点: 构造一个虚拟的头节点dummy,代替head。这是一个比较好的思路:
+使快指针走到 n+1的位置，这样与慢节点就相差 n+1个节点;
+快节点走到最后，即 len+1位置，慢节点走到 len-n 位置，即倒数第n个节点前一个。
