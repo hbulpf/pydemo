@@ -24,10 +24,11 @@ class Solution:
                     h1, h2 = nums[j]
                     if k1 > h1 > h2 >= k2 or k1 < h1 < h2 <= k2:
                         has_persons[j] = False
+                        print(h1, h2, ":", distance)
                 distance += self.get_diff(k1, k2)
                 has_persons[i] = False
                 last_floor = k2
-                print(k1, k2, ":", distance)
+                print(k1, "=>", k2, ":", distance)
         return distance
 
     def get_diff(self, v1, v2):
