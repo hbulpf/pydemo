@@ -74,26 +74,7 @@
 
 ### leetcode进阶
 
-学习分两个部分:
-
-1. 去 [牛客网的LeetCode经典编程题](https://www.nowcoder.com/ta/leetcode) 做题系统中进行 leetcode in python 练习
-2. 按照下面的 [LeetCode作业集](docs/leetcode/README.md) 自主完成习题反复思考总结
-
-学习目标：
-
-1. 需要掌握的题目类型 
-   1. 数组
-   2. 字符串
-   3. 查找
-   4. 排序
-   5. 链表
-   6. 堆栈
-   7. 树+递归
-   8. 回溯法
-   9. 动态规划
-   10. 贪心算法
-2. 需要完成目标: 本阶段后，要把[牛客网的LeetCode经典编程题](https://www.nowcoder.com/ta/leetcode)全部刷完。
-
+刷题，练习思维。
 
 ### 公司面试
 根据面试公司往年的招聘情况，找一些相似公司或该公司的历年真题进行针对性测验练习。
