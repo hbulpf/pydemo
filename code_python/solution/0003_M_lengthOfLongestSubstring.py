@@ -18,16 +18,17 @@ class Solution:
         """
         dup_dic = dict()
         s_len = len(s)
-        # ans是结果; k是匹配串的起始位置
-        ans,k = 0,0
-        for i in range(s_len):
-            if s[i] in dup_dic and dup_dic[s[i]] > k:
-                pass
+        # ans是结果; k是匹配串的起始位置,
+        ans, k = 0, -1
+        for i, c in enumerate(s):
+            # 字符c在字典中 且 上次出现的下标大于当前长度的起始下标
+            if c in dup_dic and dup_dic[c] > k:
+                k = dup_dic[c]
+                dup_dic[c] = i
             else:
-                pass
-
-
-
+                dup_dic[c] = i
+                ans = max(ans, i - k)
+        return ans
 
     def lengthOfLongestSubstring3(self, s: str) -> int:
         """
