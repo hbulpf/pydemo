@@ -63,6 +63,7 @@
     - [二分查找](docs/leetcode/algo/binary_search.md)
     - [双指针](docs/leetcode/algo/two_points.md)
     - [滑动窗口](docs/leetcode/algo/sliding_window.md)
+    - [DFS和BFS](docs/leetcode/algo/dfs_and_bfs.md)
     - [旋转变换](docs/leetcode/algo/rotating.md)
     - [贪婪算法](docs/leetcode/algo/greedy.md)
     - [动态规划](docs/leetcode/algo/dp.md)
