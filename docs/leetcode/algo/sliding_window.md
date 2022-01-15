@@ -34,6 +34,11 @@ void slidingWindow(string s, string t) {
 }
 ```
 
+## 典型题目
+
+1. [力扣 3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)   
+2. [力扣 567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/)
+
 ## 参考
 
 1. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/1/11/)
