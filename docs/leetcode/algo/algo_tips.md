@@ -101,6 +101,33 @@
 9. 注意 `is not None` 和 `not` 是有区别的。`not 0` 结果也是`false`,所以如果只想表示判空，要用 `is not None`。  
     比如针对 [力扣1. 两数之和](https://leetcode-cn.com/problems/two-sum/)。使用dict取出的值有可能有 0，就会导致和None的情况混在一起，产生错误。
 
+10. 数组、dict、set 都可以用 `==` 比较内部的值是否相同。比如 [力扣567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) 在计算两个可以重复的字符串是否等价时，就用到了两个数组之间的 `==` 比较
+    
+    ```python
+    def is_equal(self, s1, s2) -> bool:
+        """
+        判断 s1 和 s1 是否等价，即两者是否含有相同的字符
+        """
+        if len(s1) != len(s2):
+            return False
+        # s1_dict = dict()
+        # for c in s1:
+        #     if c in s1_dict:
+        #         s1_dict[c] +=1
+        #     else:
+        #         s1_dict[c] = 1
+        # for c in s2:
+        #     if c in s1_dict and s1_dict[c] > 0:
+        #         s1_dict[c] -= 1
+        #     else:
+        #         return False
+        dic1 = [0] * 26
+        dic2 = [0] * 26
+        for i in range(len(s1)):
+            dic1[ord(s1[i]) - ord('a')] += 1
+            dic2[ord(s2[i])- ord('a')] += 1
+        return dic1 == dic2
+    ```
 ## 算法技巧类
 
 1. 删除元素时会引起数组长度变化,因此**删除时从后面开始删除**可以避免此问题。
