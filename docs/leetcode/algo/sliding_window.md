@@ -33,3 +33,7 @@ void slidingWindow(string s, string t) {
     }
 }
 ```
+
+## 参考
+
+1. [labuladong 的算法小抄](https://labuladong.gitee.io/algo/1/11/)
